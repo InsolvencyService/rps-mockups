@@ -1,0 +1,65 @@
+.form-example-1 .ip-information-summary {
+    border: 3px solid #2b8cc4;
+    box-sizing: border-box;
+    padding: 1em 1em 0.25em 1em;
+    margin: 1em -1em 1.5em -1em;
+    background-color: #d5e8f3;
+}
+.form-example-1 .ip-information-summary *:first-child {
+    margin-top: 0em;
+}
+.form-example-1 .ip-information-summary ul, .form-example-1 .ip-information-summary ol {
+    padding-left: 1em;
+}
+.form-example-1 .ip-information-summary input[type="text"], .form-example-1 .ip-information-summary textarea {
+    background-color: #fff;
+}
+.form-example-1 .ip-information-summary .inner {
+    background-color: white;
+    border: 1px solid #bfc1c3;
+    padding: 2em;
+    margin-bottom: 0.75em;
+}
+.form-example-1 .ip-information-summary .inner input[type="text"], .form-example-1 .ip-information-summary .inner textarea {
+    background-color: #f8f8f8;
+}
+.form-example-1 .ip-information-summary h1 {
+    margin-bottom: 0;
+}
+.form-example-1 .ip-information-summary a {
+    color: #003479;
+    text-decoration: none;
+}
+.form-example-1 .ip-information-summary a:hover {
+    text-decoration: underline;
+}
+.form-example-1 .ip-information-summary ul, .form-example-1 .ip-information-summary ol {
+    color: #003479;
+}
+.form-example-1 .ip-information-summary ul {
+    padding-left: 2.2em;
+}
+.form-example-1 .ip-information-summary ul li {
+    list-style-type: none;
+    list-style-image: none;
+}
+.form-example-1 .ip-information-summary li {
+    font-family: "nta", Arial, sans-serif;
+	font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    color: #003479;
+}
+
+.form-example-1 .ip-information .ip-information-message, .ip-information-message {
+    color: #003479;
+    font-family: "nta", Arial, sans-serif;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+
