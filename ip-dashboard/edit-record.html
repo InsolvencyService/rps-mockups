@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insolvency Practitioners - Redundancy Payments - The Insolvency Service</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">	
+</head>
+<body style="padding-top:60px;">
+<!-- responsive wrapper -->		
+<div class="container-fluid" id="top">
+	<!-- global navigation toolbar -->	
+		<div class="navbar  navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <div class="container-fluid">
+		      	<ul class="nav">
+				  <li><a class="brand" href="search.html">The Insolvency Service</a></li>
+					<li class="divider-vertical"></li>
+				  <li><a href="new-record.html"><i class="icon-plus"></i>
+					New Claimant Record</a></li>
+				</ul>
+				<ul class="nav pull-right">
+					<li class="divider-vertical"></li>
+					<li><a href="">
+					LOGOUT</a></li>
+				</ul>					
+		    </div>
+		  </div>
+		</div>		
+		<!-- new row (nr) -->
+			<div class="row-fluid">
+		<!-- new column (nc) -->			
+			    <div class="span12">
+		<!-- main navigation tabs -->								
+						<ul class="nav nav-tabs">
+							<li>
+								<a href="ip-dashboard.html">
+									<i class="icon-search"></i>
+									Dashboard</a>
+							</li>
+							<li class="active"><a href="new-record.html"><i class="icon-plus"></i>
+								New Claimant Record</a></li>
+						</ul>
+					</div>
+				</div>
+	<!-- nr -->	
+<!-- nr -->	
+	<div class="row-fluid">
+<!-- nc -->
+	    <div class="span12">
+<!-- customer record navigation -->				
+			<ul class="nav nav-pills">
+				<li><a class="" href="view-record.html">
+					<i class="icon-user"></i>
+					View Record</a></li>						
+				<li class="active"><a class="" href="edit-record.html">
+					<i class="icon-edit"></i>
+					Edit Record</a></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="row-fluid">
+	    <div class="span12">
+			<form method="post" action="/create-employee-record/employee-details/" class="form-horizontal">
+			            <fieldset>
+			                <legend><small>About the employer</small></legend>
+
+					<div class="control-group">
+			            <div class="control-label">
+			                <label for="employer_name">Employer Name</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employer_name" name="employer_name" type="text" value="ABC Solutions Ltd.">
+			            </div>
+			       </div>
+
+			            </fieldset>
+			            <fieldset>
+			                <legend><small>About the employee who was made redundant</small></legend>
+
+			        <div class="control-group">
+			            <div class="control-label">
+			                <label for="employee_title">Title</label>
+			            </div>
+			            <div class="controls">
+			                <select id="employee_title" name="employee_title"><option value="Mr" selected="selected">Mr</option><option value="Mrs">Mrs</option><option value="Miss">Miss</option><option value="Ms">Ms</option><option value="Other">Other</option><option value=""></option></select>
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class="control-label">
+			                <label for="employee_title_other">Title if other</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_title_other" name="employee_title_other" type="text" value="">
+			            </div>
+
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_forenames">Forenames</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_forenames" name="employee_forenames" type="text" value="Firstname">
+			            </div>
+			       </div>
+
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_surname">Surname</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_surname" name="employee_surname" type="text" value="Surname">
+			            </div>
+			       </div>
+
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_national_insurance_number">National Insurance Number</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_national_insurance_number" name="employee_national_insurance_number" type="text" value="NY123456D">
+			            </div>
+			       </div>
+
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_national_insurance_class">NI Class</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_national_insurance_class" name="employee_national_insurance_class" type="text" value="C">
+			            </div>
+			       </div>
+
+
+			        <div class="control-group">
+			            <div class="control-label">
+			                <label for="employee_date_of_birth">Date of Birth</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_date_of_birth" name="employee_date_of_birth" type="text" value="01/01/1972">
+			            </div>
+			       </div>
+
+			            </fieldset>
+			            <fieldset>
+			                <legend><small>About the employees employment</small></legend>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_start_date">Employment Start Date</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_start_date" name="employee_start_date" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_date_of_notice">Date Notice Given</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_date_of_notice" name="employee_date_of_notice" type="text" value="">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_end_date">Employment End Date</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_end_date" name="employee_end_date" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_basic_weekly_pay">Basic Weekly Pay</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_basic_weekly_pay" name="employee_basic_weekly_pay" type="text" value="450">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_weekly_pay_day">If paid weekly, on what day of the week?</label>
+			            </div>
+			            <div class="controls">
+			                <select id="employee_weekly_pay_day" name="employee_weekly_pay_day"><option selected="" value=""></option><option value="sunday">Sunday</option><option value="monday">Monday</option><option value="tuesday">Tuesday</option><option value="wednesday">Wednesday</option><option value="thursday">Thursday</option><option value="friday">Friday</option><option value="saturday">Saturday</option></select>
+			            </div>
+			            <div class="">
+
+
+
+			            </div>
+			       </div>
+			    <p></p>
+
+			            </fieldset>
+			            <fieldset>
+			                <legend><small>Periods of arrears for which pay is owed to this employee</small></legend>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_owed_wages_from">Period 1 From</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_owed_wages_from" name="employee_owed_wages_from" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_owed_wages_to">Period 1 To</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_owed_wages_to" name="employee_owed_wages_to" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_owed_wages_in_arrears">Arrears of pay amount</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_owed_wages_in_arrears" name="employee_owed_wages_in_arrears" type="text" value="250">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_owed_wages_in_arrears_type">Arrears of pay type</label>
+			            </div>
+			            <div class="controls">
+			                <select id="employee_owed_wages_in_arrears_type" name="employee_owed_wages_in_arrears_type"><option selected="" value=""></option><option value="attatchment_of_earnings">attachment of earnings</option><option value="wages">wages</option><option value="overtime">overtime</option><option value="unpaid_checque">unpaid cheque</option><option value="commission">commission</option></select>
+			            </div>
+			       </div>
+
+			            </fieldset>
+			            <fieldset>
+			                <legend><small>Holiday pay owed to this employee</small></legend>
+
+			       <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_holiday_year_start_date">Holiday Year Start Date</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_holiday_year_start_date" name="employee_holiday_year_start_date" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_holiday_owed">Total number of days holiday owed</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_holiday_owed" name="employee_holiday_owed" type="text" value="10">
+			            </div>
+			       </div>
+			            </fieldset>
+			            <fieldset>
+			                <legend><small>Holiday taken and not paid</small></legend>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_unpaid_holiday_from">Unpaid holiday From</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_unpaid_holiday_from" name="employee_unpaid_holiday_from" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+
+			        <div class="control-group">
+			            <div class=" control-label">
+			                <label for="employee_unpaid_holiday_to">Unpaid holiday To</label>
+			            </div>
+			            <div class="controls">
+			                <input id="employee_unpaid_holiday_to" name="employee_unpaid_holiday_to" type="text" value="01/01/2013">
+			            </div>
+			       </div>
+			                <div style="display:none;"><input id="csrf_token" name="csrf_token" type="hidden" value="1386072878.98##bb88cc8317cf16b5984181667666216d9c160934"></div>
+			            </fieldset>
+			<div class="form-actions">            
+				<a class="btn btn-primary" href="record-updated.html">Save claimant record</a>
+			</div>
+			        </form>
+
+		</div>
+	</div>
+</div>	
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/placeholder.js"></script>		
+</body>
+</html>
