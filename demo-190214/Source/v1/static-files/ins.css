@@ -1,0 +1,62 @@
+.header-global .page-title {
+	color: #fff;
+	font-weight: 600;
+	font-size: 2rem;
+	padding: .3em 1.5em 0 0;
+	overflow: hidden;
+	width: auto;
+	text-align: right;
+}
+
+.header-global .page-title.beta span {
+background: #f47738;
+}
+
+.redundancy-payments {
+	background: #fff;
+	padding: 0 1em 4em 1em;
+	margin: 0 auto;
+	max-width: 980px;
+}
+
+
+.header-global .page-title span {
+	width: auto;
+	margin-left: .75em;
+	letter-spacing: 0.2em;
+	font-weight: 700;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding: 6px 10px 4px 10px;
+	position: relative;
+	top: -2px;
+}
+
+.redundancy-payments .claim-info {
+	margin: 0;
+	padding: 10px 1em 10px 0;
+	list-style: none;
+	text-align: right;
+	border-top: 10px solid #003479;
+}
+
+main {
+	background: #fff;
+	border-bottom: 10px solid #003479;
+	display: block;
+}
+
+.redundancy-payments section {
+	background: #fff;
+	position: relative;
+	padding: 1.6em 0 0 1em;
+}
+
+.redundancy-payments section h1 {
+	font-size: 3.6rem;
+	font-weight: 700;
+	line-height: 1.2em;
+	margin-bottom: .25em;
+	margin-right: 20%;
+	margin-left: -2px;
+}
