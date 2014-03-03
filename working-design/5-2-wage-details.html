@@ -9,16 +9,18 @@
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
     </script>
 
-<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 
-<link href="assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
+	<link href="assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 
-<link href="assets/fonts.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/fonts.css" media="all" rel="stylesheet" type="text/css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="assets/application.css" media="all" rel="stylesheet" type="text/css">
+
+	<link href="assets/prototype.css" media="all" rel="stylesheet" type="text/css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<link href="assets/application.css" media="all" rel="stylesheet" type="text/css">
-
-<link href="assets/prototype.css" media="all" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -54,56 +56,46 @@
     
 <div id="wrapper">
     <main id="content" role="main" class="group detailed-guidance">
-	
         <article role="article" class="group">
             
-    <h1>About this claim</h1>
-
+    <h1>How much do you earn?</h1>
     <form method="post">
          <fieldset>
-
-			            <p>Did you receive any new benefits or an increase in your benefits during the notice period?</p>
+			<p>What is your rate of pay?</p>
 			<div class="question-group">
 			<ul class="radio">
-				<li>
-			        <input id="benefit_yes" name="benefit" type="radio" value="yes"> 
-					<label for="benefit_yes">Yes</label>
-				</li>	
-				<li>
-			        <input id="benefit_no" name="benefit" type="radio" value="no"> 
-					<label for="benefit_no">No</label>
-				</li>
+			<li>
+			<input id="hour" name="rate" type="radio" value="yes"> 
+			<label for="hour">Per Hour</label>
+			</li>	
+			<li>
+			<input id="day" name="rate" type="radio" value="no"> 
+			<label for="day">Per Day</label>
+			</li>
+			<li>
+			<input id="week" name="rate" type="radio" value="yes" checked="checked"> 
+			<label for="week">Per Week</label>
+			</li>	
+			<li>
+			<input id="month" name="rate" type="radio" value="no"> 
+			<label for="month">Per Month</label>
+			</li>
+			<li>
+			<input id="year" name="rate" type="radio" value="no"> 
+			<label for="year">Per Year</label>
+			</li>
 			</div>
-            <p>Did you have a job during your notice period?</p>
-<div class="question-group">
-<ul class="radio">
-	<li>
-        <input id="job_yes" name="job" type="radio" value="yes"> 
-		<label for="job_yes">Yes</label>
-	</li>	
-	<li>
-        <input id="job_no" name="job" type="radio" value="no"> 
-		<label for="job_no">No</label>
-	</li>
-</div>
-
-<p>Were you self-employed during your notice period?</p>
-<div class="question-group">
-<ul class="radio">
-<li>
-<input id="se_yes" name="se" type="radio" value="yes"> 
-<label for="se_yes">Yes</label>
-</li>	
-<li>
-<input id="se_no" name="se" type="radio" value="no"> 
-<label for="se_no">No</label>
-</li>
-</div>		
+			<p class="input-group">
+				<label>How much are you paid?</label>
+						<span class="input-group-addon">£</span> 
+						<input type="text" class="form-control" size="6">
+						<span class="hint">This is the gross amount of pay on your payslip excluding any overtime payments</span>
+			</p>
 
         </fieldset>
 <nav class="form-navigation">
-		<a href="1-0-matched.html" class="button-secondary">Back</a>
-		<a href="5-0-self-employed.html" class="button">Next Step</a>
+		<a href="5-1-1-job-end-date.html" class="button-secondary">Back</a>
+		<a href="5-3-hours-worked.html" class="button">Next</a>
 </nav>		
     </form>
 

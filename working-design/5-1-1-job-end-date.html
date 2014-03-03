@@ -9,16 +9,18 @@
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
     </script>
 
-<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 
-<link href="assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
+	<link href="assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 
-<link href="assets/fonts.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/fonts.css" media="all" rel="stylesheet" type="text/css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="assets/application.css" media="all" rel="stylesheet" type="text/css">
+
+	<link href="assets/prototype.css" media="all" rel="stylesheet" type="text/css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<link href="assets/application.css" media="all" rel="stylesheet" type="text/css">
-
-<link href="assets/prototype.css" media="all" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -54,58 +56,25 @@
     
 <div id="wrapper">
     <main id="content" role="main" class="group detailed-guidance">
-	
         <article role="article" class="group">
             
-    <h1>About this claim</h1>
-
+    <h1>Self-employment during notice period</h1>
     <form method="post">
          <fieldset>
-
-			            <p>Did you receive any new benefits or an increase in your benefits during the notice period?</p>
-			<div class="question-group">
-			<ul class="radio">
-				<li>
-			        <input id="benefit_yes" name="benefit" type="radio" value="yes"> 
-					<label for="benefit_yes">Yes</label>
-				</li>	
-				<li>
-			        <input id="benefit_no" name="benefit" type="radio" value="no"> 
-					<label for="benefit_no">No</label>
-				</li>
-			</div>
-            <p>Did you have a job during your notice period?</p>
-<div class="question-group">
-<ul class="radio">
-	<li>
-        <input id="job_yes" name="job" type="radio" value="yes"> 
-		<label for="job_yes">Yes</label>
-	</li>	
-	<li>
-        <input id="job_no" name="job" type="radio" value="no"> 
-		<label for="job_no">No</label>
-	</li>
-</div>
-
-<p>Were you self-employed during your notice period?</p>
-<div class="question-group">
-<ul class="radio">
-<li>
-<input id="se_yes" name="se" type="radio" value="yes"> 
-<label for="se_yes">Yes</label>
-</li>	
-<li>
-<input id="se_no" name="se" type="radio" value="no"> 
-<label for="se_no">No</label>
-</li>
-</div>		
-
+            <p>
+        <label for="">When did your self-employment end?</label>
+        <input type="text" value="" size="4" maxlength="2" placeholder="DD">
+		<input type="text" value="" size="4" maxlength="2" placeholder="MM">
+		<input type="text" value="" size="8" maxlength="4" placeholder="YYYY">
+		<span class="hint">Example: For example: 01 01 2014</span>
+    </p>
+              
         </fieldset>
 <nav class="form-navigation">
-		<a href="1-0-matched.html" class="button-secondary">Back</a>
-		<a href="5-0-self-employed.html" class="button">Next Step</a>
+		<a href="5-1-job-start-date.html" class="button-secondary">Back</a>
+		<a href="5-4-amount-earned.html" class="button">Next</a>
 </nav>		
-    </form>
+		    </form>
 
         </article>
     </main>
