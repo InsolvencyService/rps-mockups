@@ -1,0 +1,377 @@
+/* Throwaway styling for HTML mockup */
+
+a[rel="external"]::after {
+	content: "    \A0\A0\A0";
+	background-position: right 6px;
+}
+
+a[rel="external"]::after {
+	background-image: url(https://assets.digital.cabinet-office.gov.uk/static/external-link-4247fe6cbf644abe4092032a36a5837e.png);
+	background-repeat: no-repeat;
+}
+
+p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+}
+
+article h1 {
+	font-size: 3.6rem!important;
+	font-weight: 700;
+	line-height: 1.2em;
+	margin-bottom: .25em;
+	margin-right: 20%;
+	margin-left: -2px;
+}
+
+article li {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    margin: 0.25em 0;
+    padding-left: 0.3em;
+}
+
+article table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 1em -1em 2em -1em;
+    width: 105.95%}
+article table caption {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    font-weight: 700;
+    margin: 0.4em 0.5em 0.4em 0.7em;
+    text-align: left;
+}
+@media (max-width: 640px) {
+    article table caption {
+    font-size: 20px;
+    line-height: 1.2;
+}
+}article th, article td {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    vertical-align: top;
+    padding: 0.7em 0.5em 0.7em 1em;
+}
+@media (max-width: 640px) {
+    article th, article td {
+    font-size: 14px;
+    line-height: 1.14286;
+}
+}article tr:nth-child(even) td {
+    background-color: #fff;
+}
+article td {
+    background: #f8f8f8; 
+    border: dotted 1px #bfc1c3;
+}
+article td small {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+}
+@media (max-width: 640px) {
+    article td small {
+    font-size: 14px;
+    line-height: 1.14286;
+}
+}@media screen and (max-width: 320px) {
+    article th, article td, article td small {
+    font-size: 1rem;
+}
+}article th {
+    line-height: 1.25em;
+    text-align: left;
+    color: #0b0c0c;
+    font-weight: 700;
+   	background-color: #dee0e2;
+    border: solid 1px #bfc1c3;
+}
+
+.form-navigation {
+	margin-top:1.2em;
+}
+
+.form-navigation .button, .form-navigation .button-secondary {
+	font-size: 1.9rem;
+	line-height: 1em;
+	border: 0;
+	padding: 0.4em 1em 0.25em 1em;
+	cursor: pointer;
+	-webkit-appearance: none;
+	display: inline-block;
+	margin: .8em .25em 0 0;
+	font-weight: 500;
+	text-decoration: none;
+	top: 0;
+	position: relative;
+	overflow: visible;
+}
+article select {
+	padding: 2px;
+	min-width: 15rem;
+	max-width: 29.3rem;
+	position: relative;
+	font-size: 13px;
+	height: 30px;
+	top: 2px;
+	background: #fafafa;
+	border: 1px solid #a2a2a2;
+}
+
+.question-intro {
+	margin-bottom:-20px!important;
+	padding-bottom:0px!important;	
+}
+
+ul.radio {
+	margin-top: -10px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	clear:both;	
+}
+
+ul.radio li {
+	position: relative;
+	float: left;
+	margin: 0 0 0 1px;
+	padding: 0;
+}
+
+ul.radio li:first-child {
+	margin-left: 0;
+}
+
+ul.radio li input[type="radio"] {
+	position: absolute;
+	top: 13px;
+	left: 14px;
+	margin: 0;
+	cursor: pointer;
+	line-height: 1em;
+}
+
+ul.radio li label {
+	display: block;
+	background: #e8e8e8;
+	padding: 12px 14px 10px 34px;
+	font-size: 1.7rem;
+	cursor: pointer;
+	line-height: 1em;
+	border: 1px solid #fff;
+	font-weight: 500;
+}
+
+.input-group {
+	background: #fff;
+
+}
+
+.input-group-addon {
+	font-family: "nta", Arial, sans-serif;
+	font-size: 19px;
+	line-height: 1.31579;
+	font-weight: 400;
+	padding: 6px 12px;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.form-control {
+
+}
+
+article .help-notice {
+	background: none;
+	background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-187bcc8d8a6d56498c4ac26cadad102d.png) no-repeat scroll 0 0.5em;
+	padding: 0.1em 0 0.1em 1em;
+}
+
+article .help-notice p {
+	padding: 0 1em 0 2em;
+	font-weight:600;
+}
+
+.claim-info {
+/*  border-top: 10px solid #003479; */
+	border-bottom: 1px solid #e8e8e8;
+    list-style: none outside none;
+    margin: 0;
+    padding: 16px 1em 10px 0;
+    text-align: right;
+}
+
+.claim-info li:first-child {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.claim-info li {
+    color: #000000;
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 14px;
+}
+
+.claim-info li.active {
+	font-weight:600;
+}
+table.notice-period {
+	margin:auto;
+	width:100%;
+}
+table.notice-period td {
+	background-color:#fff!important;
+	padding: 0.35em 0.25em 0.35em 0.5em;
+}
+
+table.notice-period td.completed {
+	height:30px;
+	background: url("tick.png") no-repeat scroll center center #E6EFF5;
+}
+
+.divider {
+	border-left: 1px solid #e8e8e8;	
+}
+
+.progress {
+    background-color: #e8e8e8;
+    background-repeat: repeat-x;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+	font-size:18px;
+}
+
+.progress .start {
+    float: left;
+    background-color: #fff;
+	padding-right:20px;
+	border-right:2px solid #000;
+	
+}
+.progress .end {
+    float: right;
+    background-color: #fff;	
+	padding-left:20px;
+	border-left:2px solid #000;	
+}
+
+
+.progress .bar {
+    background-color: #000;
+    background-repeat: repeat-x;
+    color: #fff;
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 0;
+}
+
+
+ul.summary-list {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.summary-list li {
+	  background: url("tick.png") no-repeat scroll 1.1em 0.75em #e8e8e8;
+	  padding: 0.5em 5em 0.5em 2.9em;
+	  position: relative;
+    border-bottom: solid 1px #bfc1c3;
+	}
+	
+ul.earnings-list {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}	
+ul.earnings-list li {
+	  background: none;
+	  border: none;
+	  padding: 0.5em 5em 0.5em 2.9em;
+	  position: relative;
+    border-bottom: dotted 1px #bfc1c3;	
+}
+
+ul.earnings-list li:last-child {
+	border-bottom: none;	
+}
+
+ul.earnings-list li:last-child a {
+	position:static;
+	font-size:14px;
+}
+
+ul.earnings-list li span {
+/*	background-color:#E6EFF5;
+	padding:0 0.25em;
+	font-weight:600;*/
+}
+ul.summary-list li a, ul.earnings-list li a  {
+ 	position:absolute;
+	top:1em;
+	right:0.5em;
+	font-size:14px;
+}
+
+ul.earnings-list li.add-to-list a {
+	 	position:none;
+		font-size:16px;	
+}
+
+table.earnings-list {
+	width:100%;
+	font-size:14px;
+	margin-left:0;
+	background-color:#E6EFF5;
+}
+table.earnings-list caption {
+	font-size:18px;
+}
+table.earnings-list thead {
+	border-bottom:1px solid #CDD7DC;
+}
+
+table.earnings-list thead th:first-child {
+	width:25%;
+}
+
+table.earnings-list tbody tr {
+	border-bottom:1px solid #CDD7DC;
+	background-color:transparent;	
+}
+
+table.earnings-list tr.earnings-question th {
+	background-color:#fff;
+	padding-top:30px;		
+}
+
+table.earnings-list tr:nth-child(even) td {
+	background-color:transparent;
+}
+
+table.earnings-list th, table.earnings-list td {
+	border-width:0px;
+	background-color:transparent;
+}

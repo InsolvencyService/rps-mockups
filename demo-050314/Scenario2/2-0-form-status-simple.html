@@ -9,18 +9,16 @@
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
     </script>
 
-	<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 
-	<link href="assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
+<link href="assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 
-	<link href="assets/fonts.css" media="all" rel="stylesheet" type="text/css">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href="assets/application.css" media="all" rel="stylesheet" type="text/css">
-
-	<link href="assets/prototype.css" media="all" rel="stylesheet" type="text/css">
-
+<link href="assets/fonts.css" media="all" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link href="assets/application.css" media="all" rel="stylesheet" type="text/css">
+
+<link href="assets/prototype.css" media="all" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -56,21 +54,45 @@
     
 <div id="wrapper">
     <main id="content" role="main" class="group detailed-guidance">
+	
         <article role="article" class="group">
-            <h1>Check your contact details</h1>
+            
+    <h1>Summary of your claim</h1>
+	<h2>Your notice period is 12 weeks</h2>
+    <div class="progress">
+<!--	<div class="start">6th Jan 2014</div> -->
+    <div class="bar" style="width: 50%;">56 of 84 days</div>
+<!--	<div class="end">24th Mar 2014</div> -->
+    </div>
+    <form method="post">
+         <fieldset>
+			<h2>You have told us that</h2>
+			<ul class="summary-list">
+				<li>You received  new benefits or an increase in your benefits during the notice period<a href="">Change this answer</a></li>
+				<ul class="earnings-list">
+				<li>you received <span>£200</span> in <span>Housing Benefit</span> between <span>19th Jan 2014</span> and <span>25th Jan 2014</span><a href="">Edit this information</a></li>				
+				<li>you received <span>£71.70</span> in <span>Jobseeker's Allowance</span> between <span>19/01/2014</span> and <span>25/01/2014</span><a href="">Edit this information</a></li>
+				<li><a href="">Add another benefit</a></li>
+				</ul>
+				
+				<li>You had a job during your notice period<a href="">Change this answer</a></li>
+			<ul class="earnings-list">
+			<li>you earned <span>£700</span> with <span>Brentshire Utilities</span>  between <span>25th Jan 2014</span> and <span>8th Feb 2014</span><a href="">Edit this information</a></li>
+			<li><a href="">Add another period of employment</a></li>		
+			
+			</ul>
+				<li>You were self-employed during your notice period<a href="">Change this answer</a></li>
+			<ul class="earnings-list">
+			<li>you earned <span>£700</span> as <span>Sam Smith</span>  between <span>26th Jan 2014</span> and <span>8th Feb 2014</span><a href="">Edit this information</a></li>
+			<li><a href="">Add another period of self-employment</a></li>		
+			</ul>
+			</ul>
 
-			<p>Based on your employment records, the latest contact details we have for you are:</p>
-			<form>
-				<table>
-					<tr><th>Name</th><td>Firstname Surname</td><td><a href="" class="button-secondary" disabled="disabled">Change</a></td></tr>
-					<tr><th>Address</th><td>123 Anystreet, <br>Anytown,<br> Anyplace <br>AB1 2CD</td><td><a href="" class="button-secondary" disabled="disabled">Change</a></td></tr>
-					<tr><th>Phone number</th><td>0123456789</td><td><a href="" class="button-secondary" disabled="disabled">Change</a></td></tr>
-					<tr><th>Email address</th><td><input id="name" name="name" type="text" size="30" value="firstname.surname@email.com"></td><td><a href="1-0-matched.html" class="button">Save</a></td></tr>
-				</table>
-<nav class="form-navigation">				
-				<a class="button" href="2-0-configure-form.html" disabled="disabled">Next</a>
-</nav>				
-			</form>	
+        </fieldset>
+<nav class="form-navigation">
+		<a href="" class="button">Send this claim</a>
+</nav>		
+    </form>
 
         </article>
     </main>
@@ -88,7 +110,7 @@
             
 
             <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="assets/open-government-licence_2x.png" alt="OGL"></a></h2>
+              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="../../Source/assets/open-government-licence_2x.png" alt="OGL"></a></h2>
               <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
             </div>
           </div>
