@@ -3,7 +3,11 @@
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 
-    <title>Claim a redundancy payment - GOV.UK</title>
+    <title>Apply for redundancy payment - GOV.UK</title>
+
+    <script type="text/javascript">
+      (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+    </script>
 
 	<link href="assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 
@@ -54,35 +58,46 @@
     <main id="content" role="main" class="group detailed-guidance">
         <article role="article" class="group">
             
-    <h1>Summary of your claim for loss of notice</h1>
+    <h1>How much do you earn?</h1>
     <form method="post">
          <fieldset>
-	<h2>You have told us that you received benefits during your notice period</h2>
-		<ul>
-		<li>you received <strong>£200</strong> in <strong>Housing Benefit</strong> between <strong>19/01/2014</strong> and <strong>25/01/2014</strong></li>				
-		</ul>
-		<p><a href="3-0-configure-benefits.html">Edit this information</a></p>
-		<h2>You have told us that you were self-employed during your notice period</h2>
-			<p><a href="5-0-self-employed.html" class="button">Add details</a>
-	
-	<h2>Declaration</h2>
-	
-	<p>By submitting your claim, you confirm that:</p>
-	<ul>
-	<li>as far as you know, all the information you have provided in your claim is correct</li>
-	<li>this is the only claim you are making for a compensatory notice payment in relation to this job</li>
-	<li>you agree to us using your information as described in our privacy policy (including sharing information with your last employer, their representatives or with relevant government organisations if we need to in order to check your claim or work out how much to pay you)</li>
-	</ul>
-	
-	<div class="help-notice">
-	<p>We may take legal action against you If you make a false statement in your claim.</p>
-	</div>
+			<p>What is your rate of pay?</p>
+			<div class="question-group">
+			<ul class="radio">
+			<li>
+			<input id="hour" name="rate" type="radio" value="yes"> 
+			<label for="hour">Per Hour</label>
+			</li>	
+			<li>
+			<input id="day" name="rate" type="radio" value="no"> 
+			<label for="day">Per Day</label>
+			</li>
+			<li>
+			<input id="week" name="rate" type="radio" value="yes" checked="checked"> 
+			<label for="week">Per Week</label>
+			</li>	
+			<li>
+			<input id="month" name="rate" type="radio" value="no"> 
+			<label for="month">Per Month</label>
+			</li>
+			<li>
+			<input id="year" name="rate" type="radio" value="no"> 
+			<label for="year">Per Year</label>
+			</li>
+			</div>
+			<p class="input-group">
+				<label>How much are you paid?</label>
+						<span class="input-group-addon">£</span> 
+						<input type="text" class="form-control" size="6">
+						<span class="hint">This is the gross amount of pay on your payslip excluding any overtime payments</span>
+			</p>
 
         </fieldset>
 <nav class="form-navigation">
-		<a href="5-1-claim-status.html" class="button" disabled="disabled">Send this claim</a> 
+		<a href="5-1-1-job-end-date.html" class="button-secondary">Back</a>
+		<a href="5-3-hours-worked.html" class="button">Next</a>
 </nav>		
-		   </form>
+    </form>
 
         </article>
     </main>
@@ -100,7 +115,7 @@
             
 
             <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="assets/open-government-licence_2x.png" alt="OGL"></a></h2>
+              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="../../Source/assets/open-government-licence_2x.png" alt="OGL"></a></h2>
               <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
             </div>
           </div>
