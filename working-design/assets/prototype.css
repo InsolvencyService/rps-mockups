@@ -295,11 +295,11 @@ ul.summary-list {
 }
 
 ul.summary-list li {
-	  background: url("tick.png") no-repeat scroll 1.1em 0.75em #fff;
+	  background: url("tick.png") no-repeat scroll 1.1em 0.75em #E6EFF5;
 	  padding: 0.5em 5em 0.5em 2.9em;
 	margin:0;
 	  position: relative;
-    border-bottom: dotted 1px #bfc1c3;
+    border-bottom: solid 1px #CDD7DC;
 	}
 	
 ul.summary-list h3 {
@@ -324,10 +324,10 @@ ul.earnings-list {
     padding: 0;
 }	
 ul.earnings-list li {
-	  background: none;
-	  border: none;
-	  padding: 0.5em 5em 0.5em 2.9em;
-	  position: relative;
+	background: none;
+	border: none;
+	padding: 0.5em 5em 0.5em 2.9em;
+	position: relative;
     border-bottom: dotted 1px #bfc1c3;	
 	font-size:18px;
 	line-height:inherit;
