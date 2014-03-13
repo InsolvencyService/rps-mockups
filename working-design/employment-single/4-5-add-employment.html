@@ -45,25 +45,29 @@
             
     <h1>Summary of employment during the notice period</h1>
 	<div class="notice-period info-notice">
-		<p>Your notice period started on 1st January 2014 and ended on 5th March 2014</p>
+		<p>Your notice period started on [notice-start-date] and ended on [notice-end-date]</p>
 	</div>
     <form method="post">
          <fieldset>
 			<ul class="summary-list">
-				<li>You were employed during the notice period</li>
+				<li>
+					<h3>Were you employed during your notice period?</h3>	
+					<p>Yes</p>
+					<a href="2-2-employed-question.html">Change this answer</a>
+				</li>
 			<ul class="earnings-list">
-			<li>you earned <strong>£700</strong> with <strong>Brentshire Utilities</strong> between <strong>1st January 2014</strong> and <strong>5th March 2014</strong> <a href="" class="button-secondary">Change</a></li>
+			<li>You earned [total-pay] with [company-name] between [job-start-date] and [job-end-date]/[notice-period-end] <a href="" class="button-secondary">Change</a></li>
 			</ul>
 			</ul>
 			<p>Would you like to add any further employment during your notice period?</p>
 			<div class="question-group">
 				<ul class="radio">
 					<li>
-				        <input id="employment_yes" name="employment" type="radio" value="yes"> 
+				        <input id="employment_yes" name="employment" type="radio" value="yes">
 						<label for="employment_yes">Yes</label>
 					</li>	
 					<li>
-				        <input id="employment_no" name="employment" type="radio" value="no"> 
+				        <input id="employment_no" name="employment" type="radio" value="no" checked="checked"> 
 						<label for="employment_no">No</label>
 					</li>
 				</ul>	
