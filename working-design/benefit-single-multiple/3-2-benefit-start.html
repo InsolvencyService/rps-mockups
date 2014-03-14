@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Apply for redundancy payment - GOV.UK</title>
-<link href="../assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
-<link href="../assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
-<link href="../assets/fonts.css" media="all" rel="stylesheet" type="text/css">   
-<link href="../assets/application.css" media="all" rel="stylesheet" type="text/css">
-<link href="../assets/prototype.css" media="all" rel="stylesheet" type="text/css">
+    <title>[benefit] received during the notice period - Redundancy Payments Service</title>
+	<link href="../assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="../assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
+	<link href="../assets/fonts.css" media="all" rel="stylesheet" type="text/css">
+	<link href="../assets/application.css" media="all" rel="stylesheet" type="text/css">
+	<link href="../assets/prototype.css" media="all" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body class="js-enabled" cz-shortcut-listen="true" style="">
@@ -40,57 +41,39 @@
     
 <div id="wrapper">
     <main id="content" role="main" class="group detailed-guidance">
-	
         <article role="article" class="group">
             
-    <h1>Summary of your claim for loss of notice</h1>
+    <h1>[benefit] received during the notice period</h1>
 	<div class="notice-period info-notice">
-		<p>The notice period started on 1st January 2014 and ended on 5th March 2014
+		<p>Your notice period started on [notice-start-date] and ended on [notice-end-date]</p>
 	</div>
     <form method="post">
          <fieldset>
-			<ul class="summary-list">
-				<li>
-					<h3>Did you receive any new benefits or an increase in your benefits during the notice period?</h3>
-					<p>Yes</p>
-					<a href="2-0-benefits-question.html">Change this answer</a>
-				</li>				
-					<ul class="earnings-list">
-						<li>You received £[total-benefit] in [benefit] between [benefit-start-date] and [benefit-end-date]/[notice-period-end]<a href="" class="button-secondary">Change</a></li>				
-					</ul>
-				<li>
-					<h3>Were you self-employed during your notice period?</h3>
-					<p>Yes</p>
-					<a href="2-1-selfemployed-question.html">Change this answer</a>
-				</li>
-					<ul class="earnings-list">
-						<li>You earned £[total-pay] as [company-name]  [job-start-date] and [job-end-date]/[notice-period-end]<a href="" class="button-secondary">Change</a></li>
-					</ul>
-				<li>
-					<h3>Were you employed during your notice period?</h3>	
-					<p>Yes</p>
-					<a href="2-2-employed-question.html">Change this answer</a>
-				</li>			
-					<ul class="earnings-list">
-						<li>You earned £[total-pay] with [company-name] between [job-start-date] and [job-end-date]/[notice-period-end]<a href="" class="button-secondary">Change</a></li>
-					</ul>
-			</ul>		
+            <p>
+        <label for="day">When did your [benefit] start?</label>
+        <input type="text" id="day" name="day" value="" size="4" maxlength="2" placeholder="DD">
+		<input type="text" id="month" name="month" value="" size="4" maxlength="2" placeholder="MM">
+		<input type="text" id="year" name="year" value="" size="8" maxlength="4" placeholder="YYYY">
+		<span class="hint">Example: 01 01 2014</span>
+    </p>
+                    <p>Were you still claiming [benefit] on [notice-end-date]?</p>
+					<div class="question-group">
+					<ul class="radio">
+						<li>
+					        <input id="benefit_yes" name="benefit" type="radio" value="yes"> 
+							<label for="benefit_yes">Yes</label>
+						</li>	
+						<li>
+					        <input id="benefit_no" name="benefit" type="radio" value="no"> 
+							<label for="benefit_no">No</label>
+						</li>
+					</div>
 
-
+    </p>
         </fieldset>
-<h2>Declaration</h2>
-		<p>By submitting your claim, you confirm that:</p>
-		<ul>
-		<li>as far as you know, all the information you have provided in your claim is correct</li>
-		<li>this is the only claim you are making for a compensatory notice payment in relation to this job</li>
-		<li>you agree to us using your information as described in our privacy policy (including sharing information with your last employer, their representatives or with relevant government organisations if we need to in order to check your claim or work out how much to pay you)</li>
-		</ul>
-		<div class="help-notice">
-		<p>We may take legal action against you if you knowingly make a false statement in your claim.</p>
-		</div>
 <nav class="form-navigation">
-	<a href="" class="button-secondary">Back</a>
-	<a href="6-1-declaration.html" class="button">Next</a>
+		<a href="3-0-configure-benefits.html" class="button-secondary">Back</a>	
+		<a href="3-2-1-benefit-end.html" class="button">Next</a>
 </nav>		
     </form>
 
