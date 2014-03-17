@@ -50,13 +50,16 @@
     <form method="post">
          <fieldset>
 	<p class="input-group">
-		<label for="total-gross">How much gross pay did you receive from self-employment during the notice period?</label>
+		<label for="business-income">What was the gross <em>business income</em> while self-employed between [self employed start date] and [self employed date/notice period end date]?</label>
 				<span class="input-group-addon">£</span> 
-				<input type="text" class="form-control" id="total-gross" value="" size="6">
-				<span class="hint">Can be a negative value</span>
+				<input type="text" class="form-control" id="business-income" value="" maxlength="6" size="6">
 	</p>
-	<p>Gross pay <strong>equals</strong> business earnings <strong>minus</strong> business expenses</p>
-			
+	<p class="input-group">
+		<label for="business-expenditure">What was the gross <em>business expenditure</em> while self-employed between [self employed start date] and [self employed date/notice period end date]?</label>
+				<span class="input-group-addon">£</span> 
+				<input type="text" class="form-control" id="business-expenditure" value="" maxlength="6" size="6">
+	</p>
+	<p>You will be asked to post or email a copy of your income and expenditure at the end of your claim. </p>			
         </fieldset>
 <nav class="form-navigation">
 		<a href="5-1-1-job-end-date.html" class="button-secondary">Back</a>
