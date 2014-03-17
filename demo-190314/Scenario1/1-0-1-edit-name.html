@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Total earnings from self-employment - Redundancy Payments Service</title>
+    <title>Check your contact details - Redundancy Payments Service</title>
 	<link href="../assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="../assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 	<link href="../assets/fonts.css" media="all" rel="stylesheet" type="text/css">
 	<link href="../assets/application.css" media="all" rel="stylesheet" type="text/css">
 	<link href="../assets/prototype.css" media="all" rel="stylesheet" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body class="js-enabled" cz-shortcut-listen="true" style="">
@@ -42,30 +44,20 @@
 <div id="wrapper">
     <main id="content" role="main" class="group detailed-guidance">
         <article role="article" class="group">
-            
-    <h1>Total earnings from self-employment</h1>
-	<div class="notice-period info-notice">
-		<p>Your notice period started on [notice-start-date] and ended on [notice-end-date]</p>
-	</div>
-    <form method="post">
-         <fieldset>
-	<p class="input-group">
-		<label for="business-income">What was the gross <em>business income</em> while self-employed between [self employed start date] and [self employed date/notice period end date]?</label>
-				<span class="input-group-addon">£</span> 
-				<input type="text" class="form-control" id="business-income" value="" maxlength="6" size="6">
-	</p>
-	<p class="input-group">
-		<label for="business-expenditure">What was the gross <em>business expenditure</em> while self-employed between [self employed start date] and [self employed date/notice period end date]?</label>
-				<span class="input-group-addon">£</span> 
-				<input type="text" class="form-control" id="business-expenditure" value="" maxlength="6" size="6">
-	</p>
-	<p>You will be asked to post or email a copy of your income and expenditure at the end of your claim. </p>			
-        </fieldset>
-<nav class="form-navigation">
-		<a href="5-1-1-job-end-date.html" class="button-secondary">Back</a>
-		<a href="5-3-add-employment.html" class="button">Next</a>
-</nav>		
-    </form>
+            <h1>Check your contact details</h1>
+
+			<p>Based on your employment records, the latest contact details we have for you are:</p>
+			<form>
+				<table>
+					<tr><th>Name</th><td><input id="name" name="name" type="text" size="30" value="Sam Smith"></td><td><a href="1-0-matched.html" class="button">Save</a></td></tr>
+					<tr><th>Address</th><td>127 High Street, <br>Bourneville,<br> Birmingham <br>B30 1JR</td><td><a href="" class="button-secondary" disabled="disabled">Change</a></td></tr>
+					<tr><th>Phone number</th><td>01234 567890</td><td><a href="" class="button-secondary" disabled="disabled">Change</a></td></tr>
+					<tr><th>Email address</th><td>samsmithrps@hotmail.co.uk</td><td><a href="" class="button-secondary" disabled="disabled">Change</a></td></tr>
+				</table>
+<nav class="form-navigation">				
+				<a class="button" href="2-0-configure-form.html" disabled="disabled">Next</a>
+</nav>				
+			</form>	
 
         </article>
     </main>
