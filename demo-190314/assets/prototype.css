@@ -428,6 +428,10 @@ article .address-notice p {
 	textarea {
 		width:99%;
 	}
+	ul.radio li {
+		clear:left;
+		width:50%;
+	}
 } 
 
 @media (min-width: 769px) {
