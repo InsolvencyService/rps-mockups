@@ -416,7 +416,15 @@ article .address-notice p {
 }
 
 @media (max-width: 640px) {
-
+	ul.summary-list li a {
+	 	position:static;
+	}
+	ul.earnings-list li a  {
+	 	position:absolute;
+		top:0.75em;
+		right:0.5em;
+		font-size:14px;
+	}
 } 
 
 @media (min-width: 769px) {
