@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Benefits received during the notice period - Redundancy Payments Service</title>
+    <title>Housing Benefit received during the notice period - Redundancy Payments Service</title>
 	<link href="../assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="../assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 	<link href="../assets/fonts.css" media="all" rel="stylesheet" type="text/css">
@@ -17,6 +17,8 @@
         <a href="#content" class="skiplink">Skip to main content</a>
       </div>
     </div>
+
+    
     <header role="banner" id="global-header" class="">
       <div class="header-wrapper">
         <div class="header-global">
@@ -27,7 +29,7 @@
           </div>
           
     <h1 class="page-title">
-        <strong>Redundancy Payments Service</strong> <span class="phase-tag">beta</span>
+        Redundancy Payments Service <span class="phase-tag">beta</span>
     </h1>
 
         </div>
@@ -41,54 +43,37 @@
     <main id="content" role="main" class="group detailed-guidance">
         <article role="article" class="group">
             
-    <h1>Benefits received during the notice period</h1>
+    <h1>Housing Benefit received during the notice period</h1>
+	<div class="notice-period info-notice">
+		<p>Your notice period started on 5th November 2013 and ended on 13th January 2014</p>
+	</div>
     <form method="post">
          <fieldset>
-	<p>Please select all that apply</p>
             <p>
-        <label for="benefit4">		
-        <input id="benefit4" name="benefit4" type="checkbox" value="">
-		Jobseeker's Allowance
-		</label>
-        <label for="benefit1">
-        <input id="benefit1" name="benefit1" type="checkbox" value="">
-		Employment and Support Allowance
-		</label>
-        <label for="benefit3">
-        <input id="benefit3" name="benefit3" type="checkbox" value="">
-		Income Support
-		</label>
-        <label for="benefit6">		
-        <input id="benefit6" name="benefit6" type="checkbox" value="">
-		Pension Credit
-		</label>				
-        <label for="benefit2">		
-        <input id="benefit2" name="benefit2" type="checkbox" value="">
-		Housing Benefit
-		</label>				
-        <label for="benefit5">
-        <input id="benefit5" name="benefit5" type="checkbox" value="">
-		Maternity Allowance
-		</label>
-        <label for="benefit7">
-        <input id="benefit7" name="benefit7" type="checkbox" value="">
-		Sickness and Bereavement Allowance
-		</label>
-        <label for="benefit8">		
-        <input id="benefit8" name="benefit8" type="checkbox" value="">
-		Universal Credit
-		</label>		      
+        <label for="day">When did your <strong>extra</strong> Housing Benefit start?</label>
+        <input type="text" id="day" name="day" value="" size="4" maxlength="2" placeholder="DD">
+		<input type="text" id="month" name="month" value="" size="4" maxlength="2" placeholder="MM">
+		<input type="text" id="year" name="year" value="" size="8" maxlength="4" placeholder="YYYY">
+		<span class="hint">Example: 01 01 2014</span>
     </p>
-            <p>
-        <label for="benefit_other">Another benefit (please specify)</label>
-        <input id="benefit_other" name="benefit_other" type="text" value="">
-<span class="hint">Please enter the name of the benefit you received</span>
-        
-    </p>	
+                    <p>Were you still claiming <strong>extra</strong> Housing Benefit on 13th January 2014?</p>
+					<div class="question-group">
+					<ul class="radio">
+						<li>
+					        <input id="benefit_yes" name="benefit" type="radio" value="yes"> 
+							<label for="benefit_yes">Yes</label>
+						</li>	
+						<li>
+					        <input id="benefit_no" name="benefit" type="radio" value="no"> 
+							<label for="benefit_no">No</label>
+						</li>
+					</div>
+
+    </p>
         </fieldset>
 <nav class="form-navigation">
-		<a href="2-3-notice-summary.html" class="button-secondary">Back</a>
-		<a href="3-0-1-configure-benefit.html" class="button">Next</a>
+		<a href="3-0-1-configure-benefit.html" class="button-secondary">Back</a>	
+		<a href="3-3-benefit-amount-2.html" class="button">Next</a>
 </nav>		
     </form>
 
