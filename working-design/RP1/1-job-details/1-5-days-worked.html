@@ -43,18 +43,27 @@
     <main class="group detailed-guidance" role="main" id="content">
         <article class="group" role="article">
             
-    <h1>Hours worked at [Company/Employer's name]</h1>
+    <h1>Days worked at [Company/Employer's name]</h1>
     <form method="post">
          <fieldset>    
            <p>
-	<label for="hours">How many hours a week did you normally work?</label>
+	<label for="hours">How many days did you normally work each week?</label>
 	<input type="text" maxlength="3" size="4" value="" id="hours">
 		        <span class="hint">Don’t include any overtime</span>
 			</p>
-	<div class="help">		
-			<p class="question">What if I  have irregular working hours?</p>
-			<p style="display: none;">If you have irregular working hours, give us the typical number of hours you work per week.</p>
-	</div>
+		<div class="question-group">
+		<p>Was this Monday to Friday?</p>
+		<ul class="radio">
+			<li>
+		        <input id="working_week_yes" name="working_week" type="radio" value="yes"> 
+				<label for="working_week_yes">Yes</label>
+			</li>	
+			<li>
+		        <input id="working_week_no" name="working_week" type="radio" value="no"> 
+				<label for="working_week_no">No</label>
+			</li>
+		</ul>
+		</div>
 				
         </fieldset>
 <nav class="form-navigation">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><!--<![endif]--><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <title>Hours worked  at [Company/Employer's name] - Redundancy Payments Service</title>
+    <title>Gross rate of pay at [Company/Employer's name] - Redundancy Payments Service</title>
 	<link type="text/css" rel="stylesheet" media="screen" href="../assets/govuk-template.css">
 	<link type="text/css" rel="stylesheet" media="print" href="../assets/govuk-template-print.css">
 	<link type="text/css" rel="stylesheet" media="all" href="../assets/fonts.css">
@@ -43,23 +43,43 @@
     <main class="group detailed-guidance" role="main" id="content">
         <article class="group" role="article">
             
-    <h1>Hours worked at [Company/Employer's name]</h1>
+    <h1>Gross rate of pay at [Company/Employer's name]</h1>
     <form method="post">
-         <fieldset>    
-           <p>
-	<label for="hours">How many hours a week did you normally work?</label>
-	<input type="text" maxlength="3" size="4" value="" id="hours">
-		        <span class="hint">Don’t include any overtime</span>
+         <fieldset>
+			
+			
+			<p class="input-group">
+				<label>What was your gross rate of pay at [Company/Employer's name]?</label>
+						<span class="input-group-addon">£</span> 
+						<input type="text" class="form-control" size="6">
+						<span class="input-group-addon">per</span> 
+						<select>
+							<option>Choose...</option>				
+							<option>Hour</option>
+							<option>Day</option>				
+							<option>Week</option>
+							<option>Month</option>
+							<option>Year</option>
+						</select>
+						<span class="hint">This is the total amount on your payslip before taking off tax and National Insurance, and without overtime.</span>
 			</p>
-	<div class="help">		
-			<p class="question">What if I  have irregular working hours?</p>
-			<p style="display: none;">If you have irregular working hours, give us the typical number of hours you work per week.</p>
-	</div>
-				
+			<p>Did your pay include any bonus or commission?</p>
+			<div class="question-group">	
+			<ul class="radio">
+				<li>
+			        <input id="work_yes" name="work" type="radio" value="yes"> 
+					<label for="work_yes">Yes</label>
+				</li>	
+				<li>
+			        <input id="work_no" name="work" type="radio" value="no"> 
+					<label for="work_no">No</label>
+				</li>
+			</div>
+
         </fieldset>
 <nav class="form-navigation">
-		<a class="button-secondary" href="4-2-wage-details.html">Back</a>
-		<a class="button" href="4-4-amount-earned.html">Next</a>
+		<a class="button-secondary" href="4-1-1-job-end-date.html">Back</a>
+		<a class="button" href="4-3-hours-worked.html">Next</a>
 </nav>		
     </form>
 
