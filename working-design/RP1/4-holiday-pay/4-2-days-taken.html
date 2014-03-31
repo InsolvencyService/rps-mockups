@@ -47,10 +47,14 @@
     <form method="post">
          <fieldset>
            <p>
-			<label for="holidays-taken">How many holiday days have you taken this year?</label>
+			<label for="holidays-taken">How many holiday days have you taken, including bank holidays?</label>
 			<input type="text" maxlength="3" size="4" value="" id="holidays-taken">
-				        <span class="hint">Don’t include any bank holidays</span>
+<!--				        <span class="hint">Don’t include any bank holidays</span> -->
 		</p>
+		<div class="notice-period info-notice">
+			<p>If you have worked on a bank holiday, don't include this as holiday taken.</p> 
+			<p><a href="https://www.gov.uk/redundant-your-rights/notice-periods" rel="external">What are the dates of the bank holidays in the UK?</a></p>
+		</div>		
 <!--        <p>
 			<label for="holidays-taken">How many holiday days were you still owed on [employment-end-date]?</label>
 			<input type="text" maxlength="3" size="4" value="" id="holidays-taken">
@@ -67,8 +71,7 @@
 	        <input id="holidays_unpaid_no" name="holidays_unpaid" type="radio" value="no"> 
 			<label for="holidays_unpaid_no">No</label>
 		</li>
-	</div>
-                    
+	</div>	          
         </fieldset>
 <nav class="form-navigation">
 		<a href="4-1-1-days-carried.html" class="button-secondary">Back</a>
