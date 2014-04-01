@@ -429,7 +429,7 @@ article .address-notice p {
 .highlighted-event {
     background-color: #28A197;
     color: #FFFFFF;
-    margin: 0 -1em 1em;
+    margin: 1em 0;
     padding: 0.1em 2em 0.2em;
     text-align: center;
 }
