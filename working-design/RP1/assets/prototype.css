@@ -295,12 +295,12 @@ ul.summary-list {
 }
 
 ul.summary-list li {
-	  background: url("tick.png") no-repeat scroll 1.1em 0.75em #E6EFF5;
-	  padding: 0.5em 5em 0.5em 2.9em;
+	background: url("tick.png") no-repeat scroll 1.1em 0.75em #E6EFF5;
+	padding: 0.5em 5em 0.5em 2.9em;
 	margin:0;
-	  position: relative;
+	position: relative;
     border-bottom: solid 1px #CDD7DC;
-	}
+}
 	
 ul.summary-list h3 {
 	font-size:18px;

@@ -4,7 +4,6 @@
 	<link href="../assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="../assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 	<link href="../assets/fonts.css" media="all" rel="stylesheet" type="text/css">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../assets/application.css" media="all" rel="stylesheet" type="text/css">
 	<link href="../assets/prototype.css" media="all" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,14 +47,16 @@
 			<p>Based on your employment records, the latest contact details we have for you are:</p>
 			<form>
 				<table>
-					<tr><th>Name</th><td>Firstname Surname</td><td><a href="1-0-1-edit-name.html" class="button-secondary">Change</a></td></tr>
-					<tr><th>Address</th><td>123 Anystreet, <br>Anytown,<br> Anyplace <br>AB1 2CD</td><td><a href="1-0-2-edit-address.html" class="button-secondary">Change</a></td></tr>
-					<tr><th>Phone number</th><td>0123456789</td><td><a href="1-0-3-edit-number.html" class="button-secondary">Change</a></td></tr>
-					<tr><th>Email address</th><td>firstname.surname@email.com</td><td><a href="1-0-4-edit-email.html" class="button-secondary">Change</a></td></tr>
+					<tr><th>Company or employer name</th><td>Fast Flicks Ltd</td><td><a href="2-0-1-edit-name.html" class="button-secondary" disabled="disabled">Change</a></td></tr>
+					<tr><th>Company or employer address</th><td>
+					<textarea id="address" name="address" cols="30" rows="5">556 Bristol Rd Birmingham, B29 6BD</textarea></td><td><a href="2-0-matched.html" class="button">Save</a></td></tr>
+					<tr><th>Telephone</th><td></td><td><a href="2-0-3-edit-number.html" class="button-secondary" disabled="disabled">Change</a></td></tr>
 				</table>
-<nav class="form-navigation">				
-				<a class="button" href="2-0-matched.html">Next</a>
-</nav>				
+
+				<nav class="form-navigation">				
+					<a class="button-secondary" href="1-0-matched.html" disabled="disabled">Back</a>				
+					<a class="button" href="" disabled="disabled">Next</a>
+				</nav>			
 			</form>	
 
         </article>
