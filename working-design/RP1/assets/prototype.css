@@ -453,6 +453,7 @@ article .address-notice p {
     margin-bottom: 0;
     padding: 0.2em 0 0.1em;
     text-transform: none;
+	font-style: normal;
 }
 
 .highlighted-event p span {
