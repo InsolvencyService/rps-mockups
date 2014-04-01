@@ -426,5 +426,49 @@ article .address-notice p {
     text-transform: none;
 }
 
+.highlighted-event {
+    background-color: #28A197;
+    color: #FFFFFF;
+    margin: 0 -1em 1em;
+    padding: 0.1em 2em 0.2em;
+    text-align: center;
+}
 
+.highlighted-event p {
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
 
+.highlighted-event p em {
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 0.2em 0 0.1em;
+    text-transform: none;
+}
+
+.highlighted-event p span {
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    padding-bottom: 6px;
+    padding-top: 9px;
+    text-transform: none;
+}
+
+.article-container {
+    background-color: #FFFFFF;
+    margin-right: 22.25em;
+    max-width: 38em;
+    min-height: 35em;
+}

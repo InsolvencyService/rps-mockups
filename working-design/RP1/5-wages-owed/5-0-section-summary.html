@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Amount of money owed to [Company/Employer's name] - Redundancy Payments Service</title>
+    <title>Details of wages owed at [Company/Employer's name] - Redundancy Payments Service</title>
 	<link href="../assets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="../assets/govuk-template-print.css" media="print" rel="stylesheet" type="text/css">
 	<link href="../assets/fonts.css" media="all" rel="stylesheet" type="text/css">
@@ -43,24 +43,36 @@
     <main id="content" role="main" class="group detailed-guidance">
         <article role="article" class="group">
             
-    <h1>Amount of money owed to [Company/Employer's name]</h1>
+    <h1>Summary of wages owed at [Company/Employer's name]</h1>
+	<!-- Question answers -->	
+	<ul class="summary-list">
+		<li>
+			<h3>Are you owed any wages?</h3>
+			<p>Yes</p>
+			<a href="">Change this answer</a>
+		</li>
+		<ul class="earnings-list">
+			<li>You are owed £500 for 5 days between 1st Jan 2013 and 8th Jan 2013 <a href="" class="button-secondary">Change</a></li>
+		</ul>		
+	</ul>
     <form method="post">
-         <fieldset>
-	<p class="input-group">
-		<label>How much do you owe [Company/Employer's name]?</label>
-				<span class="input-group-addon">£</span> 
-				<input type="text" class="form-control" size="6">
-	</p>
-	<p>
-        <label for="money_owed_details">What is this money owed for?</label>
-	        <textarea id="money_owed_details" name="money_owed_details" cols="50" rows="3"></textarea>
-	<span class="hint">Any money that you owe your employer has to be taken into account before we can pay you.</span> 
-    </p>			
-                    
+         <fieldset>			
+			<legend>Would you like to add further wages owed?</legend>
+			<div class="question-group">	
+			<ul class="radio">
+				<li>
+			        <input id="more_wages_yes" name="more_wages" type="radio" value="yes" checked="checked"> 
+					<label for="more_wages_yes">Yes</label>
+				</li>	
+				<li>
+			        <input id="more_wages_no" name="more_wages" type="radio" value="no"> 
+					<label for="more_wages_no">No</label>
+				</li>
+			</div>               
         </fieldset>
 <nav class="form-navigation">
-		<a href="6-0-part-payment.html" class="button-secondary">Back</a>
-		<a href="6-1-section-summary.html" class="button">Next</a>
+		<a href="5-0-wages-owed.html" class="button-secondary">Back</a>
+		<a href="5-1-failed-payments.html" class="button">Next</a>
 </nav>		
     </form>
 
