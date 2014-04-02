@@ -295,12 +295,12 @@ ul.summary-list {
 }
 
 ul.summary-list li {
-	  background: url("tick.png") no-repeat scroll 1.1em 0.75em #E6EFF5;
-	  padding: 0.5em 5em 0.5em 2.9em;
+	background: url("tick.png") no-repeat scroll 1.1em 0.75em #E6EFF5;
+	padding: 0.5em 5em 0.5em 2.9em;
 	margin:0;
-	  position: relative;
+	position: relative;
     border-bottom: solid 1px #CDD7DC;
-	}
+}
 	
 ul.summary-list h3 {
 	font-size:18px;
@@ -426,5 +426,78 @@ article .address-notice p {
     text-transform: none;
 }
 
+.highlighted-event {
+    background-color: #28A197;
+    color: #FFFFFF;
+    margin: 1em 0;
+    padding: 0.1em 2em 0.2em;
+    text-align: center;
+}
+
+.highlighted-event p {
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.highlighted-event p em {
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 0.2em 0 0.1em;
+    text-transform: none;
+	font-style: normal;
+}
+
+.highlighted-event p span {
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    padding-bottom: 6px;
+    padding-top: 9px;
+    text-transform: none;
+}
+
+.article-container {
+    background-color: #FFFFFF;
+    margin-right: 22.25em;
+    max-width: 38em;
+    min-height: 35em;
+}
 
 
+/** Media query stuff **/
+
+.group {
+	padding: 0 1em;
+}
+
+@media (max-width: 640px) {
+	ul.summary-list li a {
+	 	position:static;
+	}
+	ul.earnings-list li a  {
+	 	position:absolute;
+		top:0.75em;
+		right:0.5em;
+		font-size:14px;
+	}
+	ul.radio li {
+		clear:left;
+		width:50%;
+	}
+} 
+
+@media (min-width: 769px) {
+	
+}
+}
