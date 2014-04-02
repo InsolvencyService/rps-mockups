@@ -491,10 +491,6 @@ article .address-notice p {
 		right:0.5em;
 		font-size:14px;
 	}
-	ul.radio li {
-		clear:left;
-		width:50%;
-	}
 } 
 
 @media (min-width: 769px) {
