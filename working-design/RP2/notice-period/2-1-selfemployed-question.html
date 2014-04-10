@@ -37,52 +37,66 @@
     </header>
     <!--end header-->
 
-    
-<div id="wrapper">
-    <main id="content" role="main" class="group detailed-guidance">
-	
-        <article role="article" class="group">
-            
-    <h1>During your notice period</h1>
-	<div class="notice-period info-notice">
-		<p>Your notice period started on [notice-start-date] and ended on [notice-end-date]</p>
+	<main class="main govuk">
+	  <div class="grid-wrapper">
+	  <div class="grid">
+	    <div class="inner-block">
+	      <h1 class="heading-48">
+	        During the notice period
+	      </h1>
+
+	      <form class="form rps" action="get">
+			<div class="form-group form-group-indent">
+				<p>Your notice period started on [notice-start-date] and ended on [notice-end-date]</p>
+			</div>
+	         <fieldset class="question">
+				<!-- Question answers -->	
+				<ul class="question-list">
+					<li>
+						<h3 class="heading-19"><span class="question-number">1</span>Did you receive any new benefits or an increase in your benefits during the notice period?</h3>
+						</li>
+						<ul class="answer-list">
+							<li>
+								<p>Yes</p>
+								<button class="button-link">Change</button>
+							</li>
+						</ul>		
+				</ul>	
+			</fieldset>
+	        <fieldset class="answer">
+		          <legend class="heading-24"><span class="question-number">2</span>Were you self-employed during your notice period?
+		          </legend>
+		          <div class="form-group form-group-inline">
+
+		            <div class="form-radio">
+		              <label class="block-label" for="selfemployed_yes">
+		                <input type="radio" value="" name="selfemployed" id="selfemployed_yes">
+		                Yes
+		              </label>
+		            </div>
+		            <div class="form-radio">
+		              <label class="block-label" for="selfemployed_no">
+		                <input type="radio" value="" name="selfemployed" id="selfemployed_no">
+		                No
+		              </label>
+		            </div>
+	        </fieldset>
+		<fieldset>
+			<div class="form-group">
+					<a href="2-2-employed-question.html" class="button">Next</a>
+					<a href="2-0-benefits-question.html"class="button-link">Back</a>					
+			</div>
+		</fieldset>	
+
+	      </form>
+
+	    </div><!-- /.inner-block -->
+	  </div><!-- /.grid -->
 	</div>
-    <form method="post">
-         <fieldset>
-			<!-- Question answers -->
-			<ul class="summary-list">
-				<li>
-					<h3>Did you receive any new benefits or an increase in your benefits during the notice period?</h3>
-					<p>Yes</p>
-					<a href="2-0-benefits-question.html">Change this answer</a>
-				</li>
-			</ul>
-			
-			<!-- Question 3 -->
-			<p>Were you self-employed during your notice period?</p>
-			<div class="question-group">
-				<ul class="radio">
-					<li>
-						<input id="selfemployed_yes" name="selfemployed" type="radio" value="yes"> 
-						<label for="selfemployed_yes">Yes</label>
-					</li>	
-					<li>
-						<input id="selfemployed_no" name="selfemployed" type="radio" value="no"> 
-						<label for="selfemployed_no">No</label>
-					</li>
-				</ul>
-			</div>		
+	<!-- /.grid-wrapper -->
 
-        </fieldset>
-<nav class="form-navigation">
-		<a href="2-0-benefits-question.html" class="button-secondary">Back</a>
-		<a href="2-2-employed-question.html" class="button">Next</a>
-</nav>		
-    </form>
+	</main>    
 
-        </article>
-    </main>
-</div>
 
 
     <footer class="group js-footer" id="footer" role="contentinfo">

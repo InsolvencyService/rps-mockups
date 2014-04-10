@@ -295,16 +295,18 @@ ul.summary-list {
 }
 
 ul.summary-list li {
-	background: url("tick.png") no-repeat scroll 1.1em 0.75em #E6EFF5;
-	padding: 0.5em 5em 0.5em 2.9em;
+   	background-color: #fff;
+    border: solid #bfc1c3;
+	border-width: 0 0 0 0;
+	padding: 0.5em 5em 0.5em 0em;
 	margin:0;
 	position: relative;
-    border-bottom: solid 1px #CDD7DC;
+
 }
 	
 ul.summary-list h3 {
 	font-size:18px;
-	font-weight:500;
+	font-weight:600;
 }
 
 ul.summary-list p {
@@ -318,20 +320,20 @@ ul.earnings-list {
     padding: 0;
 }	
 ul.earnings-list li {
-	background: none;
-	border: none;
-	padding: 0.5em 5em 0.5em 2.9em;
+    background: #fff; 
+    border: dotted #bfc1c3;
+	border-width: 1px 0 0 0;
+	padding: 0.5em 5em 0.5em 0;
 	position: relative;
-    border-bottom: dotted 1px #bfc1c3;	
 	font-size:18px;
 	line-height:inherit;
 }
 
-/*
-ul.earnings-list li:last-child {
-	border-bottom: none;	
-}
 
+ul.earnings-list li:last-child {
+	border-bottom-width: 1px;	
+}
+/*
 ul.earnings-list li:last-child a {
 	position:static;
 	font-size:14px;
@@ -472,4 +474,74 @@ article .address-notice p {
     margin-right: 22.25em;
     max-width: 38em;
     min-height: 35em;
+}
+
+/* GOV UK */
+
+.govuk {
+    font-family: "nta",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.31579;
+    text-transform: none;
+}
+
+.govuk fieldset {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+}
+fieldset {
+    border: medium none;
+    padding: 0;
+}
+
+.govuk legend {
+    clear: both;
+    float: left;
+    padding-left: 0;
+    width: 100%;
+}
+
+.govuk .form-group {
+    margin-bottom: 45px;
+}
+
+.govuk .form-label, .govuk .date-of-birth legend, .govuk .form-group label {
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.31579;
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+.govuk .form-hint {
+    color: #6F777B;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+.govuk input[type="text"], .govuk input[type="email"], .govuk input[type="date"], .govuk input[type="datetime"], .govuk input[type="datetime-local"], .govuk input[type="email"], .govuk input[type="month"], .govuk input[type="number"], .govuk input[type="search"], .govuk input[type="tel"], .govuk input[type="time"], .govuk input[type="url"], .govuk input[type="week"], .govuk select[size], .govuk textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #BFC1C3;
+    border-radius: 0;
+    font-size: 1em;
+    padding: 4px;
+}
+
+.govuk .button-link {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #005EA5;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.25;
+    margin: 0 15px 15px 0;
+    padding: 10px 10px 5px;
+    text-decoration: underline;
+    vertical-align: top;
 }
