@@ -43,29 +43,41 @@
     <main id="content" role="main" class="group detailed-guidance">
         <article role="article" class="group">
             
-    <h1>Number of holiday days at [Company/Employer's name]</h1>
-    <form method="post">
-         <fieldset>
-           <p>
-			<label for="holidays">How many days holiday per year were you entitled to?</label>
-			<input type="text" maxlength="3" size="4" value="" id="holidays">
-			<!--	        <span class="hint">Don’t include any bank holidays</span> -->
-		</p>
-	<p>Were you allowed to carry forward untaken holiday entitlement from your previous holiday year?</p>
-	<div class="question-group">	
-	<ul class="radio">
-		<li>
-	        <input id="carry_yes" name="carry" type="radio" value="yes" checked="checked"> 
-			<label for="carry_yes">Yes</label>
-		</li>	
-		<li>
-	        <input id="carry_no" name="carry" type="radio" value="no"> 
-			<label for="carry_no">No</label>
-		</li>
-	</div>
+		    <h1>Number of holiday days</h1>
+		    <form method="post">
+		         <fieldset>
+		           <p>
+					<label for="holidays">How many days holiday per year were you entitled to?</label>
+					<input type="text" maxlength="3" size="4" value="" id="holidays">
+					<!--	        <span class="hint">Don’t include any bank holidays</span> -->
+				</p>
+				<p>Does this number of holiday days include bank holidays? </p>
+				<div class="question-group">	
+				<ul class="radio">
+					<li>
+				        <input id="bank_holidays_yes" name="bank_holidays_yes" type="radio" value="yes"> 
+						<label for="bank_holidays_yes">Yes</label>
+					</li>	
+					<li>
+				        <input id="bank_holidays_no" name="bank_holidays_no" type="radio" value="no"> 
+						<label for="bank_holidays_no">No</label>
+					</li>
+				</div>		
+			<p>Were you allowed to carry forward untaken holiday entitlement from your previous holiday year?</p>
+			<div class="question-group">	
+			<ul class="radio">
+				<li>
+			        <input id="carry_yes" name="carry" type="radio" value="yes"> 
+					<label for="carry_yes">Yes</label>
+				</li>	
+				<li>
+			        <input id="carry_no" name="carry" type="radio" value="no"> 
+					<label for="carry_no">No</label>
+				</li>
+			</div>
 
-                    
-        </fieldset>
+
+		        </fieldset>
 <nav class="form-navigation">
 		<a href="4-0-holiday-year.html" class="button-secondary">Back</a>
 		<a href="4-1-1-days-carried.html" class="button">Next</a>

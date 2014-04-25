@@ -45,7 +45,7 @@
             
     <h1>Details of wages owed at Fast Flicks Ltd</h1>
 	<div class="notice-period info-notice">
-		<p>This is for periods where you worked and weren't paid. Please don't include periods where you were on holiday and weren't paid. Include these dates in the holiday section. </p>
+		<p>This is for days where you worked or had holiday and weren't paid.</p>
 	</div>
     <form method="post">
          <fieldset>
@@ -62,12 +62,29 @@
 		<input type="text" id="month" name="month" value="" size="4" maxlength="2" placeholder="MM">
 		<input type="text" id="year" name="year" value="" size="8" maxlength="4" placeholder="YYYY">
     </p>
+		<p>Were any of these days taken as holiday?</p>
+		<div class="question-group">	
+		<ul class="radio">
+			<li>
+		        <input id="more_wages_yes" name="more_wages" type="radio" value="yes"> 
+				<label for="more_wages_yes">Yes</label>
+			</li>	
+			<li>
+		        <input id="more_wages_no" name="more_wages" type="radio" value="no"> 
+				<label for="more_wages_no">No</label>
+			</li>
+		</div>
+	<!--  Show/hide on yes     <p>
+			<label for="holidays">Number of holiday days taken over this period</label>
+			<input type="text" maxlength="3" size="4" value="" id="holidays">
+		</p> -->
        <p>
-		<label for="holidays">Number of days for which pay is owed</label>
+		<label for="holidays">How many days did you work without being paid?</label>
 		<input type="text" maxlength="3" size="4" value="" id="holidays">
-	</p>
+	</p>	
+<!-- split page here - do not display if days worked = 0 -->	
 	<p class="input-group">
-		<label>Gross amount of pay owed</label>
+		<label>Gross amount of pay owed for working [X] days between [start] and [end].</label>
 				<span class="input-group-addon">£</span> 
 				<input type="text" class="form-control" size="6">
 				<span class="hint">Before taking off tax and National Insurance.</span>
