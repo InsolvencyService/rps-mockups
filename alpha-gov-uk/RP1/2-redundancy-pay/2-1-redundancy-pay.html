@@ -96,35 +96,55 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
-            
-    <h1 class="form-title heading-36">What is your National Insurance number?</h1>
-	<div class="text">
-		<p>This is the first time you've used GOV.UK to access the Redundancy Payments Service. For security, please help us verify the following details.</p>
-	</div>
-	<form class="form" method="" action="">
-		<fieldset>
-			<div class="form-group">
-			          <label for="ni-number" class="form-label-bold">
-			            National Insurance number
-			            <span class="form-hint">
-			              It's on your National Insurance card, benefit letter, payslip or P60.
-			              <br>
-			              For example, 'VO 12 34 56 D'.
-			            </span>
-			          </label>
-			          <input type="text" id="ni-number" class="form-control">
-			        </div>
-		</fieldset>
+	    <div class="inner-block text">
+		    <h1 class="heading-36">Redundancy pay</h1>
+
+    	    <form class="form" method="" action="">	
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">22. Are you claiming redundancy pay?</legend>
+						<div class="form-group">
+					        <label class="block-label" for="radio-indent-1">
+					          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
+					          Yes
+					        </label>
+					        <label  data-target="official-end-date" class="block-label" for="radio-indent-2">
+					          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
+					          No
+					        </label>
+						</div>
+		             </fieldset>
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">23. Has Fast Flicks Ltd paid you part of your redundancy payment?</legend>			
+				        <label  data-target="part-payment" class="block-label" for="radio-indent-3">
+				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
+				          Yes
+				        </label>
+				        <label class="block-label" for="radio-indent-4">
+				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
+				          No
+				        </label>
+		             </fieldset>
+					<div id="part-payment" class="panel-indent toggle-content" style="display: block;">
+						<div class="form-group">
+							<label for="overtime-hours" class="form-label-bold">24. How much of your redundancy payment did Fast Flicks Ltd pay?</label>
+									<span class="input-group-addon">£</span> 
+									<input type="text" id="overtime-hours" name="overtime-hours" size="6" class="form-control-1-8">
+							</div>		
+						</div>
+        <!-- Primary buttons, secondary links -->
         <div class="form-group">
-              <a class="button" href="0-2-matched.html">Verify</a>
+          <a href="2-2-employment-tribunal.html" class="button">Continue</a>
+          <ul>
+            <li><a href="2-2-employment-tribunal.html">Skip these questions for now</a></li>
+            <li><a href="2-0-section-start.html">Back</a></li>
+          </ul>
+        </div>
 
-        </div>		
-      </form>
+	    </form>
 
-    </div>
-  </div>
-</main>
+	    </div>
+	  </div>
+	</main>
 
 
     <footer role="contentinfo" id="footer" class="group js-footer">
