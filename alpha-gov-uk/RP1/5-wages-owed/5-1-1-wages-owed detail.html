@@ -96,63 +96,69 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
-		    <h1 class="heading-36">Summary of holiday pay</h1>
-				<p>Review the answers you have given in part 4 before you proceed.</p>
-				    <form class="form" method="" action="">	
-					<div class="form-group">
-					<table>
-						<tr><th colspan="2">Question</th><th>Answer</th><th>Change answer</th></tr>
-						<tr><td>28.</td><td>Are you owed any holiday pay?</th><td>Yes</td><td><a href="">Change</a></td></tr>
-						<tr><td>29.</td><td>What was the start date of your holiday year at Fast Flicks Ltd?</th><td>01 January</td><td><a href="">Change</a></td></tr>
-						<tr><td>30.</td><td>How many days holiday per year were you entitled to?</th><td>28</td><td><a href="">Change</a></td></tr>
-						<tr><td>31.</td><td>Does this number of holiday days include bank holidays?</th><td>Yes</td><td><a href="">Change</a></td></tr>
-						<tr><td>32.</td><td>Were you allowed to carry forward untaken holiday entitlement from your previous holiday year?</th><td>Yes</td><td><a href="">Change</a></td></tr>
-						<tr><td>33.</td><td>How many untaken holiday days have you carried forward this year?</th><td>Yes</td><td><a href="">Change</a></td></tr>
-						<tr><td>34.</td><td>Including bank holidays, how many holiday days have you taken this holiday year</th><td>10</td><td><a href="">Change</a></td></tr>
-					</table>
-					</div>
-					<div class="form-group">
-					<h2 class="heading-19">35. Details of days taken as holiday but for which you have not been paid</h2>
-					<table>
-						<tr><th>From</th><th>To</th><th>No. of days owed</th><th>Change answer</th></tr>
-						<tr><td>01 January 2013</td><td>02 January 2013</th><td>5</td><td><a href="">Change</a></td></tr>												
-					</table>
-					<details>
-						<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">Would you like to add further dates of holiday for which you have not been paid?</summary>
-					    <p style="display: block;"><a class="button-link" href="3-1-break-period.html">Add further dates of holiday owed</a></p>
-					</details>
-					</div>		
-        <!-- Primary buttons, secondary links -->
-        <div class="form-group">
-          <a href="../5-wages-owed/5-0-section-start.html" class="button">Continue</a>
-          <ul>
-            <li><a href="../5-wages-owed/5-0-section-start.html">Skip part 4 for now</a></li>
-            <li><a href="4-4-holiday-period-owed.html">Back</a></li>
-          </ul>
-        </div>
+	    <div class="inner-block text">
+		    <h1 class="heading-36">Details of wages owed</h1>
+
+    <form method="post">
+         <fieldset>
+			<p>Were any of these days taken as holiday?</p>
+			<div class="question-group">	
+			<ul class="radio">
+				<li>
+			        <input id="more_wages_yes" name="more_wages" type="radio" value="yes"> 
+					<label for="more_wages_yes">Yes</label>
+				</li>	
+				<li>
+			        <input id="more_wages_no" name="more_wages" type="radio" value="no"> 
+					<label for="more_wages_no">No</label>
+				</li>
+			</div>
+		<!--  Show/hide on yes     <p>
+				<label for="holidays">Number of holiday days taken over this period</label>
+				<input type="text" maxlength="3" size="4" value="" id="holidays">
+			</p> -->
+	       <p>
+			<label for="holidays">How many days did you work without being paid?</label>
+			<input type="text" maxlength="3" size="4" value="" id="holidays">
+		</p>	
+	<!-- split page here - do not display if days worked = 0 -->	
+		<p class="input-group">
+			<label>Gross amount of pay owed for working [X] days between [start] and [end].</label>
+					<span class="input-group-addon">£</span> 
+					<input type="text" class="form-control" size="6">
+					<span class="hint">Before taking off tax and National Insurance.</span>
+		</p>			
+                    
+        </fieldset>
+<nav class="form-navigation">
+		<a href="../4-holiday-pay/4-4-section-summary.html" class="button-secondary">Back</a>
+		<a href="5-1-failed-payments.html" class="button">Next</a>
+</nav>		
     </form>
 
-	    </div>
-	  </div>
-	</main>
+        </article>
+    </main>
+</div>
 
 
-    <footer role="contentinfo" id="footer" class="group js-footer">
+    <footer class="group js-footer" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
+        
 
         <div class="footer-meta">
           <div class="footer-meta-inner">
 
+            
+
             <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="../assets/open-government-licence_2x.png" alt="OGL"></a></h2>
               <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
             </div>
           </div>
 
           <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown copyright</a>
           </div>
         </div>
       </div>
@@ -160,10 +166,10 @@
 
     <!--end footer-->
 
-    <div class="app-error hidden" id="global-app-error"></div>
+    <div id="global-app-error" class="app-error hidden"></div>
 
-    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+    <script src="assets/govuk-template.js" type="text/javascript"></script>
 
-
-
-</body></html>
+    
+  
+<div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1269</span> x <span class="tooltipHeight" id="winHeight">937</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1269</span> x <span class="tooltipHeight" id="vpHeight">785</span></div></body></html>
