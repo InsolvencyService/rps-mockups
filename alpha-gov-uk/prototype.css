@@ -26,12 +26,6 @@
 	/* need min width for large screens */
 }
 
-.subtitle {
-    color: #6F777B;
-    font-family: "nta",Arial,sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.25;
-    margin: 0;
-    text-transform: none;
+table.date-period  {
+	/* style tables foir time periods differently */
 }
