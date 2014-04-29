@@ -51,6 +51,7 @@
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
+	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -98,11 +99,14 @@
 	  <div id="content">
 	    <div class="inner-block text">
 		    <h1 class="heading-36">Details of wages owed</h1>
+			<h2 class="heading-24">36. Details of the periods for which you want to claim</h2>
+		
 			<p class="lead">From 01 January 2013 to 02 January 2013</p>
 
-    <form method="post">
+	<form class="form" method="" action="">	
+		<div class="form-group">
 		<fieldset class="inline">
-	        <legend  class="form-label-bold">Were any of the days in this period taken as holiday?</legend>
+	        <legend class="form-label">Were any of the days in this period taken as holiday?</legend>
 		        <label data-target="holiday-days-group" class="block-label" for="radio-indent-1">
 		          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
 		          Yes
@@ -112,14 +116,15 @@
 		          No
 		        </label>
              </fieldset>
-				<div id="holiday-days-group" class="panel-indent toggle-content" style="display: block;">
+				<div id="holiday-days-group" class="panel-indent toggle-content" style="display: none;">
 					<div class="form-group">
-					  <label for="holiday-days" class="form-label-bold">
+					  <label for="holiday-days" class="form-label">
 					    How many holiday days did you take over this period?
 					  </label>
 		                <input type="text" class="form-control form-control-1-8" maxlength="3" size="4" value="" id="holiday-days">
 					</div>
 		        </div>
+		</div>
 		<!--<fieldset class="inline">
 	        <legend  class="form-label-bold">Has Fast Flicks Ltd attempted to pay you?</legend>
 			<p class="form-hint">A cheque bounced or payment failed.</p>
@@ -131,10 +136,10 @@
 		          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
 		          No
 		        </label>
-             </fieldset>
-			<div id="holiday-days-group" class="panel-indent toggle-content" style="display: block;">-->	
+             </fieldset>-->	
+			<!--<div id="working-days-group" class="panel-indent toggle-content" style="display: none;">-->
 				<div class="form-group">
-				  <label for="holiday-unpaid" class="form-label-bold">
+				  <label for="holiday-unpaid" class="form-label">
 				    How many days did you work without being paid?
 				  </label>
 	                <input type="text" class="form-control form-control-1-8" maxlength="3" size="4" value="" id="holiday-unpaid">
@@ -183,6 +188,9 @@
    <div class="app-error hidden" id="global-app-error"></div>
 
    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 
 
 

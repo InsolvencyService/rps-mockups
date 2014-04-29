@@ -51,6 +51,7 @@
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
+	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -117,6 +118,7 @@
 				        </label>
 					</div>
 		             </fieldset>
+		<div class="form-group">
 				<fieldset class="inline">
 			        <legend  class="form-label-bold">32. Were you allowed to carry forward untaken holiday entitlement from your previous holiday year? </legend>
 				        <label data-target="holiday-days-carried" class="block-label" for="radio-indent-3">
@@ -128,7 +130,7 @@
 				          No
 				        </label>
 		             </fieldset>
-					<div id="holiday-days-carried" class="panel-indent toggle-content" style="display: block;">
+					<div id="holiday-days-carried" class="panel-indent toggle-content" style="display: none;">
 						<div class="form-group">
 						  <label for="holidays-carried" class="form-label-bold">
 						    33. How many untaken holiday days have you carried forward this year?
@@ -136,7 +138,8 @@
 						<span class="form-hint">Don't include the previous year unless allowed under your contract of employment.</span>
 				        <input type="text" maxlength="3" class="form-control-1-8" size="4" value="" id="holidays-carried">
 						</div>
-			        </div>				
+			        </div>
+			</div>				
 		
        <!-- Primary buttons, secondary links -->
        <div class="form-group">
@@ -178,6 +181,9 @@
  <div class="app-error hidden" id="global-app-error"></div>
 
  <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 
 
 

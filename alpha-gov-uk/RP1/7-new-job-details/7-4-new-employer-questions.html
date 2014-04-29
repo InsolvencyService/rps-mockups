@@ -51,6 +51,7 @@
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
+	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -138,9 +139,10 @@
 				          No
 				        </label>
 					</div>
-		             </fieldset>		
+		             </fieldset>
+		<div class="form-group">		
  				<fieldset class="inline">
-			        <legend  class="form-label-bold">49. Are you aware of any link between Fast Flicks Ltd and [New employer name]?</legend>
+			        <legend class="form-label-bold">49. Are you aware of any link between Fast Flicks Ltd and [New employer name]?</legend>
 					<div class="form-group">
 				        <label data-target="employer-link" class="block-label" for="radio-indent-7">
 				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-7">
@@ -150,15 +152,15 @@
 				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-8">
 				          No
 				        </label>
+						<div id="employer-link" class="panel-indent toggle-content" style="display: none;">	
+					        <div class="form-group">
+						        <label for="employers_link_details" class="form-label-bold">50. Please provide details of any link that you are aware of</label>
+						        <textarea id="employers_link_details" name="employers_link_details" cols="50" rows="3" class="form-control"></textarea>
+					    	</div>
+						</div>
 					</div>
 		             </fieldset>
-					<div id="employer-link" class="panel-indent toggle-content" style="display: block;">	
-				        <div class="form-group">
-					        <label for="employers_link_details" class="form-label-bold">50. Please provide details of any link that you are aware of</label>
-					        <textarea id="employers_link_details" name="employers_link_details" cols="50" rows="3" class="form-control"></textarea>
-				    	</div>
 					</div>
-
         <!-- Primary buttons, secondary links -->
         <div class="form-group">
           <a href="7-5-section-summary.html" class="button">Continue</a>
@@ -199,6 +201,9 @@
     <div class="app-error hidden" id="global-app-error"></div>
 
     <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 
 
 
