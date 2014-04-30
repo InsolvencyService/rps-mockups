@@ -98,31 +98,53 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-		    <h1 class="heading-36">New employment</h1>
-			    <form class="form" method="" action="">						
-						<fieldset class="inline">
-					        <legend  class="form-label-bold">40. Have you had a new job since you were made redundant?</legend>
-							<div class="form-group">
-						        <label class="block-label" for="radio-indent-3">
-						          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
-						          Yes
-						        </label>
-						        <label class="block-label" for="radio-indent-4">
-						          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
-						          No
-						        </label>
-							</div>
-				             </fieldset>				
-
-        <!-- Primary buttons, secondary links -->
+            
+    <h1 class="form-title heading-36">Confirm your identity</h1>
+	<div class="text">
+		<p>To access your claim, please confirm the following details.</p>
+	</div>
+	<form class="form" method="" action="">
+		<fieldset>
+			<div class="form-group">
+	          <label for="forename" class="form-label-bold">
+	            What is your first name?
+	          </label>
+	          <input type="text" id="forename" class="form-control form-control-1-4">
+	        </div>
+			<div class="form-group">
+	          <label for="surname" class="form-label-bold">
+	            What is your surname?
+	          </label>
+	          <input type="text" id="surname" class="form-control form-control-1-4">
+	        </div>	
+			<fieldset class="date-of-birth">
+	          <legend class="form-label-bold">What is your date of birth?</legend>
+	          <p class="form-hint">For example, 08 04 2014</p>
+	          <div class="form-group form-group-day">
+	            <label for="dob-day">Day</label>
+	            <input type="text" id="dob-day" pattern="[0-9]*" class="form-control form-control-1-4">
+	          </div>
+	          <div class="form-group form-group-month">
+	            <label for="dob-month">Month</label>
+	            <input type="text" id="dob-month" class="form-control">
+	          </div>
+	          <div class="form-group form-group-year">
+	            <label for="dob-year">Year</label>
+	            <input type="text" id="dob-year" pattern="[0-9]*" class="form-control">
+	          </div>
+	        </fieldset>	
+			<div class="form-group">
+	          <label for="postcode" class="form-label-bold">
+	            What is your postcode?
+	          </label>
+	          <input type="text" id="postcode" class="form-control form-control-1-8">
+	        </div>	
+		</fieldset>
         <div class="form-group">
-          <a href="7-5-section-summary.html" class="button">Continue</a>
-          <ul>
-            <li><a href="#">Skip this question for now</a></li>
-			<li><a href="7-0-section-start.html">Back</a>
-          </ul>
-        </div>
-    </form>
+              <a class="button" href="0-2-verify.html">Confirm</a>
+
+        </div>		
+      </form>
 
     </div>
   </div>
