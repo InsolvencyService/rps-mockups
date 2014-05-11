@@ -41,7 +41,8 @@ article table {
     border-collapse: collapse;
     border-spacing: 0;
     margin: 1em -1em 2em -1em;
-    width: 105.95%}
+    width: 105.95%
+}
 article table caption {
     font-family: "nta", Arial, sans-serif;
     font-size: 24px;
@@ -52,6 +53,12 @@ article table caption {
     margin: 0.4em 0.5em 0.4em 0.7em;
     text-align: left;
 }
+
+article table tbody {
+	border-bottom:1px solid #bfc1c3;	
+}
+
+
 @media (max-width: 640px) {
     article table caption {
     font-size: 20px;
@@ -287,6 +294,18 @@ table.notice-period td.completed {
     width: 0;
 }
 
+ul.claim-summary, ul.claim-summary li ul {
+	list-style: none;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+ul.claim-summary li, ul.claim-summary li ul li {
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
 
 ul.summary-list {
 	list-style: none;
@@ -301,7 +320,6 @@ ul.summary-list li {
 	padding: 0.5em 5em 0.5em 0em;
 	margin:0;
 	position: relative;
-
 }
 	
 ul.summary-list h3 {
@@ -310,7 +328,6 @@ ul.summary-list h3 {
 }
 
 ul.summary-list p {
-	font-weight:600;
 	margin-bottom:0;
 }
 
