@@ -1,0 +1,31 @@
+.beta-banner {
+    background-color: #f47738;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.beta-banner p {
+    color: #0B0C0C;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0;
+    text-transform: none;
+}
+
+.beta-banner strong {
+    font-weight: bold;
+}
+
+.beta-banner a, .beta-banner a:link, .beta-banner a:visited, .beta-banner a:active {
+    color: #0B0C0C;
+}
+
+.days-of-week .form-group .block-label {
+	/* need min width for large screens */
+}
+
+table.date-period  {
+	/* style tables foir time periods differently */
+}
