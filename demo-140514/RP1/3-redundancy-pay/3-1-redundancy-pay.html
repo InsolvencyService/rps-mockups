@@ -98,103 +98,92 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-            
-    <h1 class="form-title heading-36">Check your employment details</h1>
-	<div class="text">
-			<p>We have matched your details with the following employer information:</p>
-	</div>		
-			<form class="form" method="" action="">
-		        <div class="form-group">				
-					<table>
-						<tr><th>Employer name</th><td>Fast Flicks Ltd</td><td></td></tr>
-						<tr><th>Employer address</th><td>
-						556 Bristol Rd<br>
-						Birmingham,  B29 6BD</td><td></td></tr>
-						<tr><th>Employer phone number</th><td>0123 456 789</td><td><a href="0-4-3-edit-phone.html">Change</a></td></tr>
-					</table>
-				</div>
+		    <h1 class="heading-36">Redundancy pay</h1>
+
+    	    <form class="form" method="" action="">	
 				<div class="form-group">
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">Has Fast Flicks Ltd paid you part of your redundancy payment?</legend>			
+				        <label data-target="part-payment" class="block-label" for="radio-indent-3">
+				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
+				          Yes
+				        </label>
+				        <label class="block-label" for="radio-indent-4">
+				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
+				          No
+				        </label>
+		             </fieldset>
+					<div id="part-payment" class="panel-indent toggle-content" style="display: none;">
+						<div class="form-group">
+							<label for="overtime-hours" class="form-label-bold">How much of your redundancy payment did Fast Flicks Ltd pay?</label>
+									<span class="input-group-addon">£</span> 
+									<input type="text" id="overtime-hours" name="overtime-hours" size="6" class="form-control-1-8">
+							</div>		
+						</div>
+						</div>
+						<div class="form-group">
 						<fieldset class="inline">
-						                <legend class="form-label">Is the address above the same as the address where you worked?</legend>
-										<p class="form-hint">If the answer is no, you will be able to enter a different address</p>
-						                <label class="block-label" for="radio-indent-1">
-						                  <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
-						                  Yes
-						                </label>
-						                <label  data-target="actual-work-address" class="block-label" for="radio-indent-2">
-						                  <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
-						                  No
-						                </label>
-						              </fieldset>
-									<div id="actual-work-address" class="panel-indent toggle-content"  style="display: none;">
-							                <fieldset>
-												<legend class="form-label-bold">Address where you worked</legend>
-								            	<div class="form-group">
-								        			<label for="building" class="form-label">Building number or name</label>
-									        		<input id="building" name="employers_name" class="form-control" type="text">
-												</div>
-								            	<div class="form-group">
-								        			<label for="address1" class="form-label">Address</label>
-									        		<input id="address1" name="employers_name" class="form-control" type="text">
-									        		<input id="address2" name="employers_name" class="form-control" type="text">
-									        		<input id="address3" name="employers_name" class="form-control" type="text">
-								        		</div>
-								            	<div class="form-group">
-								        			<label for="town" class="form-label">Town</label>
-									        		<input id="town" name="employers_name" class="form-control" type="text">
-												</div>	
-								            	<div class="form-group">
-								        			<label for="county" class="form-label">County</label>
-									        		<input id="county" name="employers_name" class="form-control" type="text">
-												</div>					
-									            <div class="form-group">
-								    				<label for="postcode" class="form-label">Postcode</label>
-								        			<input id="postcode" name="postcode" class="form-control form-control-1-4" type="text">
-												</div>
-										    </fieldset>
-										</div>
-										</div>
+					        <legend  class="form-label-bold">Have you been awarded any payments from a Employment tribunal in relation to your job ending?</legend>
+						        <label data-target="tribunal-payment" class="block-label" for="radio-indent-1">
+						          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
+						          Yes
+						        </label>
+						        <label class="block-label" for="radio-indent-2">
+						          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
+						          No
+						        </label>
+				             </fieldset>
+							<div id="tribunal-payment" class="panel-indent toggle-content" style="display: none;">
+								<div class="form-group">
+									<p>You will be asked to send a copy of the tribunal award with your claim form. If you made a settlement through ACAS or a compromise agreement with your employer, You will be asked to send a copy of the agreement.</p>
+									</div>		
+								</div>
+						</div>							
+        <!-- Primary buttons, secondary links -->
+        <div class="form-group">
+          <a href="3-2-section-summary.html" class="button">Continue</a>
+          <ul>
+            <li><a href="3-2-section-summary.html">Skip these questions for now</a></li>
+            <li><a href="3-0-section-start.html">Back</a></li>
+          </ul>
+        </div>
 
-		        <div class="form-group">
-		              <a class="button" href="../1-job-details/1-0-section-start.html">Continue</a>
-			          <ul>
-			            <li><a href="0-3-matched.html">Back</a></li>
-			          </ul>
-		        </div>				
-			</form>	
-		    </div>
-		  </div>
-		</main>
+	    </form>
+
+	    </div>
+	  </div>
+	</main>
 
 
-		    <footer role="contentinfo" id="footer" class="group js-footer">
+    <footer role="contentinfo" id="footer" class="group js-footer">
 
-		      <div class="footer-wrapper">
+      <div class="footer-wrapper">
 
-		        <div class="footer-meta">
-		          <div class="footer-meta-inner">
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
 
-		            <div class="open-government-licence">
-		              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-		              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-		            </div>
-		          </div>
+            <div class="open-government-licence">
+              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
 
-		          <div class="copyright">
-		            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-		          </div>
-		        </div>
-		      </div>
-		    </footer>
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		    <!--end footer-->
+    <!--end footer-->
 
-		    <div class="app-error hidden" id="global-app-error"></div>
+    <div class="app-error hidden" id="global-app-error"></div>
 
-		    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
-			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
-			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 
 
-		</body></html>
+
+</body></html>

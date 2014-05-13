@@ -53,6 +53,7 @@
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
 	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
+
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
   <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -99,69 +100,24 @@
 	  <div id="content">
 	    <div class="inner-block text">
             
-    <h1 class="form-title heading-36">Check your employment details</h1>
-	<div class="text">
-			<p>We have matched your details with the following employer information:</p>
-	</div>		
+    <h1 class="form-title heading-36">Check your contact details</h1>
+			<div class="text">
+			<p>Based on your employment records, the latest contact details we have for you are:</p>
+			</div>
 			<form class="form" method="" action="">
-		        <div class="form-group">				
-					<table>
-						<tr><th>Employer name</th><td>Fast Flicks Ltd</td><td></td></tr>
-						<tr><th>Employer address</th><td>
-						556 Bristol Rd<br>
-						Birmingham,  B29 6BD</td><td></td></tr>
-						<tr><th>Employer phone number</th><td>0123 456 789</td><td><a href="0-4-3-edit-phone.html">Change</a></td></tr>
-					</table>
-				</div>
-				<div class="form-group">
-						<fieldset class="inline">
-						                <legend class="form-label">Is the address above the same as the address where you worked?</legend>
-										<p class="form-hint">If the answer is no, you will be able to enter a different address</p>
-						                <label class="block-label" for="radio-indent-1">
-						                  <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
-						                  Yes
-						                </label>
-						                <label  data-target="actual-work-address" class="block-label" for="radio-indent-2">
-						                  <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
-						                  No
-						                </label>
-						              </fieldset>
-									<div id="actual-work-address" class="panel-indent toggle-content"  style="display: none;">
-							                <fieldset>
-												<legend class="form-label-bold">Address where you worked</legend>
-								            	<div class="form-group">
-								        			<label for="building" class="form-label">Building number or name</label>
-									        		<input id="building" name="employers_name" class="form-control" type="text">
-												</div>
-								            	<div class="form-group">
-								        			<label for="address1" class="form-label">Address</label>
-									        		<input id="address1" name="employers_name" class="form-control" type="text">
-									        		<input id="address2" name="employers_name" class="form-control" type="text">
-									        		<input id="address3" name="employers_name" class="form-control" type="text">
-								        		</div>
-								            	<div class="form-group">
-								        			<label for="town" class="form-label">Town</label>
-									        		<input id="town" name="employers_name" class="form-control" type="text">
-												</div>	
-								            	<div class="form-group">
-								        			<label for="county" class="form-label">County</label>
-									        		<input id="county" name="employers_name" class="form-control" type="text">
-												</div>					
-									            <div class="form-group">
-								    				<label for="postcode" class="form-label">Postcode</label>
-								        			<input id="postcode" name="postcode" class="form-control form-control-1-4" type="text">
-												</div>
-										    </fieldset>
-										</div>
-										</div>
-
 		        <div class="form-group">
-		              <a class="button" href="../1-job-details/1-0-section-start.html">Continue</a>
-			          <ul>
-			            <li><a href="0-3-matched.html">Back</a></li>
-			          </ul>
+				<table>
+					<tr><th>Name</th><td>Jamie Jones</td><td><a href="0-3-1-edit-name.html">Change</a></td></tr>
+					<tr><th>Contact address</th><td>15 Mindelsohn Way,<br>Birmingham, <br>West Midlands <br>B15 2TG</td><td><a href="0-3-2-edit-address.html">Change</a></td></tr>
+					<tr><th>Contact phone number</th><td>01217445555</td><td><a href="0-3-3-edit-phone.html">Change</a></td></tr>
+					<tr><th>Contact email address</th><td>jamiejones@hotmail.com</td><td><a href="0-3-4-edit-email.html">Change</a></td></tr>
+				</table>
+		        </div>	
+		        <div class="form-group">
+		              <a class="button" href="0-4-matched.html">Continue</a>
 		        </div>				
 			</form>	
+
 		    </div>
 		  </div>
 		</main>
@@ -195,6 +151,7 @@
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+
 
 
 		</body></html>
