@@ -105,21 +105,37 @@
 				<li>details of Jobseeker's Allowance received</li>
 				<li>notice of refusal (if applicable)</li>
 			</ul>
-			<p>	
-			<details>
-				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What are the questions in part 3?</summary>
-				<ol class="list-number" start="1">
 
-					</ol>
-			</details>
 		    <form class="form" method="" action="">
 			
-			<p>Click on "Continue" to begin this part of the claim</p>
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">Did you apply for Jobseeker's Allowance?</legend>
+					<div class="form-group">
+				        <label class="block-label" for="radio-indent-3">
+				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
+				          Yes
+				        </label>
+				        <label class="block-label" for="radio-indent-4" data-target="no-apply-reason">
+				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
+				          No
+				        </label>
+					</div>
+		             </fieldset>
+					<div id="no-apply-reason" class="panel-indent toggle-content" style="display: none;">
+						<div class="form-group">
+						  <label for="bonus-details" class="form-label-bold">
+						    Why did you not apply?
+						  </label>
+			                <textarea id="bonus-details" class="form-control"></textarea>
+						</div>
+						<p>You won't need to answer any more questions in this part of the claim. 
+							Click on "Continue" to complete this part of the claim.</p>
+			        </div>
 		
 
         <!-- Primary buttons, secondary links -->
         <div class="form-group">
-          <a href="1-1-main-question.html" class="button">Continue</a>
+          <a href="1-1-jsa-application.html" class="button">Continue</a>
           <ul>
             <li><a href="../2-benefits/2-0-section-start.html">Skip part 1 for now</a></li>
           </ul>

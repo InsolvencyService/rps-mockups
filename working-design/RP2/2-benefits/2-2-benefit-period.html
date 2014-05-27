@@ -98,94 +98,98 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-            
-    <h1 class="form-title heading-large">Bank account details</h1>
+		    <h1 class="heading-large">Dates of [benefit]</h1>
+		<div class="panel-indent">
+			<p>You can add more than one period where you received Jobseeker's Allowance. There is an option to do this from the summary screen.</p>
+		</div>	
+		    <form class="form" method="" action="">	
+		<fieldset class="date-of-birth">
+	         <legend class="form-label-bold">When did your [benefit] start?</legend>
+	         <div class="form-group form-group-day">
+	           <label for="dob-day">Day</label>
+	           <input type="text" id="dob-day" pattern="[0-9]*" class="form-control">
+	         </div>
+	         <div class="form-group form-group-month">
+	           <label for="dob-month">Month</label>
+	           <input type="text" id="dob-month" class="form-control">
+	         </div>
+	         <div class="form-group form-group-year">
+	           <label for="dob-year">Year</label>
+	           <input type="text" id="dob-year" pattern="[0-9]*" class="form-control">
+	         </div>
+	       </fieldset>
+	
+         <fieldset class="inline">
+			<legend class="form-label-bold">Were you still claiming [benefit] on [notice-end-date]?</legend>
+			<div class="form-group">
+		        <label class="block-label" for="radio-indent-3">
+		          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
+		          Yes
+		        </label>
+		        <label class="block-label" for="radio-indent-4" data-target="claim-end-date">
+		          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
+		          No
+		        </label>
+			</div>	      
+        </fieldset>
 
-    <form class="form" method="" action="">
+		<div id="claim-end-date" class="panel-indent toggle-content" style="display: none;">
+			<fieldset class="date-of-birth">
+	         <legend class="form-label-bold">When did your [benefit] end?</legend>
+	         <div class="form-group form-group-day">
+	           <label for="dob-day">Day</label>
+	           <input type="text" id="dob-day" pattern="[0-9]*" class="form-control">
+	         </div>
+	         <div class="form-group form-group-month">
+	           <label for="dob-month">Month</label>
+	           <input type="text" id="dob-month" class="form-control">
+	         </div>
+	         <div class="form-group form-group-year">
+	           <label for="dob-year">Year</label>
+	           <input type="text" id="dob-year" pattern="[0-9]*" class="form-control">
+	         </div>
+	       </fieldset>
+		</div>
+	        <!-- Primary buttons, secondary links -->
 	        <div class="form-group">
-	          <label for="bank-name" class="form-label-bold">
-	            Name of bank, building society or other account provider
-	          </label>
-	          <input type="text" id="bank-name" name="bank-name" class="form-control">
+	          <a href="2-3-benefit-amount.html" class="button">Continue</a>
+	          <ul>
+	            <li><a href="2-3-benefit-amount.html">Skip this question for now</a></li>
+	            <li><a href="2-1-benefit-list.html">Back</a></li>
+	          </ul>
 	        </div>
-	       <!-- <div class="form-group">
-	          <label for="branch-name" class="form-label-bold">
-	            Branch name
-	          </label>
-			<span class="form-hint">Leave blank if you don't know.</span>
-	          <input type="text"  id="branch-name" name="branch-name" class="form-control">
-	        </div>	-->
-	        <div class="form-group text">
-	          <label for="sort-code" class="form-label-bold">
-	            Sort code
-	          </label>
-			<span class="form-hint">For example 12-43-56</span>
-	          <input type="text" id="sort-code" name="sort-code" class="form-control form-control-1-8">
-				&ndash;
-	          <input type="text" id="sort-code-2" name="sort-code-2" class="form-control form-control-1-8">
-				&ndash;
-	          <input type="text" id="sort-code-3" name="sort-code-3" class="form-control form-control-1-8">
-	        </div>	
-	        <div class="form-group text">
-	          <label for="account-number" class="form-label-bold">
-	            Account number
-	          </label>
-	          <input type="text"  id="account-number" name="account-number" class="form-control">
-	        </div>
-	        <div class="form-group text">
-	          <label for="building-society-number" class="form-label-bold">
-	            Building society roll or reference number
-	          </label>
-			<span class="form-hint">If your building society uses a roll or reference number, you will find it on the passbook.</span>
-	          <input type="text"  id="building-society-number" name="building-society-number" class="form-control">
-	        </div>
-	        <div class="form-group">
-	          <label for="account-holder-name" class="form-label-bold">
-	            Account holder's name
-	          </label>
-			<span class="form-hint">Please write the name exactly as it appears on the cheque book, passbook or statement.</span>
-	          <input type="text"  id="account-holder-name" name="account-holder-name" class="form-control">
-	        </div>	
+	    </form>
 
-        <!-- Primary buttons, secondary links -->
-        <div class="form-group">
-          <a href="9-2-1-bank-details-summary.html" class="button">Continue</a>
-          <ul>
-            <li><a href="9-1-payment-question.html">Back</a></li>
-          </ul>
-        </div>
-    </form>
-
-    </div>
-  </div>
-</main>
+	    </div>
+	  </div>
+	</main>
 
 
-    <footer role="contentinfo" id="footer" class="group js-footer">
+   <footer role="contentinfo" id="footer" class="group js-footer">
 
-      <div class="footer-wrapper">
+     <div class="footer-wrapper">
 
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
+       <div class="footer-meta">
+         <div class="footer-meta-inner">
 
-            <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-            </div>
-          </div>
+           <div class="open-government-licence">
+             <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+             <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+           </div>
+         </div>
 
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+         <div class="copyright">
+           <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+         </div>
+       </div>
+     </div>
+   </footer>
 
-    <!--end footer-->
+   <!--end footer-->
 
-    <div class="app-error hidden" id="global-app-error"></div>
+   <div class="app-error hidden" id="global-app-error"></div>
 
-    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+   <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
