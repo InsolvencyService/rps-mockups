@@ -29,3 +29,61 @@
 table.date-period  {
 	/* style tables foir time periods differently */
 }
+
+@media (max-width: 640px) {
+a.button {
+	width:90%!important;
+}
+a.button-get-started {
+	width:80%!important;
+}
+}
+
+.form-control-addon {
+    background-color: #FFFFFF;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.31579;
+    padding: 4px;
+    text-transform: none;	
+}
+
+@media (max-width: 640px) {
+.form-control-addon {
+    font-size: 16px;
+    line-height: 1.25;
+}
+}
+
+select {
+   -moz-box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #BFC1C3;
+    border-radius: 0;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.31579;
+    padding: 4px;
+    text-transform: none;
+}
+
+@media (max-width: 640px) {
+select {
+    font-size: 16px;
+    line-height: 1.25;
+}
+}
+
+.ip-info {
+	clear: both;
+	content: "";
+	display: block;
+	background: url(http://govuk-elements.herokuapp.com/public/images/icons/icon-information.png) no-repeat scroll 0 0;
+	padding: 0px 10px 10px 20px;
+}
+
+.ip-info p {
+	    margin-left: 20px;
+}
