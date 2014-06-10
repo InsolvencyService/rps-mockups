@@ -98,53 +98,34 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-		    <h1 class="heading-large">Details of new employment</h1>
-			<p class="form-hint">Part 8 of 9</p>
-			<p>This part of the claim will ask you about your new job. The following information will help you with the questions in this section:</p>
-			<ul class="list-bullet text">
-				<li>your new contract of employment</li>
-			</ul>	
-		    <form class="form" method="" action="">						
-					<fieldset class="inline">
-				        <legend  class="form-label-bold">Have you had a new job since you were made redundant?</legend>
-						<div class="form-group">
-					        <label class="block-label" for="radio-indent-3">
-					          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
-					          Yes
-					        </label>
-					        <label data-target="part-advisory" class="block-label" for="radio-indent-4">
-					          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
-					          No
-					        </label>
-							<div id="part-advisory" class="panel-indent toggle-content" style="display: none;">
-									<p>You won't need to answer any more questions. 
-										Click on "Continue" to complete this part of the claim.</p>
-								</div>
-						</div>
-			             </fieldset>		
-			<details>
-				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What are the questions in part 6?</summary>
-				<ol class="list-number">
-						<li>New employer name</li>
-						<li>New employer address</li>
-						<li>Telephone number</li>
-						<li>When were you offered this job?</li>
-						<li>When did your employment with Fast Flicks Ltd start?</li>
-						<li>Although you have a different employer, is your new job role the same?</li>
-						<li>Are you dealing with the same customers?</li>
-						<li>Have your terms and conditions changed?</li>
-						<li>Are you aware of any link between Fast Flicks Ltd and [New employer name]?</li>
-						<li>Please provide details of any link that you are aware of</li>
-					</ol>
-			</details>
-			<p>Click on "Continue" to begin this part of the claim</p>
+            
+    <h1 class="form-title heading-large">Payment method</h1>
+	<p>We advise that payments are made directly into a bank or building society using the Bank Automated Clearing System (BACS). BACS is:</p>
+		<ul class="list-bullet">
+			<li>more secure than sending a cheque to you by post</li>
+			<li>means that the payments are available to you more quickly</li>
+		</ul>		
+    <form class="form" method="" action="">
+	        <div class="form-group">
+				<label class="block-label" for="checkbox-inline-1" data-target="no-account">
+                  <input type="checkbox" value="1" id="checkbox-inline-1">
+                  I do not have a bank or building society account
+                </label>
+				<div id="no-account" class="panel-indent toggle-content" style="display: none;">
+						<p>We will send you a cheque to the following postal address.</p>
+						<ul>
+							<li>Jamie Jones</li>
+							<li>15 Mindelsohn Way</li>
+							<li>Birmingham</li> 
+							<li>West Midlands</li>
+							<li>B15 2TG</li>
+						</ul>	
+					</div>
+	        </div>	
 
         <!-- Primary buttons, secondary links -->
         <div class="form-group">
-          <a href="8-1-new-employer.html" class="button">Continue</a>
-          <ul>
-            <li><a href="../9-summary/9-0-claim-summary.html">Skip part 8 for now</a></li>
-          </ul>
+          <a href="10-2-bank-details.html" class="button">Continue</a>
         </div>
     </form>
 

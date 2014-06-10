@@ -104,31 +104,28 @@
 	        		<label for="employers_name" class="form-label-bold">New employer name</label>
 	        		<input id="employers_name" name="employers_name" class="form-control" type="text">
 	    		</div>
-				<fieldset>
-					<legend class="form-label-bold">New employer address</legend>
-	            	<div class="form-group">
-	        			<label for="building" class="form-label">Building number or name</label>
-		        		<input id="building" name="employers_name" class="form-control" type="text">
-					</div>
-	            	<div class="form-group">
-	        			<label for="address1" class="form-label">Address</label>
-		        		<input id="address1" name="employers_name" class="form-control" type="text">
-		        		<input id="address2" name="employers_name" class="form-control" type="text">
-		        		<input id="address3" name="employers_name" class="form-control" type="text">
-	        		</div>
-	            	<div class="form-group">
-	        			<label for="town" class="form-label">Town</label>
-		        		<input id="town" name="employers_name" class="form-control" type="text">
-					</div>	
-	            	<div class="form-group">
-	        			<label for="county" class="form-label">County</label>
-		        		<input id="county" name="employers_name" class="form-control" type="text">
-					</div>					
-		            <div class="form-group">
-	    				<label for="postcode" class="form-label">Postcode</label>
-	        			<input id="postcode" name="postcode" class="form-control form-control-1-4" type="text">
-					</div>
-			    </fieldset>	
+				<fieldset class="form-group">
+				    <legend class="form-label-bold">
+				        New employer address
+				    </legend>
+					<p class="form-hint">Change the information and click on 'Save' when finished.</p>
+				
+		        <div class="form-group">
+				    <label for="yourAddressLine-1" class="form-label">Building and street</label>
+				    <input type="text" name="yourAddressLine-1" id="yourAddressLine-1" class="form-control">				
+				    <label for="yourAddressLine-2" class="form-label visuallyhidden">Building and street line 2 (optional)</label>
+				    <input type="text" name="yourAddressLine-2" id="yourAddressLine-2" class="form-control">
+				</div>	
+		        <div class="form-group">
+				    <label for="yourAddressTown" class="form-label">Town or city</label>
+				    <input type="text" name="yourAddressTown" id="yourAddressTown" class="form-control form-control-1-2">
+				</div>	
+		        <div class="form-group">
+				    <label for="yourAddressPostcode" class="form-label">Postcode (optional)</label>
+				    <input type="text" name="yourAddressPostcode" id="yourAddressPostcode" class="form-control form-control-1-4">
+				</div>	
+
+				</fieldset>
            		<div class="form-group">
         			<label for="employers_number" class="form-label-bold">Telephone number</label>
         			<input id="employers_number" name="employers_number" class="form-control" type="text">

@@ -98,52 +98,62 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-		    <h1 class="heading-large">Details of new employment</h1>
-			<p class="form-hint">Part 8 of 9</p>
-			<p>This part of the claim will ask you about your new job. The following information will help you with the questions in this section:</p>
-			<ul class="list-bullet text">
-				<li>your new contract of employment</li>
-			</ul>	
-		    <form class="form" method="" action="">						
-					<fieldset class="inline">
-				        <legend  class="form-label-bold">Have you had a new job since you were made redundant?</legend>
-						<div class="form-group">
-					        <label class="block-label" for="radio-indent-3">
-					          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
-					          Yes
-					        </label>
-					        <label data-target="part-advisory" class="block-label" for="radio-indent-4">
-					          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
-					          No
-					        </label>
-							<div id="part-advisory" class="panel-indent toggle-content" style="display: none;">
-									<p>You won't need to answer any more questions. 
-										Click on "Continue" to complete this part of the claim.</p>
-								</div>
-						</div>
-			             </fieldset>		
-			<details>
-				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What are the questions in part 6?</summary>
-				<ol class="list-number">
-						<li>New employer name</li>
-						<li>New employer address</li>
-						<li>Telephone number</li>
-						<li>When were you offered this job?</li>
-						<li>When did your employment with Fast Flicks Ltd start?</li>
-						<li>Although you have a different employer, is your new job role the same?</li>
-						<li>Are you dealing with the same customers?</li>
-						<li>Have your terms and conditions changed?</li>
-						<li>Are you aware of any link between Fast Flicks Ltd and [New employer name]?</li>
-						<li>Please provide details of any link that you are aware of</li>
-					</ol>
-			</details>
-			<p>Click on "Continue" to begin this part of the claim</p>
+            
+    <h1 class="form-title heading-large">Bank account details</h1>
 
+    <form class="form" method="" action="">
+	        <div class="form-group">
+	          <label for="bank-name" class="form-label-bold">
+	            Name of bank, building society or other account provider
+	          </label>
+	          <input type="text" id="bank-name" name="bank-name" class="form-control">
+	        </div>
+	       <!-- <div class="form-group">
+	          <label for="branch-name" class="form-label-bold">
+	            Branch name
+	          </label>
+			<span class="form-hint">Leave blank if you don't know.</span>
+	          <input type="text"  id="branch-name" name="branch-name" class="form-control">
+	        </div>	-->
+	        <div class="form-group text">
+	          <label for="sort-code" class="form-label-bold">
+	            Sort code
+	          </label>
+			<span class="form-hint">For example 12-43-56</span>
+	          <input type="text" id="sort-code" name="sort-code" class="form-control form-control-1-8">
+				&ndash;
+	          <input type="text" id="sort-code-2" name="sort-code-2" class="form-control form-control-1-8">
+				&ndash;
+	          <input type="text" id="sort-code-3" name="sort-code-3" class="form-control form-control-1-8">
+	        </div>	
+	        <div class="form-group text">
+	          <label for="account-number" class="form-label-bold">
+	            Account number
+	          </label>
+	          <input type="text"  id="account-number" name="account-number" class="form-control">
+	        </div>
+	        <div class="form-group text">
+	          <label for="building-society-number" class="form-label-bold">
+	            Building society roll or reference number
+	          </label>
+			<span class="form-hint">If your building society uses a roll or reference number, you will find it on the passbook.</span>
+	          <input type="text"  id="building-society-number" name="building-society-number" class="form-control">
+	        </div>
+	        <div class="form-group">
+	          <label for="account-holder-name" class="form-label-bold">
+	            Account holder's name
+	          </label>
+			<span class="form-hint">Please write the name exactly as it appears on the cheque book, passbook or statement.</span>
+	          <input type="text"  id="account-holder-name" name="account-holder-name" class="form-control">
+	        </div>	
+			<div class="panel-indent">
+				<p>Please make sure you have given us your correct bank details. Your redundancy payment will be made directly into this account. </p>
+			</div>
         <!-- Primary buttons, secondary links -->
         <div class="form-group">
-          <a href="8-1-new-employer.html" class="button">Continue</a>
+          <a href="10-3-claim-complete.html" class="button">Continue</a>
           <ul>
-            <li><a href="../9-summary/9-0-claim-summary.html">Skip part 8 for now</a></li>
+            <li><a href="10-1-payment-question.html">Back</a></li>
           </ul>
         </div>
     </form>
