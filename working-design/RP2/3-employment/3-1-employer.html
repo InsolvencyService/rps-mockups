@@ -104,34 +104,43 @@
 			        <label for="job_title" class="form-label-bold">Job title</label>
 			        <input id="job_title" name="job_title" type="text" class="form-control">
 			    </div>
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">Are you self-employed in this job?</legend>
+					<div class="form-group">
+				        <label class="block-label" for="radio-indent-1">
+				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
+				          Yes
+				        </label>
+				        <label class="block-label" for="radio-indent-2" data-target="no-apply-reason">
+				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
+				          No
+				        </label>
+					</div>
+		             </fieldset>			
 			    <div class="form-group">
 			        <label for="employers_name" class="form-label-bold">Company or employer's name</label>
 			        <input id="employers_name" name="employers_name" type="text" class="form-control">
-			        <h2 class="heading-medium">Company or employer's address</h2>
-                <fieldset>
-	            	<div class="form-group">
-	        			<label for="building" class="form-label">Building number or name</label>
-		        		<input id="building" name="employers_name" class="form-control" type="text">
-					</div>
-	            	<div class="form-group">
-	        			<label for="address1" class="form-label">Address</label>
-		        		<input id="address1" name="employers_name" class="form-control" type="text">
-		        		<input id="address2" name="employers_name" class="form-control" type="text">
-		        		<input id="address3" name="employers_name" class="form-control" type="text">
-	        		</div>
-	            	<div class="form-group">
-	        			<label for="town" class="form-label">Town</label>
-		        		<input id="town" name="employers_name" class="form-control" type="text">
+				</div>
+					<fieldset class="form-group">
+					    <legend class="form-label-bold">
+					        Company or employer's address
+					    </legend>
+			        <div class="form-group">
+					    <label for="yourAddressLine-1" class="form-label">Building and street</label>
+					    <input type="text" name="yourAddressLine-1" id="yourAddressLine-1" class="form-control">				
+					    <label for="yourAddressLine-2" class="form-label visuallyhidden">Building and street line 2 (optional)</label>
+					    <input type="text" name="yourAddressLine-2" id="yourAddressLine-2" class="form-control">
 					</div>	
-	            	<div class="form-group">
-	        			<label for="county" class="form-label">County</label>
-		        		<input id="county" name="employers_name" class="form-control" type="text">
-					</div>					
-		            <div class="form-group">
-	    				<label for="postcode" class="form-label">Postcode</label>
-	        			<input id="postcode" name="postcode" class="form-control form-control-1-4" type="text">
-					</div>
-			    </fieldset>
+			        <div class="form-group">
+					    <label for="yourAddressTown" class="form-label">Town or city</label>
+					    <input type="text" name="yourAddressTown" id="yourAddressTown" class="form-control form-control-1-2">
+					</div>	
+			        <div class="form-group">
+					    <label for="yourAddressPostcode" class="form-label">Postcode (optional)</label>
+					    <input type="text" name="yourAddressPostcode" id="yourAddressPostcode" class="form-control form-control-1-4">
+					</div>	
+
+					</fieldset>
 	        <!-- Primary buttons, secondary links -->
 	        <div class="form-group">
 	          <a href="3-2-employment-period.html" class="button">Continue</a>

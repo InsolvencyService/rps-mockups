@@ -98,17 +98,27 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-		    <h1 class="heading-large">Amount of Jobseeker's Allowance</h1>	
-			<p class="lead">From 18 April 2014 to 21 April 2014</p>
-		
-		    <form class="form" method="" action="">	
+			    <h1 class="heading-large">Amount of Jobseeker's Allowance</h1>	
+			<div class="panel-indent">
+			<p>Based on our calculation we think you received £214.50 in Jobseeker's Allowance</p>
+			<details>
+				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">How is this calculated?</summary>
+				<ul class="list-bullet">
+					<li>Jobseekers Allowance is paid as a 7 day week</li>
+					<li>you are entitled to £71.50 per week</li>
+					<li>you claimed for 3 weeks</li>
+				</ul>
+			</details>			
+			</div>
+			    <form class="form" method="" action="">	
+	                <div class="form-group">
+					  <label for="amount-owed" class="form-label-bold">
+					    How much did you receive between 29 April 2014 and 19 May 2014?
+					  </label>
+					<span class="form-hint"></span>
+		                <span class="form-control-addon">£</span> <input type="text" class="form-control form-control-1-4" maxlength="6" size="6" value="" id="amount-owed">
+					</div>
 
-                <div class="form-group">
-				  <label for="amount-owed" class="form-label-bold">
-				    How much did you receive?
-				  </label>
-	                <span class="input-group-addon">£</span> <input type="text" class="form-control form-control-1-8" maxlength="6" size="6" value="" id="amount-owed">
-				</div>
 
 	        <!-- Primary buttons, secondary links -->
 	        <div class="form-group">
