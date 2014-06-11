@@ -97,77 +97,90 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
-		    <h1 class="heading-large">Summary of holiday pay</h1>
-			<p class="form-hint">Part 5 of 9</p>
-				<p class="lead">Review the answers you have given in part 5 before you proceed.</p>
-				    <form class="form" method="" action="">	
+	    <div class="inner-block text">
+		    <h1 class="heading-large">Number of holiday days</h1>
+		    <form class="form" method="" action="">	
+				<div class="form-group">
+					<label for="holidays" class="form-label-bold">How many days holiday per year were you entitled to?
+						</label>
+					    <input type="text" maxlength="3" pattern="[0-9]*" class="form-control form-control-1-8" size="4" id="holidays">
+				</div>
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">Does this number of holiday days include bank holidays? </legend>
 					<div class="form-group">
-					<table>
-						<tr><th>Question</th><th>Answer</th><th></th></tr>
-						<tr><td>Are you owed any holiday pay?</th><td>Yes</td><td><a href="">Change</a></td></tr>
-						<tr><td>What was the start date of your holiday year at Fast Flicks Ltd?</td><td>05 January</td><td><a href="5-1-holiday-year.html">Change</a></td></tr>
-						<tr class="incomplete"><td>How many days holiday per year were you entitled to?</td><td>Incomplete</td><td><a href="5-2-holiday-days-2.html">Change</a></td></tr>
-						<tr class="incomplete"><td>Does this number of holiday days include bank holidays?</td><td>Incomplete</td><td><a href="5-2-holiday-days-2.html">Change</a></td></tr>
-						<tr class="incomplete"><td>Were you allowed to carry forward untaken holiday entitlement from your previous holiday year?</th><td>Incomplete</td><td><a href="5-2-holiday-days-2.html">Change</a></td></tr>
-						<tr class="incomplete"><td>How many untaken holiday days have you carried forward this year?</td><td>Incomplete</td><td><a href="5-2-holiday-days.html">Change</a></td></tr>
-						<tr class="incomplete"><td>Including bank holidays, how many holiday days have you taken this holiday year</td><td>Incomplete</td><td><a href="5-3-holiday-days-2.html">Change</a></td></tr>
-					</table>
-				<!--	<h2 class="heading-small">Details of holidays taken but not paid
-					</h2>
-					<table>
-						<tr><th>Amount of days taken</th><th>Dates of holidays taken</th><th></th></tr>
-						<tr><td>2</td><td>
-							<ul>
-							<li>18 April 2014</li>
-							<li>21 April 2014</li>
-							</ul>
-							</td><td><a href="5-3-days-taken.html">Change</a></td></tr>												
-					</table> -->				    
-					</div>		
-        <!-- Primary buttons, secondary links -->
-		<div class="panel-indent text">
-			<p>You have chosen to skip some of the questions in this part where the answer is <span class="incomplete">incomplete</span>. We'll remind you to answer these before you send your claim.</p>
-			</div>
-        <div class="form-group">
-          <a href="../6-wages-owed/6-0-section-start.html" class="button">Save and continue</a>
-          <ul>
-            <li><a href="../6-wages-owed/6-0-section-start.html">Skip part 5 for now</a></li>
-            <li><a href="5-4-1-holiday-owed-detail.html">Back</a></li>
-          </ul>
-        </div>
-    </form>
+				        <label class="block-label" for="radio-indent-1">
+				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
+				          Yes
+				        </label>
+				        <label class="block-label" for="radio-indent-2">
+				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
+				          No
+				        </label>
+					</div>
+		             </fieldset>
+		<div class="form-group">
+				<fieldset class="inline">
+			        <legend  class="form-label-bold">Were you allowed to carry forward untaken holiday entitlement from your previous holiday year? </legend>
+				        <label data-target="holiday-days-carried" class="block-label" for="radio-indent-3">
+				          <input type="radio" value="Yes" name="radio-indent-group-2" id="radio-indent-3">
+				          Yes
+				        </label>
+				        <label class="block-label" for="radio-indent-4">
+				          <input type="radio" value="No" name="radio-indent-group-2" id="radio-indent-4">
+				          No
+				        </label>
+		             </fieldset>
+					<div id="holiday-days-carried" class="panel-indent toggle-content" style="display: none;">
+						<div class="form-group">
+						  <label for="holidays-carried" class="form-label">
+						    How many untaken holiday days have you carried forward this year?
+						  </label>
+						<span class="form-hint">Don't include the previous year unless allowed under your contract of employment.</span>
+				        <input type="text" maxlength="3" pattern="[0-9]*" class="form-control form-control-1-8" size="4" value="" id="holidays-carried">
+						</div>
+			        </div>
+			</div>				
+		
+       <!-- Primary buttons, secondary links -->
+       <div class="form-group">
+         <a href="5-3-days-taken-2.html" class="button">Continue</a>
+         <ul>
+           <li><a href="#">Skip these questions for now</a></li>
+           <li><a href="#">Back</a></li>
+         </ul>
+       </div>
+   </form>
 
-	    </div>
-	  </div>
-	</main>
+   </div>
+ </div>
+</main>
 
 
-    <footer role="contentinfo" id="footer" class="group js-footer">
+ <footer role="contentinfo" id="footer" class="group js-footer">
 
-      <div class="footer-wrapper">
+   <div class="footer-wrapper">
 
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
+     <div class="footer-meta">
+       <div class="footer-meta-inner">
 
-            <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-            </div>
-          </div>
+         <div class="open-government-licence">
+           <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+           <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+         </div>
+       </div>
 
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+       <div class="copyright">
+         <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+       </div>
+     </div>
+   </div>
+ </footer>
 
-    <!--end footer-->
+ <!--end footer-->
 
-    <div class="app-error hidden" id="global-app-error"></div>
+ <div class="app-error hidden" id="global-app-error"></div>
 
-    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+ <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
