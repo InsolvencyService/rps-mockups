@@ -98,108 +98,100 @@
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-            
-    <h1 class="form-title heading-large">Job title and category</h1>
-    <form class="form" method="" action="">
-	        <div class="form-group">
-	          <label for="job-title" class="form-label-bold">
-	            What was your job title?
-	          </label>
-	          <input type="text"  id="job-title" name="job-title" class="form-control">
-	        </div>
-	        <div class="form-group">
-	          <label for="roll-number" class="form-label-bold">
-	            What was your employee, roll or works number?
-	          </label>
-			<span class="form-hint">You might find this on your payslip. Leave blank if you don't know.</span>
-	          <input type="text"  id="roll-number" name="job-title" class="form-control">
-	        </div>
-        <fieldset>
-			<legend class="form-label-bold">What category of worker were you?</legend>
+		    <h1 class="heading-large">Weeks of wages owed</h1>
+		<div class="panel-indent">
+			<p>You can add up to 8 weeks of wages owed and failed payments. A week is calculated as 7 days from the  start date you enter below.</p>
 			<details>
-				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What do these categories mean?</summary>
-			    <p style="display: block;">Read the claim help for a full description of what these categories mean.</p>
+				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What if I am owed more than 8 weeks?</summary>
+				<ul class="list-bullet">
+					<li>check how much you are owed per week</li>
+					<li>add details of the 8 weeks that you are owed the most money</li>
+				</ul>	
 			</details>
-			<div class="form-group">
-		        <label class="block-label" for="category-employed">		
-		        <input id="category-employed" name="category" type="radio" value="">
-				Employed with a contract of employment
-				</label>
-		        <label class="block-label" for="category-director">
-		        <input id="category-director" name="category" type="radio" value="">
-				Director/shareholder of the company
-				</label>
-		        <label class="block-label" for="category-labour">
-		        <input id="category-labour" name="category" type="radio" value="">
-				Self-employed sub-contractor
-				</label>
-				<label class="block-label" for="category-fixed">
-		        <input id="category-fixed" name="category" type="radio" value="">
-				Fixed-term contracts worker
-				</label>
-		        <label class="block-label" for="category-freelance">		
-		        <input id="category-freelance" name="category" type="radio" value="">
-				Freelance worker
-				</label>
-		        <label class="block-label" for="category-agency">		
-		        <input id="category-agency" name="category" type="radio" value="">
-				Agency worker
-				</label>
-		        <label class="block-label" for="category-casual">
-		        <input id="category-casual" name="category" type="radio" value="">
-				Casual worker
-				</label>
-		        <label class="block-label" for="category-home">		
-		        <input id="category-home" name="category" type="radio" value="">
-				Home worker
-				</label>
-			</div>
-        </fieldset>
+		</div>
+    <form method="post">
+		<fieldset class="date-of-birth">
+	         <legend class="form-label-bold">What is the start date of the fourth week you are owed wages for?</legend>
+	         <div class="form-group form-group-day">
+	           <label for="dob-day">Day</label>
+	           <input type="text" id="dob-day" maxlength="2" pattern="[0-9]*" class="form-control">
+	         </div>
+	         <div class="form-group form-group-month">
+	           <label for="dob-month">Month</label>
+	           <input type="text" id="dob-month" maxlength="2" pattern="[0-9]*" class="form-control">
+	         </div>
+	         <div class="form-group form-group-year">
+	           <label for="dob-year">Year</label>
+	           <input type="text" id="dob-year" maxlength="4" pattern="[0-9]*" class="form-control">
+	         </div>
+	       </fieldset>
+			<fieldset class="inline">
+		        <legend  class="form-label-bold">Did Fast Flicks attempt to pay you?</legend>
+				<p class="form-hint">This includes any failed payments to your bank account or bounced cheques from Fast Flicks Ltd.</p>
+				<div class="form-group">
+			        <label class="block-label" for="radio-indent-3">
+			          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
+			          Yes
+			        </label>
+			        <label data-target="days-worked" class="block-label" for="radio-indent-4">
+			          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
+			          No
+			        </label>
+					<div id="days-worked" class="panel-indent toggle-content" style="display:none;">
+						<div class="form-group">
+						  <label for="days-unpaid" class="form-label-bold">
+						    How many days did you work that week without being paid?
+						  </label>
+			               <input type="text" class="form-control form-control-1-8" maxlength="3" size="4" value="" id="days-unpaid">
+						</div>
+					</div>
+				</div>
+	          </fieldset>
+	
+	        <!-- Primary buttons, secondary links -->
+	        <div class="form-group">
+	          <a href="6-1-1-wages-owed-detail-4.html" class="button">Continue</a>
+	          <ul>
+	            <li><a href="#">Skip this question for now</a></li>
+	            <li><a href="6-1-main-question.html">Back</a></li>
+	          </ul>
+	        </div>
+	    </form>
 
-        <!-- Primary buttons, secondary links -->
-        <div class="form-group">
-          <a href="1-2-job-start-date.html" class="button">Continue</a>
-          <ul>
-            <li><a href="1-2-job-start-date.html">Skip these questions for now</a></li>
-            <li><a href="1-0-section-start.html">Back</a></li>
-          </ul>
-        </div>
-    </form>
-
-    </div>
-  </div>
-</main>
-
-
-    <footer role="contentinfo" id="footer" class="group js-footer">
-
-      <div class="footer-wrapper">
-
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
-
-            <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-            </div>
-          </div>
-
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!--end footer-->
-
-    <div class="app-error hidden" id="global-app-error"></div>
-
-    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
-	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
-	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+	    </div>
+	  </div>
+	</main>
 
 
+	    <footer role="contentinfo" id="footer" class="group js-footer">
 
-</body></html>
+	      <div class="footer-wrapper">
+
+	        <div class="footer-meta">
+	          <div class="footer-meta-inner">
+
+	            <div class="open-government-licence">
+	              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+	              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+	            </div>
+	          </div>
+
+	          <div class="copyright">
+	            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+	          </div>
+	        </div>
+	      </div>
+	    </footer>
+
+	    <!--end footer-->
+
+	    <div class="app-error hidden" id="global-app-error"></div>
+
+	    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+		<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+		<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+
+
+
+	</body></html>
