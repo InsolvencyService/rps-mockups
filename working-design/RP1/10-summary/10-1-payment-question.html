@@ -106,12 +106,19 @@
 			<li>means that the payments are available to you more quickly</li>
 		</ul>		
     <form class="form" method="" action="">
+	
+	
 	        <div class="form-group">
-				<label class="block-label" for="checkbox-inline-1" data-target="no-account">
-                  <input type="checkbox" value="1" id="checkbox-inline-1">
+				<label class="block-label" for="bank-account-yes">
+                  <input type="radio" name="payment-preference" id="bank-account-yes">
+                  I have a bank or building society account
+                </label>
+				<label class="block-label" for="bank-account-no">
+                  <input type="radio" name="payment-preference" id="bank-account-no">
                   I do not have a bank or building society account
                 </label>
-				<div id="no-account" class="panel-indent toggle-content" style="display: none;">
+
+				<div id="no-account" class="panel-indent">
 						<p>We will send you a cheque to the following postal address.</p>
 						<ul>
 							<li>Jamie Jones</li>
