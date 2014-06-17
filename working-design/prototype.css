@@ -102,7 +102,9 @@ select {
 }
 
 .register-signin-container {
-    background-image: url("http://ida-showcase.herokuapp.com/assets/images/govuk/padlock.png");
+    background-image: url("assets/images/govuk/padlock.png");
     background-position: 101% 0;
     background-repeat: no-repeat;
 }
+
+.header-bar {background-color:#003479!important;}
