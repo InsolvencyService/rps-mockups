@@ -87,3 +87,22 @@ select {
 .ip-info p {
 	    margin-left: 20px;
 }
+
+.ida-example {
+    border: 1px solid #a2a2a2;
+    margin: 30px 0 60px;
+    outline: 15px solid #f8f8f8;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+}
+
+.ida-example .heading-medium {
+	margin-top:0!important;
+}
+
+.register-signin-container {
+    background-image: url("http://ida-showcase.herokuapp.com/assets/images/govuk/padlock.png");
+    background-position: 101% 0;
+    background-repeat: no-repeat;
+}
