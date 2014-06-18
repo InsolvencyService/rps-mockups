@@ -88,16 +88,16 @@ select {
 	    margin-left: 20px;
 }
 
-.ida-example {
+.rps-example {
     border: 1px solid #a2a2a2;
-    margin: 30px 0 60px;
-    outline: 15px solid #f8f8f8;
+    margin: 30px 0 30px;
+    /*outline: 15px solid #f8f8f8;*/
     overflow: hidden;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
     position: relative;
 }
 
-.ida-example .heading-medium {
+.rps-example .heading-medium {
 	margin-top:0!important;
 }
 
@@ -108,3 +108,16 @@ select {
 }
 
 .header-bar {background-color:#003479!important;}
+
+details {
+	margin:1em auto!important;
+}
+
+summary {
+	text-decoration:underline!important;
+	color:#005ea5!important;
+}
+
+.days-of-week label {
+	min-width:6em!important;
+}

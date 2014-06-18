@@ -102,9 +102,10 @@
 		    <h1 class="heading-large">Redundancy pay</h1>
 
     	    <form class="form" method="" action="">	
-				<div class="form-group">
+
 				<fieldset class="inline">
-			        <legend  class="form-label-bold">Has Fast Flicks Ltd paid you part of your redundancy payment?</legend>			
+			        <legend  class="form-label-bold">Has Fast Flicks Ltd paid you part of your redundancy payment?</legend>	
+					<div class="form-group">		
 				        <label data-target="part-payment" class="block-label" for="radio-indent-3">
 				          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
 				          Yes
@@ -113,18 +114,12 @@
 				          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
 				          No
 				        </label>
+						</div>
 		             </fieldset>
-					<div id="part-payment" class="panel-indent toggle-content" style="display: none;">
-						<div class="form-group">
-							<label for="redundancy-amount" class="form-label-bold">How much of your redundancy payment did Fast Flicks Ltd pay?</label>
-									<span class="form-control-addon">£</span> 
-									<input type="text" id="redundancy-amount" name="redundancy-amount" size="6" pattern="[0-9]*" class="form-control form-control-1-8">
-							</div>		
-						</div>
-						</div>
-						<div class="form-group">
 						<fieldset class="inline">
 					        <legend  class="form-label-bold">Have you been awarded any payments from a Employment tribunal in relation to your job ending?</legend>
+							<p class="form-hint">If the answer is 'Yes', we will ask you for a copy of the tribunal award.</p>
+							<div class="form-group">
 						        <label data-target="tribunal-payment" class="block-label" for="radio-indent-1">
 						          <input type="radio" value="Yes" name="radio-indent-group-2" id="radio-indent-1">
 						          Yes
@@ -133,18 +128,27 @@
 						          <input type="radio" value="No" name="radio-indent-group-2" id="radio-indent-2">
 						          No
 						        </label>
+										</div>
 				             </fieldset>
-							<div id="tribunal-payment" class="panel-indent toggle-content" style="display: none;">
+							<fieldset class="inline">
+						        <legend  class="form-label-bold">Do you owe Fast Flicks Ltd any money?</legend>
 								<div class="form-group">
-									<p>You will be asked to send a copy of the tribunal award with your claim form. If you made a settlement through ACAS or a compromise agreement with your employer, You will be asked to send a copy of the agreement.</p>
-									</div>		
+							        <label class="block-label" for="radio-indent-5">
+							          <input type="radio" value="Yes" name="radio-indent-group-3" id="radio-indent-5">
+							          Yes
+							        </label>
+							        <label class="block-label" for="radio-indent-6">
+							          <input type="radio" value="No" name="radio-indent-group-3" id="radio-indent-6">
+							          No
+							        </label>
 								</div>
-						</div>							
+					             </fieldset>				
+
         <!-- Primary buttons, secondary links -->
         <div class="form-group">
-          <a href="3-2-section-summary.html" class="button">Save and continue</a>
+          <a href="3-1-1-redundancy-amount.html" class="button">Continue</a>
           <ul>
-            <li><a href="3-2-section-summary.html">Skip these questions for now</a></li>
+            <li><a href="3-1-1-redundancy-amount.html">Skip these questions for now</a></li>
             <li><a href="3-0-section-start.html">Back</a></li>
           </ul>
         </div>
