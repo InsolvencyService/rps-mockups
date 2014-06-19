@@ -80,34 +80,30 @@
   <div class="header-proposition">
     <div class="content">
       <nav id="proposition-menu">
-        <a id="proposition-name" href="https://www.gov.uk/service-manual">Redundancy Payments Service</a>
-      </nav>
+        <a id="proposition-name" href="#">Claim a redundancy payment</a>
+	      <div class="inner-block">
+	        <div class="header-bar"></div>
+	      </div>
+	    </div>      </nav>
     </div>
   </div>
       </div>
     </header>
     <!--end header-->
-	<div class="beta-banner">
-	  <div class="outer-block">
-	    <div class="inner-block">
-	      <p>This website is in <strong>BETA</strong> and some content is subject to change. Please, <a href="https://rpsdigital.hackpad.com/Redundancy-Payments-Service-BETA-Feedback-g5m2a5vFo9A">give us your feedback</a>.</p>
+	<div id="global-header-bar">
+	      <div class="inner-block">
+	        <div class="header-bar"></div>
+	      </div>
 	    </div>
-	  </div>
-	</div>
     
 	<main role="main" id="wrapper">
 	  <div id="content">
 	    <div class="inner-block text">
-		    <h1 class="heading-36">Details of new employment</h1>
+		    <h1 class="heading-large">Details of new employment</h1>
 			<p class="form-hint">Part 7 of 7</p>
-			<p>This part of the claim will ask you about your new job. The following information will help you with the questions in this section:</p>
-			<ul class="list-bullet text">
-				<li>your new contract of employment</li>
-			</ul>	
 			<details>
-				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What are the questions in part 6?</summary>
-				<ol class="list-number" start="40">
-						<li>Have you had a new job since you were made redundant?</li>
+				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What are the questions in part 7?</summary>
+				<ol class="list-number">
 						<li>New employer name</li>
 						<li>New employer address</li>
 						<li>Telephone number</li>
@@ -120,14 +116,34 @@
 						<li>Please provide details of any link that you are aware of</li>
 					</ol>
 			</details>
-    <form class="form" method="" action="">										
+			<p>The following information will help you with the questions in part 7:</p>
+			<ul class="list-bullet text">
+				<li>your new contract of employment</li>
+			</ul>	
+		    <form class="form" method="" action="">						
+					<fieldset class="inline">
+				        <legend  class="form-label-bold">Have you had a new job since you were made redundant?</legend>
+						<p class="form-hint">If you choose 'No, you won't need to answer any questions in part 7.</p> 
+				
+						<div class="form-group">
+					        <label class="block-label" for="radio-indent-3">
+					          <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-3">
+					          Yes
+					        </label>
+					        <label class="block-label" for="radio-indent-4">
+					          <input type="radio" value="No" name="radio-indent-group" id="radio-indent-4">
+					          No
+					        </label>
+						</div>
+			             </fieldset>		
+
 			<p>Click on "Continue" to begin this part of the claim</p>
 
         <!-- Primary buttons, secondary links -->
         <div class="form-group">
-          <a href="7-1-main-question.html" class="button">Continue</a>
+          <a href="7-1-new-employer.html" class="button">Continue</a>
           <ul>
-            <li><a href="../9-summary/9-0-claim-summary.html">Skip part 7 for now</a></li>
+            <li><a href="../10-summary/10-0-claim-summary.html">Skip part 7 for now</a></li>
           </ul>
         </div>
     </form>

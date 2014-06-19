@@ -98,68 +98,77 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
-		    <h1 class="heading-large">Additional questions</h1>
-		    <form class="form" method="" action="">										
-				<fieldset class="inline text">
-			        <legend  class="form-label-bold">Were your wages subject to an attachment of earnings?</legend>
-					<p class="form-hint">For example, compulsory deduction of child support</span>
-					<div class="form-group">
-				        <label class="block-label" for="radio-indent-3">
-				          <input type="radio" value="Yes" name="radio-indent-group-2" id="radio-indent-3">
-				          Yes
-				        </label>
-				        <label class="block-label" for="radio-indent-4">
-				          <input type="radio" value="No" name="radio-indent-group-2" id="radio-indent-4">
-				          No
-				        </label>
+	    <div class="inner-block text">
+		    <h1 class="heading-large">Amount of wages owed</h1>
+		
+			<p>From 18 April 2014 to 21 April 2014</p>
+
+	<form class="form" method="" action="">	
+		<div class="rps-example">
+					<p>Based on the the information you have provided, we think you are owed £576.92 gross for this week.</p>
+					<details>
+						<summary tabindex="0" style="-moz-user-select: none;" role="button" aria-expanded="false">How is this calculated?</summary>
+						<ul class="list-bullet" style="display: none;">
+							<li>gross income of £576.92 per week</li>
+							<li>5 day average working week</li>
+							<li>daily rate of pay calculated as £57.6825</li>
+							<li>8 days worked without being paid</li>
+						</ul>
+					</details>
 					</div>
-		             </fieldset>					
+			
+                    <div class="form-group">
+					  <label for="amount-owed" class="form-label-bold">
+					    Gross amount of pay owed for this period
+					  </label>
+						<span class="form-hint">Before taking off tax and National Insurance.</span>
+		                <span class="input-group-addon">£</span> <input type="text" pattern="[0-9]*" class="form-control form-control-1-8" maxlength="6" size="6" value="" id="amount-owed">
+					</div>
 
-		        <!-- Primary buttons, secondary links -->
-		        <div class="form-group">
-		          <a href="6-2-wages-period.html" class="button">Continue</a>
-		          <ul>
-		            <li><a href="6-2-wages-period.html">Skip this question for now</a></li>
-		            <li><a href="6-0-section-start.html">Back</a></li>					
-		          </ul>
-		        </div>
-		    </form>
+	        <!-- Primary buttons, secondary links -->
+	        <div class="form-group">
+	          <a href="6-2-section-summary.html" class="button">Continue</a>
+	          <ul>
+	            <li><a href="#">Skip this question for now</a></li>
+	            <li><a href="6-1-wages-owed-period.html">Back</a></li>
+	          </ul>
+	        </div>
+	    </form>
 
-		    </div>
-		  </div>
-		</main>
-
-
-		    <footer role="contentinfo" id="footer" class="group js-footer">
-
-		      <div class="footer-wrapper">
-
-		        <div class="footer-meta">
-		          <div class="footer-meta-inner">
-
-		            <div class="open-government-licence">
-		              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-		              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-		            </div>
-		          </div>
-
-		          <div class="copyright">
-		            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-		          </div>
-		        </div>
-		      </div>
-		    </footer>
-
-		    <!--end footer-->
-
-		    <div class="app-error hidden" id="global-app-error"></div>
-
-		    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
-			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
-			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+	    </div>
+	  </div>
+	</main>
 
 
+   <footer role="contentinfo" id="footer" class="group js-footer">
 
-		</body></html>
+     <div class="footer-wrapper">
+
+       <div class="footer-meta">
+         <div class="footer-meta-inner">
+
+           <div class="open-government-licence">
+             <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+             <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+           </div>
+         </div>
+
+         <div class="copyright">
+           <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+         </div>
+       </div>
+     </div>
+   </footer>
+
+   <!--end footer-->
+
+   <div class="app-error hidden" id="global-app-error"></div>
+
+   <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+
+
+
+</body></html>
