@@ -98,66 +98,34 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
+	    <div class="inner-block text">
             
-    <h1 class="form-title heading-large">Weekly pay day</h1>
-    <form class="form" method="" action="">
-         <fieldset class="inline days-of-week">
-			<legend class="form-label-bold">Which day of the week were you paid?</legend>
+    <h1 class="form-title heading-large">What is your National Insurance number?</h1>
+	<div class="text">
+		<p>This is the first time you've used GOV.UK to access the Redundancy Payments Service. For security, please help us verify the following details.</p>
+	</div>
+	<form class="form" method="" action="">
+		<fieldset>
 			<div class="form-group">
-		        <label for="mon" class="block-label">		
-		        <input id="mon" name="payday" type="radio" value="">
-				Monday
-				</label>
-		        <label for="tue" class="block-label">
-		        <input id="tue" name="payday" type="radio" value="">
-				Tuesday
-				</label>
-		        <label for="wed" class="block-label">
-		        <input id="wed" name="payday" type="radio" value="">
-				Wednesday
-				</label>
-		        <label for="thu" class="block-label">		
-		        <input id="thu" name="payday" type="radio" value="">
-				Thursday
-				</label>				
-		        <label for="fri" class="block-label">		
-		        <input id="fri" name="payday" type="radio" value="">
-				Friday
-				</label>				
-		        <label for="sat" class="block-label">
-		        <input id="sat" name="payday" type="radio" value="">
-				Saturday
-				</label>
-		        <label for="sun" class="block-label">
-		        <input id="sun" name="payday" type="radio" value="">
-				Sunday
-				</label>					      
-		    </div>
-		<div class="form-group">
-			<span class="form-hint">If you don't know we will default this to Saturday</span>
-			
-			<label for="dont-know" class="block-label">
-	        <input id="dont-know" name="payday" type="radio" value="">
-			I don't know
-			</label>
-			
-			</div>
+			          <label for="ni-number" class="form-label-bold">
+			            National Insurance number
+			            <span class="form-hint">
+			              It's on your National Insurance card, benefit letter, payslip or P60.
+			              <br>
+			              For example, 'VO 12 34 56 D'.
+			            </span>
+			          </label>
+			          <input type="text" id="ni-number" class="form-control form-control-1-4">
+			        </div>
+		</fieldset>
+        <div class="form-group">
+              <a class="button" href="0-3-matched.html">Verify</a>
+        </div>		
+      </form>
 
-        </fieldset>
-		        <!-- Primary buttons, secondary links -->
-		        <div class="form-group">
-		          <a href="2-2-hours-worked.html" class="button">Continue</a>
-		          <ul>
-		            <li><a href="2-2-hours-worked.html">Skip this question for now</a></li>
-		            <li><a href="2-1-gross-income.html">Back</a></li>
-		          </ul>
-		        </div>		
-		    </form>
-
-		    </div>
-		  </div>
-		</main>
+    </div>
+  </div>
+</main>
 
 
     <footer role="contentinfo" id="footer" class="group js-footer">

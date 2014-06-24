@@ -53,6 +53,7 @@
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
 	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
+
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
   <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -98,97 +99,68 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
+	    <div class="inner-block text">
             
-    <h1 class="form-title heading-large">Weekly pay day</h1>
-    <form class="form" method="" action="">
-         <fieldset class="inline days-of-week">
-			<legend class="form-label-bold">Which day of the week were you paid?</legend>
-			<div class="form-group">
-		        <label for="mon" class="block-label">		
-		        <input id="mon" name="payday" type="radio" value="">
-				Monday
-				</label>
-		        <label for="tue" class="block-label">
-		        <input id="tue" name="payday" type="radio" value="">
-				Tuesday
-				</label>
-		        <label for="wed" class="block-label">
-		        <input id="wed" name="payday" type="radio" value="">
-				Wednesday
-				</label>
-		        <label for="thu" class="block-label">		
-		        <input id="thu" name="payday" type="radio" value="">
-				Thursday
-				</label>				
-		        <label for="fri" class="block-label">		
-		        <input id="fri" name="payday" type="radio" value="">
-				Friday
-				</label>				
-		        <label for="sat" class="block-label">
-		        <input id="sat" name="payday" type="radio" value="">
-				Saturday
-				</label>
-		        <label for="sun" class="block-label">
-		        <input id="sun" name="payday" type="radio" value="">
-				Sunday
-				</label>					      
-		    </div>
-		<div class="form-group">
-			<span class="form-hint">If you don't know we will default this to Saturday</span>
-			
-			<label for="dont-know" class="block-label">
-	        <input id="dont-know" name="payday" type="radio" value="">
-			I don't know
-			</label>
-			
+    <h1 class="form-title heading-large">Check your contact details</h1>
+			<div class="text">
+			<p>Based on your employment records, the latest contact details we have for you are:</p>
 			</div>
-
-        </fieldset>
-		        <!-- Primary buttons, secondary links -->
+			<form class="form" method="" action="">
+				<div role="alert" aria-labelledby="error-heading" class="validation-summary">
+				                <h3 id="error-heading" class="heading-19">There was a problem submitting the form</h3>
+				                <p>Please try the following:</p>
+				                <ul>
+					              <li><a href="#error-your-name">Enter your name</a></li>
+				                  <li><a href="#error-your-address">Enter your contact address</a></li>
+				                </ul>
+				              </div>
 		        <div class="form-group">
-		          <a href="2-2-hours-worked.html" class="button">Continue</a>
-		          <ul>
-		            <li><a href="2-2-hours-worked.html">Skip this question for now</a></li>
-		            <li><a href="2-1-gross-income.html">Back</a></li>
-		          </ul>
-		        </div>		
-		    </form>
+				<table>
+					<tr><th>Name</th><td><span id="error-your-name" class="validation-message">Name must be completed</span></td><td><a href="0-3-1-edit-name.html">Change</a></td></tr>
+					<tr><th>Contact address</th><td><span id="error-your-address" class="validation-message">Address must be completed</span></td><td><a href="0-3-2-edit-address.html">Change</a></td></tr>
+					<tr><th>Contact phone number</th><td>01217445555</td><td><a href="0-3-3-edit-phone.html">Change</a></td></tr>
+					<tr><th>Contact email address</th><td>jamiejones@hotmail.co.uk</td><td><a href="0-3-4-edit-email.html">Change</a></td></tr>
+				</table>
+		        </div>	
+		        <div class="form-group">
+		              <a class="button" href="0-4-matched.html" disabled="disabled">Continue</a>
+		        </div>				
+			</form>	
 
 		    </div>
 		  </div>
 		</main>
 
 
-    <footer role="contentinfo" id="footer" class="group js-footer">
+		    <footer role="contentinfo" id="footer" class="group js-footer">
 
-      <div class="footer-wrapper">
+		      <div class="footer-wrapper">
 
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
+		        <div class="footer-meta">
+		          <div class="footer-meta-inner">
 
-            <div class="open-government-licence">
-              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-            </div>
-          </div>
+		            <div class="open-government-licence">
+		              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+		              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+		            </div>
+		          </div>
 
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+		          <div class="copyright">
+		            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+		          </div>
+		        </div>
+		      </div>
+		    </footer>
 
-    <!--end footer-->
+		    <!--end footer-->
 
-    <div class="app-error hidden" id="global-app-error"></div>
+		    <div class="app-error hidden" id="global-app-error"></div>
 
-    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
-	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
-	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
+		    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 
 
 
-</body></html>
+		</body></html>

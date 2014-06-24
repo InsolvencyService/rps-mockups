@@ -98,66 +98,38 @@
     
 	<main role="main" id="wrapper">
 	  <div id="content">
-	    <div class="inner-block">
-            
-    <h1 class="form-title heading-large">Weekly pay day</h1>
+	    <div class="inner-block text">
+		    <h1 class="heading-large">Other information about your claim</h1>
+					<p class="form-hint">Part 8 of 8</p>
+			<details class="">
+				<summary aria-expanded="false" role="button" style="-moz-user-select: none;" tabindex="0">What are the questions in part 8?</summary>
+				<ol class="list-number" style="display: none;">
+						<li>Have you been awarded any payments from a Employment tribunal in relation to your job ending?</li>
+						<li>Do you owe [employer] any money?</li>
+						<li>How much do you owe [employer]?</li>
+						<li>What is this money owed for?</li>
+					</ol>
+			</details>
+				 <p>The following information will help you with the questions in part 1:</p>
+			<ul class="list-bullet text">
+				<li>details of any money owed to [employer]</li>
+				<li>anything else you would like to tell us about</li>
+			</ul>			
+
     <form class="form" method="" action="">
-         <fieldset class="inline days-of-week">
-			<legend class="form-label-bold">Which day of the week were you paid?</legend>
-			<div class="form-group">
-		        <label for="mon" class="block-label">		
-		        <input id="mon" name="payday" type="radio" value="">
-				Monday
-				</label>
-		        <label for="tue" class="block-label">
-		        <input id="tue" name="payday" type="radio" value="">
-				Tuesday
-				</label>
-		        <label for="wed" class="block-label">
-		        <input id="wed" name="payday" type="radio" value="">
-				Wednesday
-				</label>
-		        <label for="thu" class="block-label">		
-		        <input id="thu" name="payday" type="radio" value="">
-				Thursday
-				</label>				
-		        <label for="fri" class="block-label">		
-		        <input id="fri" name="payday" type="radio" value="">
-				Friday
-				</label>				
-		        <label for="sat" class="block-label">
-		        <input id="sat" name="payday" type="radio" value="">
-				Saturday
-				</label>
-		        <label for="sun" class="block-label">
-		        <input id="sun" name="payday" type="radio" value="">
-				Sunday
-				</label>					      
-		    </div>
-		<div class="form-group">
-			<span class="form-hint">If you don't know we will default this to Saturday</span>
-			
-			<label for="dont-know" class="block-label">
-	        <input id="dont-know" name="payday" type="radio" value="">
-			I don't know
-			</label>
-			
-			</div>
+        <!-- Primary buttons, secondary links -->
+        <div class="form-group">
+          <a href="8-1-other-questions.html" class="button">Continue</a>
+          <ul>
+            <li><a href="../10-summary/10-0-claim-summary.html">Skip part 8 for now</a></li>
+            <li><a href="../7-new-job-details/7-4-section-summary.html">Back</a></li>
+          </ul>
+        </div>
+    </form>
 
-        </fieldset>
-		        <!-- Primary buttons, secondary links -->
-		        <div class="form-group">
-		          <a href="2-2-hours-worked.html" class="button">Continue</a>
-		          <ul>
-		            <li><a href="2-2-hours-worked.html">Skip this question for now</a></li>
-		            <li><a href="2-1-gross-income.html">Back</a></li>
-		          </ul>
-		        </div>		
-		    </form>
-
-		    </div>
-		  </div>
-		</main>
+    </div>
+  </div>
+</main>
 
 
     <footer role="contentinfo" id="footer" class="group js-footer">
@@ -184,8 +156,9 @@
 
     <div class="app-error hidden" id="global-app-error"></div>
 
-    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.8.0"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/modernizr.custom.77028.js"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 

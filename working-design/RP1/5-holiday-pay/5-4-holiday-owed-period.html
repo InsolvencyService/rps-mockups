@@ -104,12 +104,6 @@
 				<p>You can add more than one holiday owed. There is an option to do this from the summary screen.</p>
 			</div>	
 			    <form class="form" method="" action="">	
-					<div class="form-group">
-								  <label class="form-label-bold" for="holiday-unpaid">
-								    How many holidays have you taken that have not been paid for?
-								  </label>
-					             <input type="text" id="holiday-unpaid" value="" size="4" maxlength="3" class="form-control form-control-1-8" pattern="[0-9]*">
-								</div>
 			<fieldset class="date-of-birth">
 		         <legend class="form-label-bold">From</legend>
 		         <div class="form-group form-group-day">
@@ -140,7 +134,12 @@
 		           <input type="text" id="dob-year" pattern="[0-9]*" class="form-control">
 		         </div>
 		       </fieldset>
-
+				<div class="form-group">
+							  <label class="form-label-bold" for="holiday-unpaid">
+							    How many days did you take as holiday in this period?
+							  </label>
+				             <input type="text" id="holiday-unpaid" value="" size="4" maxlength="3" class="form-control form-control-1-8" pattern="[0-9]*">
+							</div>
 		<!-- not happy with this explanation -->
 		<!--<p>This is for periods where you worked and weren't paid. Please don't include periods where you were on holiday and weren't paid. Include these dates in the holiday owed section. </p>
     <form method="post">
