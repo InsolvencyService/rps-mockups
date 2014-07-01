@@ -121,3 +121,6 @@ summary {
 .days-of-week label {
 	min-width:6em!important;
 }
+
+tr.complete td, .complete {color:#6f777b!important;}
+tr.incomplete td, .incomplete {color:#df3034!important;}
