@@ -53,7 +53,6 @@
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
 	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
-
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
   <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -101,24 +100,40 @@
 	  <div id="content">
 	    <div class="inner-block">
             
-    <h1 class="form-title heading-large">Check your contact details</h1>
-			<div class="text">
-			<p>The latest contact details we have for you are:</p>
-			</div>
+    <h1 class="form-title heading-large">Your employer details</h1>
+	<div class="text">
+			<p>We have matched you with the following employer information:</p>
+	</div>		
 			<form class="form" method="" action="">
+		        <div class="form-group">				
+					<table>
+						<tr><th>Employer name</th><td>[employer]</td><td></td></tr>
+						<tr><th>Employer address</th><td>
+						556 Bristol Rd<br>
+						Birmingham,  B29 6BD</td><td></td></tr>
+					</table>
+				</div>
+				<div class="form-group">
+					<fieldset class="inline">
+	                <legend class="form-label-bold">Is this the address where you worked?</legend>
+					<p class="form-hint">If the answer is no, we will ask you to enter a different address.</p>
+	                <label class="block-label" for="radio-indent-1">
+	                  <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
+	                  Yes
+	                </label>
+	                <label class="block-label" for="radio-indent-2">
+	                  <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
+	                  No
+	                </label>
+	              </fieldset>
+				</div>
 		        <div class="form-group">
-				<table>
-					<tr><th>Name</th><td>Jamie Jones</td><td><a href="0-3-1-edit-name.html">Change</a></td></tr>
-					<tr><th>Date of birth</th><td>01 January 1970</td><td><a href="0-3-2-edit-dob.html">Change</a></td></tr>										
-					<tr><th>Contact address</th><td>15 Mindelsohn Way,<br>Birmingham, <br>B15 2TG</td><td><a href="0-3-3-edit-address.html">Change</a></td></tr>
-					<tr><th>Contact phone number</th><td><a href="0-3-4-edit-phone.html">Add a contact number</a></td><td></td></tr>
-					<tr><th>Contact email address (required)</th><td><a href="0-3-5-edit-email.html">Add an email address</a></td><td><a href="">Why do we need this?</a></td></tr>				</table>
-		        </div>	
-		        <div class="form-group">
-		              <a class="button" href="0-4-matched.html">Continue</a>
+		              <a class="button" href="0-4-1-add-employer-address.html">Continue</a>
+			          <ul>
+			            <li><a href="0-3-claim-matching.html">Back</a></li>
+			          </ul>
 		        </div>				
 			</form>	
-
 		    </div>
 		  </div>
 		</main>
@@ -152,7 +167,6 @@
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
-
 
 
 		</body></html>

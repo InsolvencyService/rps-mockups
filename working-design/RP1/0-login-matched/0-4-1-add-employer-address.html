@@ -53,7 +53,6 @@
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
 	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
-
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
   <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -101,23 +100,33 @@
 	  <div id="content">
 	    <div class="inner-block text">
             
-    <h1 class="form-title heading-large">Sorry, we don’t have any record of your employer being insolvent</h1>
+    <h1 class="form-title heading-large">Address where you worked</h1>	
+			<form class="form" method="" action="">
+				<fieldset class="form-group">
 
-			<p>We can only process your claim once your employer has officially been officially declared insolvent.</p>
+		        <div class="form-group">
+				    <label for="yourAddressLine-1" class="form-label-bold">Building and street</label>
+				    <input type="text" name="yourAddressLine-1" id="yourAddressLine-1" class="form-control">				
+				    <label for="yourAddressLine-2" class="form-label visuallyhidden">Building and street line 2 (optional)</label>
+				    <input type="text" name="yourAddressLine-2" id="yourAddressLine-2" class="form-control">
+				</div>	
+		        <div class="form-group">
+				    <label for="yourAddressTown" class="form-label-bold">Town or city</label>
+				    <input type="text" name="yourAddressTown" id="yourAddressTown" class="form-control form-control-1-2">
+				</div>	
+		        <div class="form-group">
+				    <label for="yourAddressPostcode" class="form-label-bold">Postcode</label>
+				    <input type="text" name="yourAddressPostcode" id="yourAddressPostcode" class="form-control form-control-1-4">
+				</div>	
 
-			<p><a rel="external" href="https://www.gov.uk/your-rights-if-your-employer-is-insolvent">Your rights if your employer is insolvent</a></p>
-
-			<p>For advice on what to do next, contact the Redundancy Payments Service.</p>
-				<h3 class="heading-small">Address</h3>
-				<p>Redundancy Payments Service<br />
-				PO Box 16685<br>
-				Birmingham<br>
-				B2 2LX</p>
-				<h3 class="heading-small">Telephone</h3><p>0330 331 0020</p>
-				<h3 class="heading-small">Opening hours</h3><p>9am to 5pm</p>
-				<h3 class="heading-small">Email</h3><p><a href="redundancyclaims@insolvency.gsi.gov.uk">redundancyclaims@insolvency.gsi.gov.uk</a></p>
-
-
+				</fieldset>
+		        <div class="form-group">
+		              <a class="button" href="0-5-claim-status.html">Continue</a>
+			          <ul>
+			            <li><a href="0-4-employer-matched.html">Back</a></li>
+			          </ul>
+		        </div>				
+			</form>	
 		    </div>
 		  </div>
 		</main>
@@ -151,7 +160,6 @@
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
-
 
 
 		</body></html>
