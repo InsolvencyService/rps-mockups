@@ -8,12 +8,14 @@
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
     </script>
 
+	<link type="text/css" rel="stylesheet" media="screen" href="../../prototype.css">
+	
     <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" media="screen" href="http://govuk-elements.herokuapp.com/public/stylesheets/govuk-template.css?0.6.2"><!--<![endif]-->
     <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/govuk-template-ie6.css?0.6.2" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/govuk-template-ie7.css?0.6.2" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 8]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/govuk-template-ie8.css?0.6.2" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
-    <link type="text/css" rel="stylesheet" media="print" href="/public/stylesheets/govuk-template-print.css?0.6.2">
+    <link type="text/css" rel="stylesheet" media="print" href="http://govuk-elements.herokuapp.com/public/stylesheets/govuk-template-print.css?0.6.2">
 
     <!--[if IE 8]>
     <script type="text/javascript">
@@ -28,7 +30,7 @@
     </script>
     <![endif]-->
     <!--[if gte IE 9]><!-->
-      <link type="text/css" rel="stylesheet" media="all" href="/public/stylesheets/fonts.css?0.6.2">
+      <link type="text/css" rel="stylesheet" media="all" href="http://govuk-elements.herokuapp.com/public/stylesheets/fonts.css?0.6.2">
     <!--<![endif]-->
 
 
@@ -36,7 +38,7 @@
       <script src="http://govuk-elements.herokuapp.com/public/javascripts/ie.js?0.6.2" type="text/javascript"></script>
     <![endif]-->
 
-    <link type="image/x-icon" href="/public/images/favicon.ico?0.6.2" rel="shortcut icon">
+    <link type="image/x-icon" href="http://govuk-elements.herokuapp.com/public/images/favicon.ico?0.6.2" rel="shortcut icon">
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link href="http://govuk-elements.herokuapp.com/public/images/apple-touch-icon-144x144.png?0.6.2" sizes="144x144" rel="apple-touch-icon-precomposed">
@@ -49,6 +51,7 @@
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
+	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -76,90 +79,44 @@
         </div>
   <div class="header-proposition">
     <div class="content">
-      <a class="js-header-toggle menu" href="#proposition-links">Menu</a>
       <nav id="proposition-menu">
-        <a id="proposition-name" href="https://www.gov.uk/service-manual">Government Service Design Manual</a>
-        <ul id="proposition-links">
-          <li><a href="https://www.gov.uk/service-manual/digital-by-default">Digital by Default Service Standard</a></li>
-          <li><a href="https://www.gov.uk/service-manual/start">Start using the manual</a></li>
-          <li><a href="https://www.gov.uk/contact/govuk">Feedback</a></li>
-        </ul>
-      </nav>
+        <a id="proposition-name" href="#">Claim a redundancy payment</a>
+	      <div class="inner-block">
+	        <div class="header-bar"></div>
+	      </div>
+	    </div>      </nav>
     </div>
   </div>
       </div>
     </header>
     <!--end header-->
+	<div id="global-header-bar">
+	      <div class="inner-block">
+	        <div class="header-bar"></div>
+	      </div>
+	    </div>
+    
+	<main role="main" id="wrapper">
+	  <div id="content">
+	    <div class="inner-block text">
+            
+    <h1 class="form-title heading-large">Other ways to claim a redundancy payment</h1>
+	<h2 class="heading-medium">Contact the Redundancy Payments Service</h2>
+	<div class="text">
+		<h3 class="heading-small">Address</h3>
+			<p>Redundancy Payments Service<br>
+			PO Box 16685<br>
+			Birmingham<br>
+			B2 2LX</p>
+		<h3 class="heading-small">Email</h3>
+		<p><a href="redundancyclaims@insolvency.gsi.gov.uk">redundancyclaims@insolvency.gsi.gov.uk</a></p>
+	</div>
 
-
-    <div id="global-cookie-message">
-    </div>
-
-<main role="main" id="wrapper">
-  <div id="content">
-    <div class="inner-block">
-
-      <a class="example-back-link" href="/">Back to GOV.UK elements</a>
-
-      <form class="form" method="" action="">
-
-        <h1 class="form-title heading-large">
-          Your details
-        </h1>
-
-        <!-- Full name -->
-        <div class="form-group">
-          <label for="full-name" class="form-label-bold">Full name</label>
-          <p class="form-hint">As shown on your birth certificate or passport</p>
-          <input type="text" id="full-name" class="form-control">
-        </div>
-
-        <!-- National Insurance number -->
-        <div class="form-group">
-          <label for="ni-number" class="form-label-bold">
-            National Insurance number
-            <span class="form-hint">
-              It's on your National Insurance card, benefit letter, payslip or P60.
-              <br>
-              For example, 'VO 12 34 56 D'.
-            </span>
-          </label>
-          <input type="text" id="ni-number" class="form-control">
-        </div>
-
-        <!-- Date of birth -->
-        <fieldset class="date-of-birth">
-          <legend class="form-label-bold">Date of birth</legend>
-
-          <p class="form-hint">For example, 08 04 2014</p>
-          <div class="form-group form-group-day">
-            <label for="dob-day">Day</label>
-            <input type="text" id="dob-day" pattern="[0-9]*" class="form-control">
-          </div>
-          <div class="form-group form-group-month">
-            <label for="dob-month">Month</label>
-            <input type="text" id="dob-month" class="form-control">
-          </div>
-          <div class="form-group form-group-year">
-            <label for="dob-year">Year</label>
-            <input type="text" id="dob-year" pattern="[0-9]*" class="form-control">
-          </div>
-        </fieldset>
-
-        <!-- Primary buttons, secondary links -->
-        <div class="form-group">
-          <input type="submit" value="Continue" class="button">
-          <ul>
-            <li><a href="#">Skip this section for now</a></li>
-            <li><a href="#">Back</a></li>
-          </ul>
-        </div>
-
-      </form>
 
     </div>
   </div>
 </main>
+
 
     <footer role="contentinfo" id="footer" class="group js-footer">
 
@@ -186,7 +143,10 @@
     <div class="app-error hidden" id="global-app-error"></div>
 
     <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
+	<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
 
-  
+
 
 </body></html>
