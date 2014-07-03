@@ -128,3 +128,14 @@ tr.incomplete td, .incomplete {color:#df3034!important;}
 .phase-tag {
     background-color: #f47738!important;
 }
+
+.form-title span {
+    color: #6f777b;
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    text-transform: none;
+}
