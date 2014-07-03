@@ -124,3 +124,7 @@ summary {
 
 tr.complete td, .complete {color:#6f777b!important;}
 tr.incomplete td, .incomplete {color:#df3034!important;}
+
+.phase-tag {
+    background-color: #f47738!important;
+}
