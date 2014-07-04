@@ -142,12 +142,27 @@
 	            <input type="text" id="dob-year" pattern="[0-9]*" class="form-control">
 	          </div>
 	        </fieldset>	
-			<div class="form-group">
-	          <label for="postcode" class="form-label-bold">
-	            What is your postcode?
-	          </label>
-	          <input type="text" id="postcode" class="form-control form-control-1-8">
-	        </div>	
+			<fieldset class="form-group">
+			    <legend class="form-label-bold">
+			        What is your address?
+			    </legend>
+			
+	        <div class="form-group">
+			    <label for="yourAddressLine-1" class="form-label">Building and street</label>
+			    <input type="text" name="yourAddressLine-1" id="yourAddressLine-1" class="form-control">				
+			    <label for="yourAddressLine-2" class="form-label visuallyhidden">Building and street line 2 (optional)</label>
+			    <input type="text" name="yourAddressLine-2" id="yourAddressLine-2" class="form-control">
+			</div>	
+	        <div class="form-group">
+			    <label for="yourAddressTown" class="form-label">Town or city</label>
+			    <input type="text" name="yourAddressTown" id="yourAddressTown" class="form-control form-control-1-2">
+			</div>	
+	        <div class="form-group">
+			    <label for="yourAddressPostcode" class="form-label">Postcode</label>
+			    <input type="text" name="yourAddressPostcode" id="yourAddressPostcode" class="form-control form-control-1-4">
+			</div>	
+
+			</fieldset>
 		</fieldset>
         <div class="form-group">
               <a class="button" href="0-2-identity-matched.html">Continue</a>
