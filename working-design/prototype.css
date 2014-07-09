@@ -139,3 +139,7 @@ tr.incomplete td, .incomplete {color:#df3034!important;}
     margin-bottom: 10px;
     text-transform: none;
 }
+
+.summary-group {
+	border-bottom-style:dotted!important;
+	}
