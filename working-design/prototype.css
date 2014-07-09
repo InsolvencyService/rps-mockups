@@ -141,5 +141,7 @@ tr.incomplete td, .incomplete {color:#df3034!important;}
 }
 
 .summary-group {
-	border-bottom-style:dotted!important;
+	border-bottom-style:none!important;
+	color:#6F777B!important;
+	padding-bottom:0!important;
 	}
