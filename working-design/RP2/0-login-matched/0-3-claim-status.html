@@ -53,7 +53,6 @@
     <meta content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.6.2" property="og:image">
 	<link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css">
 
-
   <!--[if gt IE 8]><!--><link type="text/css" rel="stylesheet" href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"><!--<![endif]-->
   <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
   <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -107,59 +106,61 @@
 			        </p>
 			      </div>
 			</div>
-	    <div class="inner-block">
+	    <div class="inner-block text">
             
-    <h1 class="form-title heading-large">Your details</h1>
-			<div class="text">
-			<p>You have successfully verified your identity. We will use the following information for the claim:</p>
-			</div>
-			<form class="form" method="" action="">
-		        <div class="form-group">
-				<table>
-					<tr><th>Name</th><td>Jamie Jones</td><td></tr>
-					<tr><th>Contact address</th><td>15 Mindelsohn Way,<br>Birmingham, <br>B15 2TG</td></tr>
-					<tr><th>Date of birth</th><td>01 January 1970</td></tr>		
-					<tr><th>Employer name</th><td>[employer]</td><td></td></tr>
-					<tr><th>Employer address</th><td>
-					556 Bristol Rd<br>
-					Birmingham,  B29 6BD</td><td></td></tr>								
-				</table>	
-		        </div>	
-		        <div class="form-group">
-		              <a class="button" href="0-3-claim-status.html">Continue</a>
-		        </div>				
-			</form>	
+    <h1 class="form-title heading-large">Your claim</h1>
+	<p>The claim consists of the following parts:</p>
+	<ol class="list-number">
+	<li>Details of Jobseeker's Allowance</li>	
+	<li>Details of other benefits</li>	
+	<li>Details of employment</li>
+	</ol>
+	<h2 class="heading-medium">Completing a claim</h2>
+	<ul class="list-bullet">
+	<li>a claim takes normally between 10 and 20 minutes to complete</li>
+	<li>you can skip some of the parts if they are not relevant to your claim</li>
+	<li>all questions are required unless marked as optional</li>
+	</ul>
+    <form class="form" method="" action="">	
+		       <!-- Primary buttons, secondary links -->
+		       <div class="form-group">
+		         <a href="../1-jsa/1-0-section-start.html" class="button">Start now</a>
+		         <ul>
+		           <li><a href="0-2-identity-matched.html">Back</a></li>
+		         </ul>
+		       </div>
+		   </form>
 
 		    </div>
 		  </div>
 		</main>
 
 
-		    <footer role="contentinfo" id="footer" class="group js-footer">
+		   <footer role="contentinfo" id="footer" class="group js-footer">
 
-		      <div class="footer-wrapper">
+		     <div class="footer-wrapper">
 
-		        <div class="footer-meta">
-		          <div class="footer-meta-inner">
+		       <div class="footer-meta">
+		         <div class="footer-meta-inner">
 
-		            <div class="open-government-licence">
-		              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
-		              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
-		            </div>
-		          </div>
+		           <div class="open-government-licence">
+		             <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+		             <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+		           </div>
+		         </div>
 
-		          <div class="copyright">
-		            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
-		          </div>
-		        </div>
-		      </div>
-		    </footer>
+		         <div class="copyright">
+		           <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+		         </div>
+		       </div>
+		     </div>
+		   </footer>
 
-		    <!--end footer-->
+		   <!--end footer-->
 
-		    <div class="app-error hidden" id="global-app-error"></div>
+		   <div class="app-error hidden" id="global-app-error"></div>
 
-		    <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
+		   <script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/govuk-template.js?0.6.2"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/vendor/jquery.details.min.js"></script>
 			<script type="text/javascript" src="http://govuk-elements.herokuapp.com/public/javascripts/application.js"></script>
