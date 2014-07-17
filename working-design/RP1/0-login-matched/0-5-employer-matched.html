@@ -106,32 +106,39 @@
 			        </p>
 			      </div>
 			</div>
-	    <div class="inner-block text">
+	    <div class="inner-block">
             
-    <h1 class="form-title heading-large">Address where you worked</h1>	
+    <h1 class="form-title heading-large">Your employer details</h1>
+	<div class="text">
+			<p>We have matched you with the following employer information:</p>
+	</div>		
 			<form class="form" method="" action="">
-				<fieldset class="form-group">
-
+		        <div class="form-group">				
+					<table>
+						<tr><th>Employer name</th><td>[employer]</td><td></td></tr>
+						<tr><th>Employer address</th><td>
+						556 Bristol Rd<br>
+						Birmingham,  B29 6BD</td><td></td></tr>
+					</table>
+				</div>
+				<div class="form-group">
+					<fieldset class="inline">
+	                <legend class="form-label-bold">Is this the address where you worked?</legend>
+					<p class="form-hint">If the answer is no, we will ask you to enter a different address.</p>
+	                <label class="block-label" for="radio-indent-1">
+	                  <input type="radio" value="Yes" name="radio-indent-group" id="radio-indent-1">
+	                  Yes
+	                </label>
+	                <label class="block-label" for="radio-indent-2">
+	                  <input type="radio" value="No" name="radio-indent-group" id="radio-indent-2">
+	                  No
+	                </label>
+	              </fieldset>
+				</div>
 		        <div class="form-group">
-				    <label for="yourAddressLine-1" class="form-label-bold">Building and street</label>
-				    <input type="text" name="yourAddressLine-1" id="yourAddressLine-1" class="form-control">				
-				    <label for="yourAddressLine-2" class="form-label visuallyhidden">Building and street line 2 (optional)</label>
-				    <input type="text" name="yourAddressLine-2" id="yourAddressLine-2" class="form-control">
-				</div>	
-		        <div class="form-group">
-				    <label for="yourAddressTown" class="form-label-bold">Town or city</label>
-				    <input type="text" name="yourAddressTown" id="yourAddressTown" class="form-control form-control-1-2">
-				</div>	
-		        <div class="form-group">
-				    <label for="yourAddressPostcode" class="form-label-bold">Postcode</label>
-				    <input type="text" name="yourAddressPostcode" id="yourAddressPostcode" class="form-control form-control-1-4">
-				</div>	
-
-				</fieldset>
-		        <div class="form-group">
-		              <a class="button" href="0-5-claim-status.html">Continue</a>
+		              <a class="button" href="0-5-1-add-employer-address.html">Continue</a>
 			          <ul>
-			            <li><a href="0-4-employer-matched.html">Back</a></li>
+			            <li><a href="0-4-claim-matching.html">Back</a></li>
 			          </ul>
 		        </div>				
 			</form>	
