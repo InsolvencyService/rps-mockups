@@ -103,8 +103,9 @@ select {
 
 .register-signin-container {
     background-image: url("assets/images/govuk/padlock.png");
-    background-position: 101% 0;
+    background-position: -1% 0;
     background-repeat: no-repeat;
+	padding-top: 60px;
 }
 
 .header-bar {background-color:#003479!important;}
