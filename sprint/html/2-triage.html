@@ -283,10 +283,13 @@
     	
     $(document).ready(function(){
     	$('input[value="Yes"]').click(function(){
-    		//$("#next").prop("href", "3-other-ways-to-claim.html");
-    		
+    		$("#next").prop("href", "3-other-ways-to-claim.html");
     	});
-    
+    	$('input[value="No"]').click(function(){
+    		if ($('input[value="Yes"]:checked').length == 0){
+    			$("#next").prop("href", "3-verify-identity.html");
+    		}
+    	});
     });
 </script>
 
