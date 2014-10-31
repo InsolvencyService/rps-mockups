@@ -1,4 +1,4 @@
-.beta-banner {
+﻿.beta-banner {
   background-color: #f47738;
   padding-bottom: 8px;
   padding-top: 8px; }
@@ -35,3 +35,28 @@ ol.bulleted {
     background: url("/static/public/images/icons/icon-steps/icon-step-2.png") no-repeat 3px 5px; }
   ol.bulleted li:nth-child(3) {
     background: url("/static/public/images/icons/icon-steps/icon-step-3.png") no-repeat 3px 5px; }
+    
+/* Prototype */
+.text{
+	width:auto;
+}
+.maincontent, .sidebar{
+	float:left;
+	display:block;
+	max-width: 30em;
+}
+.sidebar{
+	margin-top:45px;
+	margin-left: 30px;
+	width: 15em;
+}
+.sidebar .swatch-yellow{
+	padding:10px;
+	font-size:14px;
+}
+ @media (min-width: 641px) {
+	.inner-block {
+		margin-right:0;
+	}
+}
+
