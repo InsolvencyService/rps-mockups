@@ -106,6 +106,7 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -119,52 +120,73 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Contact details</h1>
+    <h1 class="form-title heading-large">Bank account details</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="c348b67fef0587630ee746d9c89c988ac636afcd">
+         <input type="hidden" name="_csrf_token" value="ffa7ed4e10f92d6a4df68f65bc532567e94ed98d">
          <fieldset>
             
     <p>
-        Please provide some additional contact information.
         </p><div class="form-group ">
             
-            <label id="email_label" for="email" class="form-label-bold email">Email address</label>
-            <span class="form-hint">We will use this to update you about your claim</span>
-            <input id="email" name="email" type="text" value="carolynwarburton@hotmail.com"><br>
+            <label id="bank_name_label" for="bank_name" class="form-label-bold bank_name">Name of bank, building society, or other account provider</label>
+            <input id="bank_name" name="bank_name" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group text ">
+            
+            <label id="bank_sort_code_label" for="bank_sort_code_a" class="form-label-bold bank_sort_code">Sort code</label>
+            <span class="form-hint">For example 12-43-56</span>
+            <fieldset id="bank_sort_code">
+                <input id="bank_sort_code_a" name="bank_sort_code.a" class="form-control form-control-1-8" type="text" maxlength="2" size="2" value="">
+			    	–
+                <input id="bank_sort_code_a" name="bank_sort_code.b" class="form-control form-control-1-8" type="text" maxlength="2" size="2" value="">
+                    –
+                <input id="bank_sort_code_a" name="bank_sort_code.c" class="form-control form-control-1-8" type="text" maxlength="2" size="2" value="">
+          </fieldset>
         </div>
     <p></p>
     <p>
         </p><div class="form-group ">
-
-            <label id="confirmed_email_label" for="confirmed_email" class="form-label">Confirm email address</label>
             
-            <input id="confirmed_email" name="confirmed_email" type="text" value="carolynwarburton@hotmail.com"><br>
+            <label id="bank_account_number_label" for="bank_account_number" class="form-label-bold bank_account_number">Account number</label>
+            <input id="bank_account_number" name="bank_account_number" type="text" value=""><br>
         </div>
     <p></p>
     <p>
         </p><div class="form-group ">
             
-            <label id="contact_number_label" for="contact_number" class="form-label-bold contact_number">Contact number</label>
-            <span class="form-hint"></span>
-            <input id="contact_number" name="contact_number" type="text" value="0101010101001"><br>
+            <label id="building_society_number_label" for="building_society_number" class="form-label-bold building_society_number">Building society roll or reference number</label>
+            <span class="form-hint">If your building society uses a roll or reference number, you will find it on the passbook.</span>
+            <input id="building_society_number" name="building_society_number" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="account_holders_name_label" for="account_holders_name" class="form-label-bold account_holders_name">Account holder's name</label>
+            <span class="form-hint">Please write the name exactly as it appears on the cheque book, passbook or statement.</span>
+            <input id="account_holders_name" name="account_holders_name" type="text" value=""><br>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
             <ul>
-	<li><a class="button" id="next" href="6-find-your-employer.html">Continue</a></li>
-    <li>
-        <a href="4-confirm-details.html" id="back" class="button-secondary">Back</a>
-    </li>
-
+            
+            <li><input id="next" class="button" type="submit" value="Next"></li>
+            
+                <li><a href="/claims/choose-payment-method" id="back" class="button-secondary">Back</a></li>
+            
+            
             </ul>
         </div>
     </form>
 </div>
-    </div>
-        </main>
+
+    </div>                                    
+                                            </main>
 
 
 

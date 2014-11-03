@@ -106,6 +106,7 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -119,52 +120,63 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Contact details</h1>
+    <h1 class="form-title heading-large">Payment method</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="c348b67fef0587630ee746d9c89c988ac636afcd">
+         <input type="hidden" name="_csrf_token" value="ffa7ed4e10f92d6a4df68f65bc532567e94ed98d">
          <fieldset>
             
-    <p>
-        Please provide some additional contact information.
-        </p><div class="form-group ">
-            
-            <label id="email_label" for="email" class="form-label-bold email">Email address</label>
-            <span class="form-hint">We will use this to update you about your claim</span>
-            <input id="email" name="email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
+        <p>
+            </p><p>We advise that payments are made directly into a bank or building society using the Bank Automated Clearing System (BACS). BACS is:</p>            <ul class="list-bullet">                <li>more secure than sending a cheque to you by post</li>                <li>means that the payments are available to you more quickly</li>            </ul>
+        <p></p>
+        <p>
+            </p><div class="form-group ">
+                
+                <div id="choose_payment_method" class="form-group">
+        
+        <label id="choose_payment_method_label" for="choose_payment_method_bacs" class="block-label">
+            <input id="choose_payment_method_bacs" value="bacs" name="choose_payment_method" type="radio">
+            I have a bank or building society account
+        </label>
+        
+        <label id="choose_payment_method_label" for="choose_payment_method_cheque" class="block-label">
+            <input id="choose_payment_method_cheque" value="cheque" name="choose_payment_method" type="radio">
+            I do not have a bank or building society account
+        </label>
+        
+    </div>
+                <div id="no-account" class="panel-indent">
+                    <p>If you select that you do not have a bank or building society account we will send you a cheque to the postal address shown below. Please note that this method of payment is likely to take much longer than selecting the alternative option. </p>
+                    <ul>
+    <li></li>
+    <li>Test</li>
+    <li>test</li>
+    <li>test</li>
+    <li>test</li>
+    <li></li>
+    <li></li>
 
-            <label id="confirmed_email_label" for="confirmed_email" class="form-label">Confirm email address</label>
-            
-            <input id="confirmed_email" name="confirmed_email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-            
-            <label id="contact_number_label" for="contact_number" class="form-label-bold contact_number">Contact number</label>
-            <span class="form-hint"></span>
-            <input id="contact_number" name="contact_number" type="text" value="0101010101001"><br>
-        </div>
-    <p></p>
+</ul>
+                </div>
+            </div>
+        <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
             <ul>
-	<li><a class="button" id="next" href="6-find-your-employer.html">Continue</a></li>
-    <li>
-        <a href="4-confirm-details.html" id="back" class="button-secondary">Back</a>
-    </li>
-
+            
+            <li><input id="next" class="button" type="submit" value="Next"></li>
+            
+                <li><a href="/claims/other-questions" id="back" class="button-secondary">Back</a></li>
+            
+            
             </ul>
         </div>
     </form>
 </div>
-    </div>
-        </main>
+
+    </div>                                    
+                                            </main>
 
 
 

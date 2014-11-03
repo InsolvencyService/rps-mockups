@@ -119,52 +119,90 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Contact details</h1>
+    <h1 class="form-title heading-large">Job title and category</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="c348b67fef0587630ee746d9c89c988ac636afcd">
+         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
          <fieldset>
             
     <p>
-        Please provide some additional contact information.
         </p><div class="form-group ">
             
-            <label id="email_label" for="email" class="form-label-bold email">Email address</label>
-            <span class="form-hint">We will use this to update you about your claim</span>
-            <input id="email" name="email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-
-            <label id="confirmed_email_label" for="confirmed_email" class="form-label">Confirm email address</label>
-            
-            <input id="confirmed_email" name="confirmed_email" type="text" value="carolynwarburton@hotmail.com"><br>
+            <label id="job_title_label" for="job_title" class="form-label-bold job_title">What was your job title?</label>
+            <input id="job_title" name="job_title" type="text" value=""><br>
         </div>
     <p></p>
     <p>
         </p><div class="form-group ">
             
-            <label id="contact_number_label" for="contact_number" class="form-label-bold contact_number">Contact number</label>
-            <span class="form-hint"></span>
-            <input id="contact_number" name="contact_number" type="text" value="0101010101001"><br>
+            <label id="personnel_number_label" for="personnel_number" class="form-label-bold personnel_number">What was your employee number? (optional)</label>
+            <span class="form-hint">You should be able to find this on your payslip</span>
+            <input id="personnel_number" name="personnel_number" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="category_of_worker_label" class="form-label-bold">What category of worker were you?</label>
+            <span class="form-hint">Please enter your employment type</span>
+            <div id="category_of_worker" class="form-group">
+        
+        <label id="category_of_worker_label" for="category_of_worker_Employed" class="block-label">
+            <input id="category_of_worker_Employed" value="Employed" name="category_of_worker" type="radio">
+            Employed
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Director" class="block-label">
+            <input id="category_of_worker_Director" value="Director" name="category_of_worker" type="radio">
+            Director
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Labour-only subcontractor" class="block-label">
+            <input id="category_of_worker_Labour-only subcontractor" value="Labour-only subcontractor" name="category_of_worker" type="radio">
+            Labour-only subcontractor
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Freelance Worker" class="block-label">
+            <input id="category_of_worker_Freelance Worker" value="Freelance Worker" name="category_of_worker" type="radio">
+            Freelance Worker
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Agency Worker" class="block-label">
+            <input id="category_of_worker_Agency Worker" value="Agency Worker" name="category_of_worker" type="radio">
+            Agency Worker
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Casual Worker" class="block-label">
+            <input id="category_of_worker_Casual Worker" value="Casual Worker" name="category_of_worker" type="radio">
+            Casual Worker
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Fixed Term Contract Worker" class="block-label">
+            <input id="category_of_worker_Fixed Term Contract Worker" value="Fixed Term Contract Worker" name="category_of_worker" type="radio">
+            Fixed Term Contract Worker
+        </label>
+        
+        <label id="category_of_worker_label" for="category_of_worker_Home Worker" class="block-label">
+            <input id="category_of_worker_Home Worker" value="Home Worker" name="category_of_worker" type="radio">
+            Home Worker
+        </label>
+        
+    </div>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-            <ul>
-	<li><a class="button" id="next" href="6-find-your-employer.html">Continue</a></li>
-    <li>
-        <a href="4-confirm-details.html" id="back" class="button-secondary">Back</a>
-    </li>
-
+            <ul>        
+            <li><a class="button" id="next" href="9-1-start.html">Continue</a></li>        
+                <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
     </form>
 </div>
+
     </div>
-        </main>
+                </main>
 
 
 

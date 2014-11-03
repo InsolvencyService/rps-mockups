@@ -119,52 +119,46 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Contact details</h1>
+    <h1 class="form-title heading-large">Date notice given</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="c348b67fef0587630ee746d9c89c988ac636afcd">
+         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
          <fieldset>
             
     <p>
-        Please provide some additional contact information.
         </p><div class="form-group ">
             
-            <label id="email_label" for="email" class="form-label-bold email">Email address</label>
-            <span class="form-hint">We will use this to update you about your claim</span>
-            <input id="email" name="email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-
-            <label id="confirmed_email_label" for="confirmed_email" class="form-label">Confirm email address</label>
-            
-            <input id="confirmed_email" name="confirmed_email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-            
-            <label id="contact_number_label" for="contact_number" class="form-label-bold contact_number">Contact number</label>
-            <span class="form-hint"></span>
-            <input id="contact_number" name="contact_number" type="text" value="0101010101001"><br>
+            <label id="given_notice_date_label" class="form-label-bold">When did Digital Testing Two Limited give you notice?</label>
+            <span class="form-hint">For example 20 04 2014</span>
+            <fieldset id="given_notice_date" class="date-of-birth">
+            <div class="form-group form-group-day">
+	            <label id="given_notice_date_label.day" for="given_notice_date.day">Day</label>
+                <input id="given_notice_date.day" name="given_notice_date.day" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="given_notice_date_label.month" for="given_notice_date.month">Month</label>
+                <input id="given_notice_date.month" name="given_notice_date.month" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="given_notice_date_label.year" for="given_notice_date.year">Year</label>
+                <input id="given_notice_date.year" name="given_notice_date.year" class="date-input" type="text" maxlength="4" size="4" value="">
+            </div>
+        </fieldset>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-            <ul>
-	<li><a class="button" id="next" href="6-find-your-employer.html">Continue</a></li>
-    <li>
-        <a href="4-confirm-details.html" id="back" class="button-secondary">Back</a>
-    </li>
-
+            <ul>        
+            <li><a class="button" id="next" href="9-5-claim.html">Continue</a></li>        
+                <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
     </form>
 </div>
+
     </div>
-        </main>
+                        </main>
 
 
 

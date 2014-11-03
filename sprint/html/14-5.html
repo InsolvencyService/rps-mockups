@@ -106,6 +106,7 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -119,52 +120,45 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Contact details</h1>
+    <h1 class="form-title heading-large">Declaration</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="c348b67fef0587630ee746d9c89c988ac636afcd">
+         <input type="hidden" name="_csrf_token" value="ffa7ed4e10f92d6a4df68f65bc532567e94ed98d">
          <fieldset>
             
     <p>
-        Please provide some additional contact information.
-        </p><div class="form-group ">
-            
-            <label id="email_label" for="email" class="form-label-bold email">Email address</label>
-            <span class="form-hint">We will use this to update you about your claim</span>
-            <input id="email" name="email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
+        </p><p>By sending your claim, you confirm that:</p>    <ul class="list-bullet">        <li>as far as you know, all the information you have provided in your claim is correct</li>        <li>this is the only claim you are making for a redundancy payment in relation to this job</li>        <li>you agree to us using your information as described in our personal information charter            (including sharing information with your last employer, their representatives or with relevant            government organisations if we need to in order to check your claim or work out how much to pay you)</li>    </ul>
     <p></p>
     <p>
-        </p><div class="form-group ">
-
-            <label id="confirmed_email_label" for="confirmed_email" class="form-label">Confirm email address</label>
-            
-            <input id="confirmed_email" name="confirmed_email" type="text" value="carolynwarburton@hotmail.com"><br>
+        </p><div id="no-account" class="panel-indent">
+            <p>We may take legal action against you if you knowingly make a false statement in your claim.</p>
         </div>
     <p></p>
     <p>
         </p><div class="form-group ">
             
-            <label id="contact_number_label" for="contact_number" class="form-label-bold contact_number">Contact number</label>
-            <span class="form-hint"></span>
-            <input id="contact_number" name="contact_number" type="text" value="0101010101001"><br>
+            <input id="confirm_claim_submission" name="confirm_claim_submission" value="True" type="checkbox">
+	<label id="confirm_claim_submission_label" for="confirm_claim_submission">I understand and agree with the declaration above</label>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
             <ul>
-	<li><a class="button" id="next" href="6-find-your-employer.html">Continue</a></li>
-    <li>
-        <a href="4-confirm-details.html" id="back" class="button-secondary">Back</a>
-    </li>
+            
+    <input id="next" class="button" type="submit" value="Send this claim">
+    <p>
+        <a href="/claims/bank-account-details" id="back">Back</a>
+    </p>
 
             </ul>
         </div>
     </form>
 </div>
+
     </div>
-        </main>
+                                        
+                                            </main>
 
 
 

@@ -106,6 +106,7 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -119,52 +120,76 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Contact details</h1>
+    <h1 class="form-title heading-large">Days of the week worked</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="c348b67fef0587630ee746d9c89c988ac636afcd">
+         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
          <fieldset>
             
     <p>
-        Please provide some additional contact information.
         </p><div class="form-group ">
             
-            <label id="email_label" for="email" class="form-label-bold email">Email address</label>
-            <span class="form-hint">We will use this to update you about your claim</span>
-            <input id="email" name="email" type="text" value="carolynwarburton@hotmail.com"><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-
-            <label id="confirmed_email_label" for="confirmed_email" class="form-label">Confirm email address</label>
-            
-            <input id="confirmed_email" name="confirmed_email" type="text" value="carolynwarburton@hotmail.com"><br>
+            <label id="num_days_worked_label" for="num_days_worked" class="form-label-bold num_days_worked">How many days a week do you normally work?</label>
+            <span class="form-hint">If you worked a shift pattern please enter the average number of days you would work in a week.</span>
+            <input id="num_days_worked" name="num_days_worked" type="text" value=""><br>
         </div>
     <p></p>
     <p>
         </p><div class="form-group ">
             
-            <label id="contact_number_label" for="contact_number" class="form-label-bold contact_number">Contact number</label>
-            <span class="form-hint"></span>
-            <input id="contact_number" name="contact_number" type="text" value="0101010101001"><br>
+            <label id="days_worked_label" class="form-label-bold">Please indicate the days you normally worked each week</label>
+            <span class="form-hint">If you worked a shift pattern please select the days you most commonly worked, selecting a number of days equal to the average number of days that you provided above.</span>
+            <div id="days_worked" class="form-group">
+        
+            <label id="_label" for="days_worked-1" class="form-label">
+                <input id="days_worked-1" name="days_worked-1" value="Monday" type="checkbox">Monday
+            </label>
+        
+            <label id="_label" for="days_worked-2" class="form-label">
+                <input id="days_worked-2" name="days_worked-2" value="Tuesday" type="checkbox">Tuesday
+            </label>
+        
+            <label id="_label" for="days_worked-3" class="form-label">
+                <input id="days_worked-3" name="days_worked-3" value="Wednesday" type="checkbox">Wednesday
+            </label>
+        
+            <label id="_label" for="days_worked-4" class="form-label">
+                <input id="days_worked-4" name="days_worked-4" value="Thursday" type="checkbox">Thursday
+            </label>
+        
+            <label id="_label" for="days_worked-5" class="form-label">
+                <input id="days_worked-5" name="days_worked-5" value="Friday" type="checkbox">Friday
+            </label>
+        
+            <label id="_label" for="days_worked-6" class="form-label">
+                <input id="days_worked-6" name="days_worked-6" value="Saturday" type="checkbox">Saturday
+            </label>
+        
+            <label id="_label" for="days_worked-7" class="form-label">
+                <input id="days_worked-7" name="days_worked-7" value="Sunday" type="checkbox">Sunday
+            </label>
+        
+    </div>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
             <ul>
-	<li><a class="button" id="next" href="6-find-your-employer.html">Continue</a></li>
-    <li>
-        <a href="4-confirm-details.html" id="back" class="button-secondary">Back</a>
-    </li>
-
+            
+            <li><input id="next" class="button" type="submit" value="Next"></li>
+            
+                <li><a href="/claims/overtime-hours-worked" id="back" class="button-secondary">Back</a></li>
+            
+            
             </ul>
         </div>
     </form>
 </div>
+
     </div>
-        </main>
+    
+                                            </main>
 
 
 
