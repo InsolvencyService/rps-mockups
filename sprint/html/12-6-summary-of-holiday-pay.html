@@ -11,6 +11,12 @@
 
     <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/overrides.css">
 
+    <style type="text/css">
+.auto-style1 {
+	background-color: #FFFFFF;
+}
+</style>
+
     <!--[if gt IE 8]><!-->
 <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/govuk-template.css"><!--<![endif]-->
     <!--[if IE 6]><link href="assets/stylesheets/govuk-template-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
@@ -108,94 +114,144 @@
 <main role="main" id="wrapper">
 
     <div id="content">
-        <div class="inner-block">
-            <div class="phase-banner">
-                    <p>
-                        <strong class="phase-tag">BETA</strong>
-                        This is a new service - your <a href="https://www.surveymonkey.com/s/MWWXKLX" target="_blank">feedback</a> will help us improve it
-                    </p>
-            </div>
-        </div>
+    <div class="text">
+        <h1 class="form-title heading-large">
+            Summary of holiday pay
+        </h1>
+
+        <p class="form-hint">
+            Section 4 of 6
+        </p>
+
+        <p class="lead text">
+            Review the answers you have given in section 4 before you proceed.
+        </p>
 
         
-<div class="inner-block text">
-    
-    <h1 class="form-title heading-large">Dates of wages owed</h1>
+            <div class="form-group">
+                <table id="summary_table">
 
-    <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
-         <fieldset>
-            
-    <p>
-        </p>
-        <div class="panel-indent">
-            You can add more than one period for wages owed up to a maximum of 8 weeks. There is an option to add more periods on the summary screen, but this should only be used if you are sure you have more periods to add. You can't add part weeks together to make a whole week: if you choose a week in which you are only owed one day of pay this will count as a whole week in your 8 week allocation.
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-            
-            
-            <label id="wage_period_start_label" class="form-label-bold">From</label>
-            <fieldset id="wage_period_start" class="date-of-birth">
-            <div class="form-group form-group-day">
-	            <label id="wage_period_start_label.day" for="wage_period_start.day">Day</label>
-                <input id="wage_period_start.day" name="wage_period_start.day" class="date-input" type="text" maxlength="2" size="2" value="">
-            </div>
-            <div class="form-group form-group-month">
-	            <label id="wage_period_start_label.month" for="wage_period_start.month">Month</label>
-                <input id="wage_period_start.month" name="wage_period_start.month" class="date-input" type="text" maxlength="2" size="2" value="">
-            </div>
-            <div class="form-group form-group-year">
-                <label id="wage_period_start_label.year" for="wage_period_start.year">Year</label>
-                <input id="wage_period_start.year" name="wage_period_start.year" class="date-input" type="text" maxlength="4" size="4" value="">
-            </div>
-        </fieldset>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-            
-            
-            <label id="wage_period_end_label" class="form-label-bold">To</label>
-            <fieldset id="wage_period_end" class="date-of-birth">
-            <div class="form-group form-group-day">
-	            <label id="wage_period_end_label.day" for="wage_period_end.day">Day</label>
-                <input id="wage_period_end.day" name="wage_period_end.day" class="date-input" type="text" maxlength="2" size="2" value="">
-            </div>
-            <div class="form-group form-group-month">
-	            <label id="wage_period_end_label.month" for="wage_period_end.month">Month</label>
-                <input id="wage_period_end.month" name="wage_period_end.month" class="date-input" type="text" maxlength="2" size="2" value="">
-            </div>
-            <div class="form-group form-group-year">
-                <label id="wage_period_end_label.year" for="wage_period_end.year">Year</label>
-                <input id="wage_period_end.year" name="wage_period_end.year" class="date-input" type="text" maxlength="4" size="4" value="">
-            </div>
-        </fieldset>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
+                    <tbody>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                        <th></th>
+                    </tr>
+                    
+                    <tr class="owed_holiday_pay_check">
+                        <td>Are you owed any holiday pay?</td>
+                        <td>Yes</td>
+                        <td>
+                            
+    <a href="/claims/holiday-pay-details-start">
+        Change
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    <tr class="holiday_year_start_date">
+                        <td>What was the start date of your holiday year at Digital Testing Two Limited?</td>
+                        <td>1 April 2014</td>
+                        <td>
+                            
+    <a href="/claims/holiday-year-start-date">
+        Change
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    <tr class="holiday_entitlement">
+                        <td>How many days holiday per year were you entitled to?</td>
+                        <td>10</td>
+                        <td>
+                            
+    <a href="/claims/holiday-entitlement">
+        Change
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    <tr class="holiday_ent_inc_bank_holidays">
+                        <td>Does this number of holiday days include bank holidays?</td>
+                        <td>No</td>
+                        <td>
+                            
+    <a href="/claims/holiday-entitlement">
+        Change
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    <tr class="holiday_ent_carry_forward">
+                        <td>Did you carry any holiday days forward from last year's holiday allowance into this year?</td>
+                        <td>No</td>
+                        <td>
+                            
+    <a href="/claims/holiday-entitlement">
+        Change
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    <tr class="holidays_carried">
+                        <td>How many untaken holiday days have you carried forward to this holiday year?</td>
+                        <td></td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="number_of_days">
+                        <td>
+						<span style="color: rgb(11, 12, 12); font-family: nta, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
+						From 1 April 201<span lang="en-gb">4</span> To
+						<span lang="en-gb">0<span class="auto-style1">1 November</span></span> 
+						2014</span></td>
+                        <td>&nbsp;</td>
+                        <td>
+                            
+    					&nbsp;</td>
+                    </tr>
+                    
+                    <tr class="number_of_days">
+                        <td>
+						<span style="color: rgb(11, 12, 12); font-family: nta, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
+						Days <span lang="en-gb">t<span class="auto-style1">aken</span></span></span></td>
+                        <td>10</td>
+                        <td>
+                            
+    <a href="/claims/holiday-days-taken">
+        Change
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
                 
-                <label id="days_owed_label" for="days_owed" class="form-label-bold days_owed">Days Owed</label>
-                <input id="days_owed" name="days_owed" type="text" size="4" maxlength="6" step="2" value="">
-        </div>
-    <p></p>
-    
+                                
+                <div class="panel-indent">
+                    <a id="loop" class="button-link" href="12-5-period.html">Would you like to add further holidays owed?
+                    </a>
+                </div>
 
-        </fieldset><!-- For User research -->
-      <div class="form-navigation form-group">
+            </div>
+        
+    </div>
+</div>
+       <div class="form-navigation form-group">
                       <ul>
-                <li><a class="button" id="next" href="13-7-summary-2.html">Continue</a></li>        
+                <li><a class="button" id="next" href="13-1-wages-owed.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
-
-    </form>
-</div>
-
-    </div>
-                                
+                   
                                             </main>
 
 
