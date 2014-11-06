@@ -120,38 +120,63 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Redundancy pay</h1>
+    <h1 class="form-title heading-large">Days of the week worked</h1>
 
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
          <fieldset>
             
     <p>
-        </p><fieldset class="inline">
-            <div class="form-group ">
-                
-                <label id="part_paid_redundancy_label" class="form-label-bold">Did you get a redundancy payment from Digital Testing Two Limited?</label>
-                <div id="part_paid_redundancy" class="form-group">
+        </p><div class="form-group ">
+            
+            <label id="num_days_worked_label" for="num_days_worked" class="form-label-bold num_days_worked">How many days a week do you normally work?</label>
+            <span class="form-hint">If you worked a shift pattern please enter the average number of days you would work in a week.</span>
+            <input id="num_days_worked" name="num_days_worked" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="days_worked_label" class="form-label-bold">Please indicate the days you normally worked each week</label>
+            <span class="form-hint">If you worked a shift pattern please select the days you most commonly worked, selecting a number of days equal to the average number of days that you provided above.</span>
+            <div id="days_worked" class="form-group">
         
-        <label id="part_paid_redundancy_label" for="part_paid_redundancy_Yes" class="block-label">
-            <input id="part_paid_redundancy_Yes" value="Yes" name="part_paid_redundancy" type="radio">
-            Yes
-        </label>
+            <label id="_label" for="days_worked-1" class="form-label">
+                <input id="days_worked-1" name="days_worked-1" value="Monday" type="checkbox">Monday
+            </label>
         
-        <label id="part_paid_redundancy_label" for="part_paid_redundancy_No" class="block-label">
-            <input id="part_paid_redundancy_No" value="No" name="part_paid_redundancy" type="radio">
-            No
-        </label>
+            <label id="_label" for="days_worked-2" class="form-label">
+                <input id="days_worked-2" name="days_worked-2" value="Tuesday" type="checkbox">Tuesday
+            </label>
+        
+            <label id="_label" for="days_worked-3" class="form-label">
+                <input id="days_worked-3" name="days_worked-3" value="Wednesday" type="checkbox">Wednesday
+            </label>
+        
+            <label id="_label" for="days_worked-4" class="form-label">
+                <input id="days_worked-4" name="days_worked-4" value="Thursday" type="checkbox">Thursday
+            </label>
+        
+            <label id="_label" for="days_worked-5" class="form-label">
+                <input id="days_worked-5" name="days_worked-5" value="Friday" type="checkbox">Friday
+            </label>
+        
+            <label id="_label" for="days_worked-6" class="form-label">
+                <input id="days_worked-6" name="days_worked-6" value="Saturday" type="checkbox">Saturday
+            </label>
+        
+            <label id="_label" for="days_worked-7" class="form-label">
+                <input id="days_worked-7" name="days_worked-7" value="Sunday" type="checkbox">Sunday
+            </label>
         
     </div>
-            </div>
-        </fieldset>
+        </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-              <ul>
-                      <li><a class="button" id="next" href="11-2.html">Continue</a></li>        
+                      <ul>
+            <li><a class="button" id="next" href="7-summary-wage.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
@@ -159,7 +184,7 @@
 </div>
 
     </div>
-            
+    
                                             </main>
 
 

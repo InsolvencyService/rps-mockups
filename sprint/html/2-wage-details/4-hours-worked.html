@@ -119,76 +119,46 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Gross income at Digital Testing Two Limited</h1>
+    <h1 class="form-title heading-large">Hours worked</h1>
 
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
          <fieldset>
             
-    <div class="">
-        <p>
-            </p><div class="form-group ">
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="hours_worked_label" for="hours_worked" class="form-label-bold hours_worked">How many hours a week were you contracted to work?</label>
+            <span class="form-hint">Please don't include overtime hours. If you have irregular working hours, please give us the average number of hours you worked per week over the last 12 weeks.</span>
+            <input id="hours_worked" name="hours_worked" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><fieldset class="inline">
+            <div class="form-group ">
                 
-                
-                <label id="gross_income_amount_label" for="gross_income_amount" class="form-label-bold gross_income_amount">What was your gross income at Digital Testing Two Limited?</label>
-                <span class="form-hint">Gross income is the total amount earned before your tax and National Insurance are deducted. Please do not include any overtime</span>
-                <span class="input-group-addon">£</span>
-            <input id="gross_income_amount" name="gross_income_amount" type="text" size="10" value="">
-            <label id="gross_income_label" for="gross_income_period">per</label>
-                <select id="gross_income_period" name="gross_income_period">
-                <option value="invalid">Choose...</option>
-                <option value="hour">Hour</option>
-                <option value="day">Day</option>
-                <option value="week">Week</option>
-                <option value="month">Month</option>
-                <option value="year">Year</option>
-            </select>
-            </div>
-        <p></p>
-        <p>
-            </p><div class="form-group ">
-                <label id="day_of_week_paid_label" for="day_of_week_paid" class="form-label-bold day_of_week_paid">If you were paid weekly, on which day of the week were you normally paid?</label>
-                <span class="form-hint">If you were not paid weekly, please skip this question. If you were paid weekly and skip this question we will default to a Saturday. </span>
-                <select id="day_of_week_paid" name="day_of_week_paid">
-                <option value="N/A">Choose...</option>
-                <option value="Monday">Monday</option>
-                <option value="Tuesday">Tuesday</option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday">Friday</option>
-                <option value="Saturday">Saturday</option>
-                <option value="Sunday">Sunday</option>
-            </select>
-                
-            </div>
-        <p></p>
-        <p>
-            </p><fieldset class="inline">
-                <div class="form-group ">
-                    
-                    <label id="pay_includes_bonuses_label" class="form-label-bold">Did your pay include any bonus or commission?</label>
-                    <div id="pay_includes_bonuses" class="form-group">
+                <label id="contract_paid_overtime_label" class="form-label-bold">Did your contract state you were paid for overtime hours?</label>
+                <div id="contract_paid_overtime" class="form-group">
         
-        <label id="pay_includes_bonuses_label" for="pay_includes_bonuses_Yes" class="block-label">
-            <input id="pay_includes_bonuses_Yes" value="Yes" name="pay_includes_bonuses" type="radio">
+        <label id="contract_paid_overtime_label" for="contract_paid_overtime_Yes" class="block-label">
+            <input id="contract_paid_overtime_Yes" value="Yes" name="contract_paid_overtime" type="radio">
             Yes
         </label>
         
-        <label id="pay_includes_bonuses_label" for="pay_includes_bonuses_No" class="block-label">
-            <input id="pay_includes_bonuses_No" value="No" name="pay_includes_bonuses" type="radio">
+        <label id="contract_paid_overtime_label" for="contract_paid_overtime_No" class="block-label">
+            <input id="contract_paid_overtime_No" value="No" name="contract_paid_overtime" type="radio">
             No
         </label>
         
     </div>
-                </div>
-            </fieldset>
-        <p></p>
-    </div>
+            </div>
+        </fieldset>
+    <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
               <ul>
-            <li><a class="button" id="next" href="10-3-commission.html">Continue</a></li>        
+            <li><a class="button" id="next" href="5-overtime.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
@@ -196,7 +166,7 @@
 </div>
 
     </div>
-                                    </main>
+                                            </main>
 
 
 

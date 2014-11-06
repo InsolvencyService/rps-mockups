@@ -106,7 +106,6 @@
 </div>
 
 <main role="main" id="wrapper">
-
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -120,7 +119,7 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Days of the week worked</h1>
+    <h1 class="form-title heading-large">Date notice given</h1>
 
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
@@ -129,54 +128,29 @@
     <p>
         </p><div class="form-group ">
             
-            <label id="num_days_worked_label" for="num_days_worked" class="form-label-bold num_days_worked">How many days a week do you normally work?</label>
-            <span class="form-hint">If you worked a shift pattern please enter the average number of days you would work in a week.</span>
-            <input id="num_days_worked" name="num_days_worked" type="text" value=""><br>
-        </div>
-    <p></p>
-    <p>
-        </p><div class="form-group ">
-            
-            <label id="days_worked_label" class="form-label-bold">Please indicate the days you normally worked each week</label>
-            <span class="form-hint">If you worked a shift pattern please select the days you most commonly worked, selecting a number of days equal to the average number of days that you provided above.</span>
-            <div id="days_worked" class="form-group">
-        
-            <label id="_label" for="days_worked-1" class="form-label">
-                <input id="days_worked-1" name="days_worked-1" value="Monday" type="checkbox">Monday
-            </label>
-        
-            <label id="_label" for="days_worked-2" class="form-label">
-                <input id="days_worked-2" name="days_worked-2" value="Tuesday" type="checkbox">Tuesday
-            </label>
-        
-            <label id="_label" for="days_worked-3" class="form-label">
-                <input id="days_worked-3" name="days_worked-3" value="Wednesday" type="checkbox">Wednesday
-            </label>
-        
-            <label id="_label" for="days_worked-4" class="form-label">
-                <input id="days_worked-4" name="days_worked-4" value="Thursday" type="checkbox">Thursday
-            </label>
-        
-            <label id="_label" for="days_worked-5" class="form-label">
-                <input id="days_worked-5" name="days_worked-5" value="Friday" type="checkbox">Friday
-            </label>
-        
-            <label id="_label" for="days_worked-6" class="form-label">
-                <input id="days_worked-6" name="days_worked-6" value="Saturday" type="checkbox">Saturday
-            </label>
-        
-            <label id="_label" for="days_worked-7" class="form-label">
-                <input id="days_worked-7" name="days_worked-7" value="Sunday" type="checkbox">Sunday
-            </label>
-        
-    </div>
+            <label id="given_notice_date_label" class="form-label-bold">When did Digital Testing Two Limited give you notice?</label>
+            <span class="form-hint">For example 20 04 2014</span>
+            <fieldset id="given_notice_date" class="date-of-birth">
+            <div class="form-group form-group-day">
+	            <label id="given_notice_date_label.day" for="given_notice_date.day">Day</label>
+                <input id="given_notice_date.day" name="given_notice_date.day" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="given_notice_date_label.month" for="given_notice_date.month">Month</label>
+                <input id="given_notice_date.month" name="given_notice_date.month" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="given_notice_date_label.year" for="given_notice_date.year">Year</label>
+                <input id="given_notice_date.year" name="given_notice_date.year" class="date-input" type="text" maxlength="4" size="4" value="">
+            </div>
+        </fieldset>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-                      <ul>
-            <li><a class="button" id="next" href="10-7-summary-wage.html">Continue</a></li>        
+            <ul>        
+            <li><a class="button" id="next" href="7-claim.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
@@ -184,8 +158,7 @@
 </div>
 
     </div>
-    
-                                            </main>
+                        </main>
 
 
 

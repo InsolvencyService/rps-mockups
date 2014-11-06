@@ -106,6 +106,7 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -119,26 +120,33 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Details of bonus or commission</h1>
+    <h1 class="form-title heading-large">Overtime hours worked</h1>
 
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
          <fieldset>
             
-    <p>
-        </p><div class="form-group ">
-            
-            <label id="details_of_bonus_or_commission_label" for="details_of_bonus_or_commission" class="form-label-bold details_of_bonus_or_commission">How much bonus or commission did you get, and how often?</label>
-            <span class="form-hint">We will take this information into account when calculating your payments so please be as accurate as possible.</span>
-            <textarea id="details_of_bonus_or_commission" name="details_of_bonus_or_commission" cols="75" rows="7"></textarea>
-        </div>
-    <p></p>
-
+    <div class="">
+        <p>
+            </p><div class="form-group ">
+                
+                <label id="overtime_hours_worked_amount_label" for="overtime_hours_worked_amount" class="form-label-bold overtime_hours_worked_amount">How many overtime hours did you normally work?</label>
+                <input id="overtime_hours_worked_amount" name="overtime_hours_worked_amount" type="text" size="10" value="">
+            <label id="overtime_hours_worked_label" for="overtime_hours_worked_period">per</label>
+                <select id="overtime_hours_worked_period" name="overtime_hours_worked_period">
+                <option value="invalid">Choose...</option>
+                <option value="week">Week</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+            </select>
+            </div>
+        <p></p>
+    </div>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-            <ul>
-            <li><a class="button" id="next" href="10-4-hours-worked.html">Continue</a></li>        
+                      <ul>
+            <li><a class="button" id="next" href="6-days-pf-week.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
@@ -146,7 +154,8 @@
 </div>
 
     </div>
-                                        </main>
+
+                                            </main>
 
 
 

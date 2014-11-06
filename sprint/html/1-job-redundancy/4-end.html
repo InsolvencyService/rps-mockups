@@ -119,7 +119,7 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Date notice given</h1>
+    <h1 class="form-title heading-large">Last day worked</h1>
 
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
@@ -128,29 +128,51 @@
     <p>
         </p><div class="form-group ">
             
-            <label id="given_notice_date_label" class="form-label-bold">When did Digital Testing Two Limited give you notice?</label>
-            <span class="form-hint">For example 20 04 2014</span>
-            <fieldset id="given_notice_date" class="date-of-birth">
+            <label id="last_day_worked_label" class="form-label-bold">What was the last day you worked for Digital Testing Two Limited?</label>
+            <span class="form-hint">For example 28 04 2014</span>
+            <fieldset id="last_day_worked" class="date-of-birth">
             <div class="form-group form-group-day">
-	            <label id="given_notice_date_label.day" for="given_notice_date.day">Day</label>
-                <input id="given_notice_date.day" name="given_notice_date.day" class="date-input" type="text" maxlength="2" size="2" value="">
+	            <label id="last_day_worked_label.day" for="last_day_worked.day">Day</label>
+                <input id="last_day_worked.day" name="last_day_worked.day" class="date-input" type="text" maxlength="2" size="2" value="">
             </div>
             <div class="form-group form-group-month">
-	            <label id="given_notice_date_label.month" for="given_notice_date.month">Month</label>
-                <input id="given_notice_date.month" name="given_notice_date.month" class="date-input" type="text" maxlength="2" size="2" value="">
+	            <label id="last_day_worked_label.month" for="last_day_worked.month">Month</label>
+                <input id="last_day_worked.month" name="last_day_worked.month" class="date-input" type="text" maxlength="2" size="2" value="">
             </div>
             <div class="form-group form-group-year">
-                <label id="given_notice_date_label.year" for="given_notice_date.year">Year</label>
-                <input id="given_notice_date.year" name="given_notice_date.year" class="date-input" type="text" maxlength="4" size="4" value="">
+                <label id="last_day_worked_label.year" for="last_day_worked.year">Year</label>
+                <input id="last_day_worked.year" name="last_day_worked.year" class="date-input" type="text" maxlength="4" size="4" value="">
             </div>
         </fieldset>
         </div>
     <p></p>
+    <p>
+        </p><fieldset class="inline">
+            <div class="form-group ">
+                    
+                    <label id="is_last_day_official_label" class="form-label-bold">Was this the date your employment officially ended?</label>
+                    <span class="form-hint">This date can be found on your letter of redundancy. If the answer is 'No', we will ask you for another date.</span>
+                    <div id="is_last_day_official" class="form-group">
+        
+        <label id="is_last_day_official_label" for="is_last_day_official_Yes" class="block-label">
+            <input id="is_last_day_official_Yes" value="Yes" name="is_last_day_official" type="radio">
+            Yes
+        </label>
+        
+        <label id="is_last_day_official_label" for="is_last_day_official_No" class="block-label">
+            <input id="is_last_day_official_No" value="No" name="is_last_day_official" type="radio">
+            No
+        </label>
+        
+    </div>
+            </div>
+        </fieldset>
+    <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-            <ul>        
-            <li><a class="button" id="next" href="9-5-claim.html">Continue</a></li>        
+             <ul>        
+            <li><a class="button" id="next" href="5-notice.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>

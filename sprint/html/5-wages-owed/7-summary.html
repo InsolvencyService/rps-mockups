@@ -104,7 +104,6 @@
         <div class="header-bar"></div>
     </div>
 </div>
-
 <main role="main" id="wrapper">
     <div id="content">
         <div class="inner-block">
@@ -119,54 +118,144 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Hours worked</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
+         <input type="hidden" name="_csrf_token" value="5f665556f292be409bbceff0c42e7e04ef1c91e6">
          <fieldset>
             
-    <p>
-        </p><div class="form-group ">
-            
-            <label id="hours_worked_label" for="hours_worked" class="form-label-bold hours_worked">How many hours a week were you contracted to work?</label>
-            <span class="form-hint">Please don't include overtime hours. If you have irregular working hours, please give us the average number of hours you worked per week over the last 12 weeks.</span>
-            <input id="hours_worked" name="hours_worked" type="text" value=""><br>
-        </div>
-    <p></p>
-    <p>
-        </p><fieldset class="inline">
-            <div class="form-group ">
+<div id="content">
+    <div class="text">
+        <h1 class="form-title heading-large">
+            Summary of wages owed
+        </h1>
+
+        <p class="form-hint">
+            Section 5 of 6
+        </p>
+
+        <p class="lead text">
+            Review the answers you have given in section 5 before you proceed.
+        </p>
+
+        
+            <div class="form-group">
+                <table id="summary_table">
+
+                    <tbody>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    
+                    <tr class="wages_owed_check">
+                        <td>Are you owed any wages?</td>
+                        <td>Yes</td>
+                        <td>
+                            
+    <a href="/claims/wages-owed-details-start">
+        Change
+    </a>
+
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="wage_period">
+                        <td>From 1 January 2014 To 1 November 2014</td>
+                        <td></td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+    <a href="/claims/wages-owed/0/remove">
+        Remove
+    </a>
+
+                        </td>
+                    </tr>
+                    
+                    <tr class="pay_attempted">
+                        <td>Did your employer attempt to pay you?</td>
+                        <td>No</td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="wages_owed_amount_currency">
+                        <td>What is the gross amount of pay owed for this period?</td>
+                        <td>£1000.00</td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="days_owed">
+                        <td>Days Owed</td>
+                        <td>10</td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="net_wages_owed_amount_currency">
+                        <td>What is the net amount of pay owed for this period?</td>
+                        <td></td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>                
+                <div class="panel-indent">
+                    <a class="button-link" href="/claims/wages-owed/2/wages-owed-period" id="loop">
+                        Would you like to add further wages owed?
+                    </a>
+                </div>
                 
-                <label id="contract_paid_overtime_label" class="form-label-bold">Did your contract state you were paid for overtime hours?</label>
-                <div id="contract_paid_overtime" class="form-group">
-        
-        <label id="contract_paid_overtime_label" for="contract_paid_overtime_Yes" class="block-label">
-            <input id="contract_paid_overtime_Yes" value="Yes" name="contract_paid_overtime" type="radio">
-            Yes
-        </label>
-        
-        <label id="contract_paid_overtime_label" for="contract_paid_overtime_No" class="block-label">
-            <input id="contract_paid_overtime_No" value="No" name="contract_paid_overtime" type="radio">
-            No
-        </label>
+            </div>
         
     </div>
-            </div>
-        </fieldset>
-    <p></p>
+</div>
 
-        </fieldset><!-- For User research -->
+        </fieldset></form><!-- For User research -->
         <div class="form-navigation form-group">
-              <ul>
-            <li><a class="button" id="next" href="10-5-overtime.html">Continue</a></li>        
-                <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
+            <ul>
+            
+<li><a class="button" href="/claims/other-questions-details-start" id="next">Continue</a></li>
+
+<li><a href="/claims/wages-owed/1/wages-owed-amount" id="back" class="button-secondary">Back</a></li>
+
+
+
             </ul>
         </div>
-    </form>
+    
 </div>
 
     </div>
-                                            </main>
+</main>
+
+
+
 
 
 

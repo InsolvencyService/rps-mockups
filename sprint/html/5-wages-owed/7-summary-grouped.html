@@ -60,6 +60,22 @@
     <!--[if IE 6]><link href="../assets/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 7]><link href="../assets/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 8]><link href="../assets/stylesheets/main-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+    
+    <style type="text/css">
+    .column-heading th{
+		color:gray;
+	}
+	tr > th:first-child,
+	tr > td:first-child{
+	border:0 transparent none !important;
+	}
+	tr.group-heading td.title,
+	tr.group-heading td.number{
+		font-weight:bold;
+		font-size:1.2em;
+}
+    
+    </style>
 </head>
 
 <body class="js-enabled js-enabled">
@@ -107,160 +123,233 @@
 
 <main role="main" id="wrapper">
     <div id="content">
-    <div class="text">
-        <h1 class="form-title heading-large">
-            Summary of the job from which you were made redundant
-        </h1>
-
-        <p class="form-hint">
-            Section 1 of 6
-        </p>
-
-        <p class="lead text">
-            Review the answers you have given in section 1 before you continue
-        </p>
+        <div class="inner-block">
+            <div class="phase-banner">
+                    <p>
+                        <strong class="phase-tag">BETA</strong>
+                        This is a new service - your <a href="https://www.surveymonkey.com/s/MWWXKLX" target="_blank">feedback</a> will help us improve it
+                    </p>
+            </div>
+        </div>
 
         
+<div class="inner-block text">
+    
+
+    <form class="form" method="post">
+         <input type="hidden" name="_csrf_token" value="5f665556f292be409bbceff0c42e7e04ef1c91e6">
+         <fieldset>
+            
+		<div id="content">
+		    <div class="text">
+		        <h1 class="form-title heading-large">
+		            Summary of wages owed
+		        </h1>
+		
+		        <p class="form-hint">
+		            Section 5 of 6
+		        </p>
+		
+		        <p class="lead text">
+		            Review the answers you have given in section 5 before you proceed.
+		        </p>
+			</div>
+		</div>
+	</fieldset>
+	</form>
+</div>
+	
+   	<div class="text" style="max-width:75%">
             <div class="form-group">
                 <table id="summary_table">
 
                     <tbody>
-                    <tr>
+                    <tr class="column-heading">
+                    	<th></th>
                         <th>Question</th>
                         <th>Answer</th>
                         <th></th>
+                        <th></th>
                     </tr>
-                    
-                    <tr class="job_title">
-                        <td>What was your job title?</td>
-                        <td>Cleaner</td>
-                        <td>
-                            
-    <a href="/claims/employment-details">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="personnel_number">
-                        <td>What was your employee number? (optional)</td>
-                        <td>123456</td>
-                        <td>
-                            
-    <a href="/claims/employment-details">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="category_of_worker">
-                        <td>What category of worker were you?</td>
-                        <td>Employed</td>
-                        <td>
-                            
-    <a href="/claims/employment-details">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="employment_start_date">
-                        <td>When did your employment at Digital Testing Two Limited start?</td>
-                        <td>1 January 2014</td>
-                        <td>
-                            
-    <a href="/claims/employment-details-start-date">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="last_day_worked">
-                        <td>What was the last day you worked for Digital Testing Two Limited?</td>
-                        <td>1 October 2014</td>
-                        <td>
-                            
-    <a href="/claims/employment-details-last-day-worked">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="is_last_day_official">
-                        <td>Was this the date your employment officially ended?</td>
+                  
+                    <tr class="wages_owed_check">
+                    <td></td>
+                        <td>Are you owed any wages?</td>
                         <td>Yes</td>
                         <td>
                             
-    <a href="/claims/employment-details-last-day-worked">
+    <a href="/claims/wages-owed-details-start">
         Change
+    </a>
+
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                     <tr class="wage_period group-heading">
+                        <td class="number">1</td>
+                        <td class="title">From 1 January 201<span lang="en-gb">3</span> To 
+						<span lang="en-gb">30</span> <span lang="en-gb">December</span> 
+						201<span lang="en-gb">3</span></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            
+    <a href="/claims/wages-owed/0/remove">
+        Remove
     </a>
 
                         </td>
                     </tr>
                     
-                    <tr class="official_employment_end_date">
-                        <td>When did your employment with Digital Testing Two Limited officially end?</td>
+                    <tr class="pay_attempted">
+                    	<td></td>
+                        <td>Did your employer attempt to pay you?</td>
+                        <td><span lang="en-gb">No</span></td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="wages_owed_amount_currency">
+                    <td></td>
+                        <td>What is the gross amount of pay owed for this period?</td>
+                        <td>£1000.00</td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="days_owed">
+                    <td></td>
+                        <td>Days Owed</td>
+                        <td><span lang="en-gb">10</span></td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="net_wages_owed_amount_currency">
+                    <td></td>
+                        <td>What is the net amount of pay owed for this period?</td>
+                        <td>&nbsp;</td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="wage_period group-heading">
+                    <td class="number">2</td>
+                        <td class="title">From 1 January 201<span lang="en-gb">4</span> To 
+						<span lang="en-gb">4</span> <span lang="en-gb">Novem</span>ber 
+						201<span lang="en-gb">4</span></td>
                         <td></td>
                         <td>
                             
                         </td>
-                    </tr>
-                    
-                    <tr class="given_notice">
-                        <td>Did Digital Testing Two Limited give you notice?</td>
-                        <td>Yes</td>
                         <td>
                             
-    <a href="/claims/notice-period">
-        Change
+    <a href="/claims/wages-owed/1/remove">
+        Remove
     </a>
 
                         </td>
                     </tr>
                     
-                    <tr class="given_notice_date">
-                        <td>When did Digital Testing Two Limited give you notice?</td>
-                        <td>20 September 2014</td>
+                    <tr class="pay_attempted">
+                    <td></td>
+                        <td>Did your employer attempt to pay you?</td>
+                        <td>No</td>
                         <td>
                             
-    <a href="/claims/given-notice-date">
-        Change
-    </a>
-
+                        </td>
+                        <td>
+                            
                         </td>
                     </tr>
                     
-                    <tr class="loss_of_notice">
-                        <td>Do you want to claim compensation for loss of notice?</td>
-                        <td>Yes</td>
+                    <tr class="wages_owed_amount_currency">
+                    <td></td>
+                        <td>What is the gross amount of pay owed for this period?</td>
+                        <td>£1000.00</td>
                         <td>
                             
-    <a href="/claims/loss-of-notice">
-        Change
-    </a>
-
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="days_owed">
+                    <td></td>
+                        <td>Days Owed</td>
+                        <td>10</td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr class="net_wages_owed_amount_currency">
+                    <td></td>
+                        <td>What is the net amount of pay owed for this period?</td>
+                        <td></td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
                         </td>
                     </tr>
                     
                     </tbody>
                 </table>
+ 
+                
             </div>
         
     </div>
+<div class="inner-block text">
+                   
+                <div class="panel-indent">
+                    <a class="button-link" href="/claims/wages-owed/2/wages-owed-period" id="loop">
+                        Would you like to add further wages owed?
+                    </a>
+                </div>
+                  
+       <div class="form-navigation form-group">
+            <ul>
+            
+<li><a class="button" href="/claims/other-questions-details-start" id="next">Continue</a></li>
+
+<li><a href="/claims/wages-owed/1/wages-owed-amount" id="back" class="button-secondary">Back</a></li>
+
+
+
+            </ul>
+        </div>
+    
 </div>
 
-             <ul>        
-            <li><a class="button" id="next" href="../2-wage-details/10-details-of-wage.html">Continue</a></li>        
-                <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
-            </ul>
+  </div>
 
-                            </main>
 
+</main>
 
 
 

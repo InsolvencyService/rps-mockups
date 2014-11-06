@@ -106,6 +106,7 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
         <div class="inner-block">
             <div class="phase-banner">
@@ -119,32 +120,74 @@
         
 <div class="inner-block text">
     
-<h1 class="form-title heading-large">Loss of notice</h1>
+    <h1 class="form-title heading-large">Dates of wages owed</h1>
 
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
+         <input type="hidden" name="_csrf_token" value="ca99d6d2dfa7c9e4ab4d8a506b26dabd1b9dd773">
          <fieldset>
             
     <p>
         </p><div class="panel-indent">
-            You can claim compensation if your employer has failed to give you the minimum statutory notice.<br><br>Your statutory entitlement is:<br><br>1 week of notice if you were continuously employed for 1 calendar month or more but for less than 2 years.<br><br>1 week of notice for each year of employment if you were continuously employed for 2 years or more but for less than 12 years.<br><br>12 weeks of notice if you were continually employed for 12 years or more. <br><br>12 weeks is the maximum entitlement.
+            You can add more than one period for wages owed up to a maximum of 8 weeks. There is an option to add more periods on the summary screen, but this should only be used if you are sure you have more periods to add. You can't add part weeks together to make a whole week: if you choose a week in which you are only owed one day of pay this will count as a whole week in your 8 week allocation.
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            
+            <label id="wage_period_start_label" class="form-label-bold">From</label>
+            <fieldset id="wage_period_start" class="date-of-birth">
+            <div class="form-group form-group-day">
+	            <label id="wage_period_start_label.day" for="wage_period_start.day">Day</label>
+                <input id="wage_period_start.day" name="wage_period_start.day" class="date-input" type="text" maxlength="2" size="2" value="1">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="wage_period_start_label.month" for="wage_period_start.month">Month</label>
+                <input id="wage_period_start.month" name="wage_period_start.month" class="date-input" type="text" maxlength="2" size="2" value="1">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="wage_period_start_label.year" for="wage_period_start.year">Year</label>
+                <input id="wage_period_start.year" name="wage_period_start.year" class="date-input" type="text" maxlength="4" size="4" value="2014">
+            </div>
+        </fieldset>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            
+            <label id="wage_period_end_label" class="form-label-bold">To</label>
+            <fieldset id="wage_period_end" class="date-of-birth">
+            <div class="form-group form-group-day">
+	            <label id="wage_period_end_label.day" for="wage_period_end.day">Day</label>
+                <input id="wage_period_end.day" name="wage_period_end.day" class="date-input" type="text" maxlength="2" size="2" value="1">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="wage_period_end_label.month" for="wage_period_end.month">Month</label>
+                <input id="wage_period_end.month" name="wage_period_end.month" class="date-input" type="text" maxlength="2" size="2" value="11">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="wage_period_end_label.year" for="wage_period_end.year">Year</label>
+                <input id="wage_period_end.year" name="wage_period_end.year" class="date-input" type="text" maxlength="4" size="4" value="2014">
+            </div>
+        </fieldset>
         </div>
     <p></p>
     <p>
         </p><fieldset class="inline">
             <div class="form-group ">
                 
-                <label id="loss_of_notice_label" class="form-label-bold">Do you want to claim compensation for loss of notice?</label>
-                <span class="form-hint">We will contact you by email about loss of notice after you've submitted this claim.</span>
-                <div id="loss_of_notice" class="form-group">
+                <label id="pay_attempted_label" class="form-label-bold">Did your employer attempt to pay you?</label>
+                <span class="form-hint">This includes any failed payments to your bank account or bounced cheques from your employer.</span>
+                <div id="pay_attempted" class="form-group">
         
-        <label id="loss_of_notice_label" for="loss_of_notice_Yes" class="block-label">
-            <input id="loss_of_notice_Yes" value="Yes" name="loss_of_notice" type="radio">
+        <label id="pay_attempted_label" for="pay_attempted_Yes" class="block-label">
+            <input id="pay_attempted_Yes" value="Yes" name="pay_attempted" type="radio">
             Yes
         </label>
         
-        <label id="loss_of_notice_label" for="loss_of_notice_No" class="block-label">
-            <input id="loss_of_notice_No" value="No" name="loss_of_notice" type="radio">
+        <label id="pay_attempted_label" for="pay_attempted_No" class="block-label selected">
+            <input id="pay_attempted_No" value="No" name="pay_attempted" type="radio" checked="checked">
             No
         </label>
         
@@ -155,17 +198,17 @@
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
-             <ul>        
-            <li><a class="button" id="next" href="9-6-summary.html">Continue</a></li>        
+             <ul>
+                <li><a class="button" id="next" href="5-amount.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
-
         </div>
     </form>
 </div>
 
     </div>
-                            </main>
+                                        
+                                            </main>
 
 
 
