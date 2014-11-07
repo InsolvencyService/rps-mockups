@@ -56,13 +56,22 @@
 			vertical-align: top;
 			}
 			
-		input#employers_address_line_2, input#employers_address_line_3{
+		input#employers_address_line_2, input#employers_address_line_3,
+		input#address_line_2, input#address_line_3, 
+		input#insolvent_employer_address_line_2, input#insolvent_employer_address_line_3 {
 			margin-top:-20px;
 			margin-left:35%;
 		}
+		
 		br{
 			height:0;
 		}
 		fieldset{
+			display:block;
 			border:0 transparent none;
+			margin-left:35%;
+			padding:0;
+			padding-top:1em;
+			padding-bottom:1em;
+
 		}
