@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Redundancy Claimant</title>
+    <style>
+        .error-message {
+        color: red
+        }
+    </style>
+    
+	<link href="paddle.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<form method="post">
+    <input type="hidden" name="_csrf_token" value="edfe5cb541ef580d92ce6945acd55d150eec4329">
+
+    <h1>Redundancy Claimant Details</h1><p>
+        <label for="case_reference">CHAMP Case Reference Number to Link to this Claimant (starts CN)</label>
+        <input id="case_reference" name="case_reference" type="text" value="" /><br/>
+        
+    </p>
+
+    <p>
+        <label for="forename">Claimant First Name</label>
+        <input id="forename" name="forename" type="text" value="" /><br/>
+        
+    </p>
+
+    <p>
+        <label for="surname">Claimant Surname</label>
+        <input id="surname" name="surname" type="text" value="" /><br/>
+        
+    </p>
+
+    <p>
+        <label for="date_of_birth">Claimant Date of Birth</label>
+        <fieldset id="date_of_birth">
+            <input name="date_of_birth.day" class="date-input" type="number" maxlength="2" size="2" min="1" max="31" value="" />
+            <input name="date_of_birth.month" class="date-input" type="number" maxlength="2" size="2" min="1" max="12" value="" />
+            <input name="date_of_birth.year" class="date-input" type="number" maxlength="4" size="4" min="1900" max="9999" value="" />
+        </fieldset>
+        
+    </p><input type="submit" id="create_new_claimant" value="Create New Claimant"/>
+</form>
+</body>
+</html>

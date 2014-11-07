@@ -1,0 +1,68 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create case</title>
+    <style>
+        .error-message {
+            color: red
+        }
+    </style>
+	<link href="paddle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form method="post">
+    <input type="hidden" name="_csrf_token" value="edfe5cb541ef580d92ce6945acd55d150eec4329"><p>
+        <label for="case_reference">Case Reference Number (starts CN)</label>
+        <input id="case_reference" name="case_reference" type="text" value="" /><br/>
+        
+    </p>
+    <p>
+        <label for="case_name">Case Name</label>
+        <input id="case_name" name="case_name" type="text" value="" /><br/>
+        
+    </p>
+    <p>
+        <label for="ip_email">IP Email</label>
+        <input id="ip_email" name="ip_email" type="text" value="" /><br/>
+        
+    </p>
+    <p>
+        <label for="employers_address_line_1">Employer&#39;s building and street</label>
+        <input id="employers_address_line_1" name="employers_address_line_1" type="text" value="" /><br/>
+        <br />
+        
+    </p>
+    <p>
+        <input id="employers_address_line_2" name="employers_address_line_2" type="text" value="" /><br/>
+        <br />
+        
+    </p>
+    <p>
+        <input id="employers_address_line_3" name="employers_address_line_3" type="text" value="" /><br/>
+        <br />
+        
+    </p>
+    <p>
+        <label for="employers_address_town">Employer&#39;s town or city</label>
+        <input id="employers_address_town" name="employers_address_town" type="text" value="" /><br/>
+        
+    </p>
+    <p>
+        <label for="employers_address_county">Employer&#39;s county</label>
+        <input id="employers_address_county" name="employers_address_county" type="text" value="" /><br/>
+        
+    </p>
+    <p>
+        <label for="employers_address_postcode">Employer&#39;s postcode</label>
+        <input id="employers_address_postcode" name="employers_address_postcode" type="text" value="" /><br/>
+        
+    </p>
+
+    
+    <input type="submit" id="create_new_case" value="Create New Case"/>
+</form>
+
+</body>
+</html>
