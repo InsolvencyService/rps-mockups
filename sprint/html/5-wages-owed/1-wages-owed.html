@@ -60,6 +60,15 @@
     <!--[if IE 6]><link href="../assets/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 7]><link href="../assets/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 8]><link href="../assets/stylesheets/main-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <style type="text/css">
+    h1{
+	margin-top:0;
+	margin-bottom:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+    
+    </style>
 </head>
 
 <body class="js-enabled js-enabled">
@@ -119,17 +128,23 @@
 
         
 <div class="inner-block text">
-    
-    <h1 class="form-title heading-large">Details of wages owed</h1>
-
-    <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
-         <fieldset>
-            
     <p class="form-hint">
         Section 5 of 6
     </p>
-    <br>
+
+    <h1 class="form-title heading-large">Details of wages and 
+	other money owed</h1>
+           <div class="panel-indent">
+    <p>
+        <span lang="en-gb">Include your c</span>ommission, overtime 
+		<span lang="en-gb">and any</span> bonus payments in <span lang="en-gb">
+		this section</span>.
+    </p>
+          </div> 
+    <form class="form" method="post">
+         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
+         <fieldset>
+  
     <p>
         This section of your claim will ask about any wages you were owed relating to the job from which you were made redundant.  The following information will help you with the questions in section 5:
     </p>
@@ -138,12 +153,9 @@
         <li>recent payslips</li>
         <li>any other documents relating to your wages</li>
     </ul>
-    <p>
-        You can claim up to a maximum of 8 weeks worth of unpaid wages. You can't add part weeks together to make a whole week. If you choose a week in which you are only owed one day of pay this will count as a whole week in your 8 week allocation.
-    </p>
-    <p>
-        Commission, overtime or bonus payments can be included in unpaid wages.
-    </p><details>
+    	 <p>You can claim up to a maximum of 8 weeks worth of unpaid wages. You can't add part weeks together to make a whole week. If you choose a week in which you are only owed one day of pay this will count as a whole week in your 8 week allocation.
+    	 </p>
+    	 <details>
         <summary tabindex="0" style="-moz-user-select: none;" role="button" aria-expanded="false">
             What are the questions in section 5?
         </summary>
