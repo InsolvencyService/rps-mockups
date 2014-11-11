@@ -1,9 +1,12 @@
-﻿
+﻿        .error-message {
+            color: red
+        }
+
 	    body{
 			font-family: arial, sans serif;
 		}
         
-        label{
+        form label{
         	clear:left;
         	display:block;
 			float:left;
@@ -13,6 +16,7 @@
 			clear:left;
 			margin-bottom:1em;
 		}
+
 		input {
 			font-size:19px;
 			line-height:1.2em;
