@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  	document.title = "UX - " + $('h1').first().text(); 
+  	
   // Example - Highlight grid
 
   if ($('.js-highlight-grid').length>0) {
