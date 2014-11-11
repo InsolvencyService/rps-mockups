@@ -128,14 +128,35 @@
         We need to know who you were working for after you'd been made
         redundant.
     </p>
-</div><p></p>
+</div>
 
     
     
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="2b6af3e5a8192bfe7cb2a48bbd05aaae18689c4f">
          <fieldset>
-            
+         
+       <p></p>
+       <div class="form-group ">
+
+       <label id="job_title_label" for="job_title" class="form-label-bold job_title">Were you self employed during your notice period?</label>
+       
+<div id="claimant_gender" class="form-group">
+        
+        <label id="claimant_gender_label" for="claimant_gender_Male" class="block-label">
+            <input id="claimant_gender_Male" value="Male" name="claimant_gender" type="radio">
+            Yes
+        </label>
+        
+        <label id="claimant_gender_label" for="claimant_gender_Female" class="block-label">
+            <input id="claimant_gender_Female" value="Female" name="claimant_gender" type="radio">
+            No
+        </label>
+        
+    </div>
+    
+
+     
     <p>
         </p><div class="form-group ">
             
@@ -147,6 +168,7 @@
         </p><div class="form-group ">
             
             <label id="employers_name_label" for="employers_name" class="form-label-bold employers_name">Company or employer's name</label>
+            <div class="form-hint">If self employed, use your trading name if you have one, or your own name</div>
             <input id="employers_name" name="employers_name" type="text" value=""><br>
         </div>
     <p></p>

@@ -122,50 +122,106 @@
         
 <div class="inner-block text">
     
-    <h1 class="form-title heading-large">Details of earnings at Two's Company</h1>
+    <h1 class="form-title heading-large">Employment details during your notice period</h1>
+    <p></p><div class="notice-period panel-indent">
+    <p>
+        We need to know who you were working for after you'd been made
+        redundant.
+    </p>
+</div>
 
     
     
     <form class="form" method="post">
          <input type="hidden" name="_csrf_token" value="2b6af3e5a8192bfe7cb2a48bbd05aaae18689c4f">
          <fieldset>
-            
+         
+       <p></p>
+       <div class="form-group ">
+
+       <label id="job_title_label" for="job_title" class="form-label-bold job_title">Self employment status</label>
+       <div class="form-hint">If you were self employed, tick the box here and use your trading name if you have one, or your name as the company name.</div>
+
+		<label id="claimant_gender_label" for="claimant_gender_Female" class="block-label">
+            <input id="claimant_gender_Female" value="Female" name="claimant_gender" type="checkbox">
+            Self employed
+        </label>
+        <div class="clear-child"></div>
+        </div>
+
+
+     
     <p>
         </p><div class="form-group ">
             
-            <br>
+            <label id="job_title_label" for="job_title" class="form-label-bold job_title">Job title</label>
+            <input id="job_title" name="job_title" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
             
-            <fieldset id="gross_pay_amount">
-                <label id="gross_pay_amount_label" for="gross_pay_amount" class="form-label-bold gross_pay_amount">What is your gross income or gross increase in income?</label>
-                <span class="form-hint">Gross income is the total amount before taking off tax and National Insurance, and without overtime</span>
-                <span class="form-hint">If this is an increase in income from an existing job, please tell us the increase in income per week</span>
-                <span class="input-group-addon">£</span>
-            <input id="gross_pay_amount" name="gross_pay_amount" type="text" size="10" value="">
-            <label id="gross_pay_label" for="gross_pay_period">per</label>
-                <select id="gross_pay_period" name="gross_pay_period">
-                <option value="invalid">Choose...</option>
-                <option value="hour">Hour</option>
-                <option value="day">Day</option>
-                <option value="week">Week</option>
-                <option value="month">Month</option>
-                <option value="year">Year</option>
-            </select>
-            </fieldset>
+            <label id="employers_name_label" for="employers_name" class="form-label-bold employers_name">Company or employer's name</label>
+            <input id="employers_name" name="employers_name" type="text" value=""><br>
+        </div>
+    <p></p>
+    <br>
+    <p class="form-label-bold">
+        Company/Employer's Address
+    </p>
+    <div class="form-group ">
+        
+        <label id="employers_address_line_1_label" for="employers_address_line_1" class="form-label">Company/Employer's Building and Street</label>
+        <input id="employers_address_line_1" name="employers_address_line_1" type="text" value=""><br>
+    </div>
+    <p></p>
+    <p>
+    </p><div class="form-group ">
+
+        
+        <input id="employers_address_line_2" name="employers_address_line_2" type="text" value=""><br>
+    </div>
+    <p></p>
+    <p>
+    </p><div class="form-group ">
+        
+        <input id="employers_address_line_3" name="employers_address_line_3" type="text" value=""><br>
+    </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="employers_address_town_label" for="employers_address_town" class="form-label">Company/Employer's Town</label>
+            <input id="employers_address_town" name="employers_address_town" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="employers_address_county_label" for="employers_address_county" class="form-label">Company/Employer's County</label>
+            <input id="employers_address_county" name="employers_address_county" type="text" value=""><br>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            <label id="employers_address_postcode_label" for="employers_address_postcode" class="form-label">Company/Employer's Postcode</label>
+            <input id="employers_address_postcode" name="employers_address_postcode" type="text" value=""><br>
         </div>
     <p></p>
 
         </fieldset><!-- For User research -->
         <div class="form-navigation form-group">
             <ul>
-            <li><a class="button" id="next" href="9.html">Continue</a></li>                    
-            <li><a href="7.html" id="back" class="button-secondary">Back</a></li>            
+            <li><a class="button" id="next" href="6.html">Continue</a></li>                    
+            <li><a href="4-not-claiming-benefits.html" id="back" class="button-secondary">Back</a></li>            
             </ul>
         </div>
     </form>
 </div>
 
     </div>
-                
+    
 </main>
 
 
