@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  	document.title = "UX - " + $('h1').first().text(); 
+  	document.title = "UX: " + $('h1').first().text(); 
   	
   // Example - Highlight grid
 
