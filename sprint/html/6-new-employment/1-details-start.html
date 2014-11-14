@@ -130,67 +130,77 @@
 
         
 <div class="inner-block text">
-    <p class="form-hint">
-        Section 5 of 6
-    </p>
+    
 
-    <h1 class="form-title heading-large">Details of wages and other mon<span lang="en-gb">ey</span> owed</h1>
-           <div class="panel-indent">
-    <p>
-        <span lang="en-gb">Include your c</span>ommission, overtime 
-		<span lang="en-gb">and any</span> bonus payments in <span lang="en-gb">
-		this section</span>.
-    </p>
-          </div> 
+    
+    
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
+         <input type="hidden" name="_csrf_token" value="d04b437785e82485fdf1646a95e0e054f4018e4c">
          <fieldset>
-  
-    <p>
-        This section of your claim will ask about any <span lang="en-gb">unpaid
-		</span>wages you were owed.  The following information will help you with the questions in section 5:
+            
+    <h1 class="form-title heading-large">
+        Details of new employment
+    </h1>
+    <p class="form-hint">
+        Section 6 of 7
     </p>
-    <ul class="list-bullet text">
-        <li>your contract of employment (if you have it available)</li>
-        <li>recent payslips</li>
-        <li>any other documents relating to your wages</li>
-    </ul>
-    	 <details>
-        <summary tabindex="0" style="-moz-user-select: none;" role="button" aria-expanded="false" id="btn-open">
-            What are the questions in section 5?
+    <br>
+    <p class="lead text">
+        We need to know if you have any new employment. The following documents, if you have them, will help you with the questions in part 6:
+        </p><ul class="list-bullet text">
+            <li>
+                your new contract of employment
+            </li>
+        </ul>
+    <p></p>
+    <details>
+        <summary tabindex="0" style="-moz-user-select: none;" role="button" aria-expanded="false">
+            What are the questions in section 6?
         </summary>
-          <div>You should complete the following 
-		 questions if they apply:</div> 
-            <ol id="question_list" class="list-number" style="display: block;">
+        <ol id="question_list" class="list-number" style="display: block;">
             
-                 <li>Are you owed any wages?</li>
+            <li>Have you had a new job since you were made redundant?</li>
             
-                 <li>What is the period for which you are owed wages?</li>
+            <li>Are you self-employed in your new job?</li>
             
-                 <li>Days Owed</li>
+            <li>New employer name</li>
             
-                 <li>Did your employer attempt to pay you?</li>
+            <li>Employer Address</li>
             
-                 <li>What is the gross amount of pay owed for this period?</li>
+            <li>Telephone number</li>
             
-            </ol>
+            <li>When were you offered this job?</li>
+            
+            <li>When did you start this job?</li>
+            
+            <li>Although you have a different employer, is your new job role the same?</li>
+            
+            <li>Are you dealing with the same customers?</li>
+            
+            <li>Have your terms and conditions changed?</li>
+            
+            <li>Are you aware of any link between your old employer and your new employer?</li>
+            
+            <li>What is the link between your old employer and your new employer?</li>
+            
+        </ol>
     </details>
+    <br>
     <p>
         </p><fieldset class="inline">
             <div class="form-group ">
                 
-                <label id="wages_owed_check_label" class="form-label-bold">Are you owed any wages<span lang="en-gb"> 
-				or other money</span>?</label>
-                <span class="form-hint">If you choose 'No' you won't need to answer any questions in section 5.</span>
-                <div id="wages_owed_check" class="form-group">
+                <label id="new_employment_check_label" class="form-label-bold">Have you had a new job since you were made redundant?</label>
+                <span class="form-hint">If you choose 'No' you won't need to answer any questions in section 6</span>
+                <div id="new_employment_check" class="form-group">
         
-        <label id="wages_owed_check_label" for="wages_owed_check_Yes" class="block-label">
-            <input id="wages_owed_check_Yes" value="Yes" name="wages_owed_check" type="radio">
+        <label id="new_employment_check_label" for="new_employment_check_Yes" class="block-label selected">
+            <input id="new_employment_check_Yes" value="Yes" name="new_employment_check" type="radio" checked="checked">
             Yes
         </label>
         
-        <label id="wages_owed_check_label" for="wages_owed_check_No" class="block-label">
-            <input id="wages_owed_check_No" value="No" name="wages_owed_check" type="radio">
+        <label id="new_employment_check_label" for="new_employment_check_No" class="block-label">
+            <input id="new_employment_check_No" value="No" name="new_employment_check" type="radio">
             No
         </label>
         
@@ -198,20 +208,27 @@
             </div>
         </fieldset>
     <p></p>
+    <p>
+        Click on "Continue" to begin this section of the claim
+    </p>
+    <br>
 
         </fieldset><!-- For User research -->
-       <div class="form-navigation form-group">
-                      <ul>
-                <li><a class="button" id="next" href="2-attachments-of-earnings.html">Continue</a></li>        
-                <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
+        <div class="form-navigation form-group">
+            <ul>
+            
+            <li><input id="next" class="button" type="submit" value="Next"></li>
+            
+                <li><a href="/claims/wages-owed-summary" id="back" class="button-secondary">Back</a></li>
+            
+            
             </ul>
         </div>
-
     </form>
 </div>
 
     </div>
-                            
+                                
                                             </main>
 
 

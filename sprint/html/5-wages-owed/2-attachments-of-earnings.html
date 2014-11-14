@@ -11,8 +11,6 @@
 
     <link type="text/css" rel="stylesheet" media="screen" href="../assets/stylesheets/overrides.css">
 
-    <br>
-
     <!--[if gt IE 8]><!-->
 <link type="text/css" rel="stylesheet" media="screen" href="../assets/stylesheets/govuk-template.css"><!--<![endif]-->
     <!--[if IE 6]><link href="../assets/stylesheets/govuk-template-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
@@ -62,15 +60,6 @@
     <!--[if IE 6]><link href="../assets/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 7]><link href="../assets/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
     <!--[if IE 8]><link href="../assets/stylesheets/main-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-    <style type="text/css">
-    h1{
-	margin-top:0;
-	margin-bottom:0;
-	margin-top:0;
-	margin-bottom:0;
-}
-    
-    </style>
 </head>
 
 <body class="js-enabled js-enabled">
@@ -130,88 +119,53 @@
 
         
 <div class="inner-block text">
-    <p class="form-hint">
-        Section 5 of 6
-    </p>
+    
+<h1 class="form-title heading-large">Deductions from wages: attachment of earnings</h1>
 
-    <h1 class="form-title heading-large">Details of wages and other mon<span lang="en-gb">ey</span> owed</h1>
-           <div class="panel-indent">
-    <p>
-        <span lang="en-gb">Include your c</span>ommission, overtime 
-		<span lang="en-gb">and any</span> bonus payments in <span lang="en-gb">
-		this section</span>.
-    </p>
-          </div> 
+    
+    
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
+         <input type="hidden" name="_csrf_token" value="d04b437785e82485fdf1646a95e0e054f4018e4c">
          <fieldset>
-  
-    <p>
-        This section of your claim will ask about any <span lang="en-gb">unpaid
-		</span>wages you were owed.  The following information will help you with the questions in section 5:
-    </p>
-    <ul class="list-bullet text">
-        <li>your contract of employment (if you have it available)</li>
-        <li>recent payslips</li>
-        <li>any other documents relating to your wages</li>
-    </ul>
-    	 <details>
-        <summary tabindex="0" style="-moz-user-select: none;" role="button" aria-expanded="false" id="btn-open">
-            What are the questions in section 5?
-        </summary>
-          <div>You should complete the following 
-		 questions if they apply:</div> 
-            <ol id="question_list" class="list-number" style="display: block;">
             
-                 <li>Are you owed any wages?</li>
-            
-                 <li>What is the period for which you are owed wages?</li>
-            
-                 <li>Days Owed</li>
-            
-                 <li>Did your employer attempt to pay you?</li>
-            
-                 <li>What is the gross amount of pay owed for this period?</li>
-            
-            </ol>
-    </details>
-    <p>
-        </p><fieldset class="inline">
-            <div class="form-group ">
-                
-                <label id="wages_owed_check_label" class="form-label-bold">Are you owed any wages<span lang="en-gb"> 
-				or other money</span>?</label>
-                <span class="form-hint">If you choose 'No' you won't need to answer any questions in section 5.</span>
-                <div id="wages_owed_check" class="form-group">
+
+<p>
+    </p><div class="form-group ">
         
-        <label id="wages_owed_check_label" for="wages_owed_check_Yes" class="block-label">
-            <input id="wages_owed_check_Yes" value="Yes" name="wages_owed_check" type="radio">
+            <label id="wages_includes_deductions_label" for="wages_includes_deductions" class="form-label-bold wages_includes_deductions">Did your wages have any compulsory deductions?</label>
+            <span class="form-hint">This could include unpaid council tax, child support payments or any court ordered deduction at source. This does not include National Insurance and income tax</span>
+        <fieldset class="inline">
+            <div id="wages_includes_deductions" class="form-group">
+        
+        <label id="wages_includes_deductions_label" for="wages_includes_deductions_Yes" class="block-label">
+            <input id="wages_includes_deductions_Yes" value="Yes" name="wages_includes_deductions" type="radio">
             Yes
         </label>
         
-        <label id="wages_owed_check_label" for="wages_owed_check_No" class="block-label">
-            <input id="wages_owed_check_No" value="No" name="wages_owed_check" type="radio">
+        <label id="wages_includes_deductions_label" for="wages_includes_deductions_No" class="block-label">
+            <input id="wages_includes_deductions_No" value="No" name="wages_includes_deductions" type="radio">
             No
         </label>
         
     </div>
-            </div>
         </fieldset>
-    <p></p>
+    </div>
+
+<p></p>
+
 
         </fieldset><!-- For User research -->
-       <div class="form-navigation form-group">
-                      <ul>
-                <li><a class="button" id="next" href="2-attachments-of-earnings.html">Continue</a></li>        
+         <div class="form-navigation form-group">
+             <ul>
+                <li><a class="button" id="next" href="2-dates.html">Continue</a></li>        
                 <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
             </ul>
         </div>
-
     </form>
 </div>
 
     </div>
-                            
+                                            
                                             </main>
 
 
