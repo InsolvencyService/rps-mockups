@@ -106,101 +106,97 @@
 </div>
 
 <main role="main" id="wrapper">
+
     <div id="content">
-    <div class="text inner-block">
-
-        <div>
-        <h1 class="form-title heading-large">
-            <span lang="en-gb">Y</span>our details
-        </h1>
-
-<p class="lead text">
-            Review the <span lang="en-gb">following information </span>before you 
-			<span lang="en-gb">continue</span>.
-        </p>
-
-        
-            <div class="form-group">
-                <table id="summary_table">
-
-                    <tbody>
-                    <tr>
-                        <th>Question</th>
-                        <th>Answer</th>
-                        <th></th>
-                    </tr>
-                    
-                    <tr class="claiming_redundancy">
-                        <td><span lang="en-gb">Title</span></td>
-                        <td><span lang="en-gb">Mr</span></td>
-                        <td>
-                            
-    <a href="/claims/redundancy-details-start">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="employment_tribunal_date">
-                        <td><span lang="en-gb">Name</span></td>
-                        <td><span lang="en-gb">Andrew Smith</span></td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                    
-                    <tr class="part_paid_redundancy">
-                        <td><span lang="en-gb">Address</span></td>
-                        <td>est <br>
-                            
-                                test <br>
-                            
-                                test </td>
-                        <td>
-                            
-    <a href="/claims/redundancy-part-paid">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="amount_redundancy_paid">
-                        <td>Date of birth</td>
-                        <td>2 January 1970</td>
-                        <td>
-                            
-    <a href="/claims/amount-redundancy-paid">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    </tbody>
-                </table>
+        <div class="inner-block">
+            <div class="phase-banner">
+                    <p>
+                        <strong class="phase-tag">BETA</strong>
+                        This is a new service - your <a href="https://www.surveymonkey.com/s/MWWXKLX" target="_blank">feedback</a> will help us improve it
+                    </p>
             </div>
-
-            <div class="form-group">
-            </div>
-            
-         <div class="form-navigation form-group">
-            <ul>
-            
-            <li><a class="button" id="next" href="5-additional-contact-details.html">Continue</a></li>
-                        
-                <li><a href="3-verify-identity.html" id="back" class="button-secondary">Back</a></li>
-            
-            
-            </ul>
         </div>
 
         
+<div class="inner-block text">
+    
+    <h1 class="form-title heading-large">Dates of wages owed</h1>
+
+    <form class="form" method="post">
+         <input type="hidden" name="_csrf_token" value="1396e64f55ecaf3dd0e78850b9f5e492e7db8375">
+         <fieldset>
+            
+    <p>
+        </p>
+        <div class="panel-indent">
+            You can add more than one period for wages owed up to a maximum of 8 weeks. There is an option to add more periods on the summary screen, but this should only be used if you are sure you have more periods to add. You can't add part weeks together to make a whole week: if you choose a week in which you are only owed one day of pay this will count as a whole week in your 8 week allocation.
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            
+            <label id="wage_period_start_label" class="form-label-bold">From</label>
+            <fieldset id="wage_period_start" class="date-of-birth">
+            <div class="form-group form-group-day">
+	            <label id="wage_period_start_label.day" for="wage_period_start.day">Day</label>
+                <input id="wage_period_start.day" name="wage_period_start.day" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="wage_period_start_label.month" for="wage_period_start.month">Month</label>
+                <input id="wage_period_start.month" name="wage_period_start.month" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="wage_period_start_label.year" for="wage_period_start.year">Year</label>
+                <input id="wage_period_start.year" name="wage_period_start.year" class="date-input" type="text" maxlength="4" size="4" value="">
+            </div>
+        </fieldset>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+            
+            
+            <label id="wage_period_end_label" class="form-label-bold">To</label>
+            <fieldset id="wage_period_end" class="date-of-birth">
+            <div class="form-group form-group-day">
+	            <label id="wage_period_end_label.day" for="wage_period_end.day">Day</label>
+                <input id="wage_period_end.day" name="wage_period_end.day" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="wage_period_end_label.month" for="wage_period_end.month">Month</label>
+                <input id="wage_period_end.month" name="wage_period_end.month" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="wage_period_end_label.year" for="wage_period_end.year">Year</label>
+                <input id="wage_period_end.year" name="wage_period_end.year" class="date-input" type="text" maxlength="4" size="4" value="">
+            </div>
+        </fieldset>
+        </div>
+    <p></p>
+    <p>
+        </p><div class="form-group ">
+                
+                <label id="days_owed_label" for="days_owed" class="form-label-bold days_owed">Days Owed</label>
+                <input id="days_owed" name="days_owed" type="text" size="4" maxlength="6" step="2" value="">
+        </div>
+    <p></p>
+    
+
+        </fieldset><!-- For User research -->
+      <div class="form-navigation form-group">
+                      <ul>
+                <li><a class="button" id="next" href="5-wages-owed/7-summary-grouped.html">Continue</a></li>        
+                <li><a href="javascript:history.go(-1)" id="back" class="button-secondary">Back</a></li>         
+            </ul>
+        </div>
+
+    </form>
+</div>
+
     </div>
-</div>
-</div>
-        </main>
+                                
+                                            </main>
 
 
 

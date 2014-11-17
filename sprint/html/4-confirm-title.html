@@ -11,6 +11,12 @@
 
     <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/overrides.css">
 
+    <style type="text/css">
+.auto-style1 {
+	background-color: #00823B;
+}
+</style>
+
     <!--[if gt IE 8]><!-->
 <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/govuk-template.css"><!--<![endif]-->
     <!--[if IE 6]><link href="assets/stylesheets/govuk-template-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
@@ -111,76 +117,22 @@
 
         <div>
         <h1 class="form-title heading-large">
-            <span lang="en-gb">Y</span>our details
+            <span lang="en-gb">Y</span>our <span lang="en-gb">title</span>
         </h1>
+<div class="form-group ">
+                
+                <label id="days_owed_label" for="days_owed" class="form-label-bold days_owed">How do we address you?</label>
+                <div class="form-hint">We wil use this in<span lang="en-gb"> our 
+					letters and emails</span> </div>
+                &nbsp;<select>
+                <option>Please choose</option>
+                <option>Mr</option>
+                <option>Mrs</option>
+                </select>
+        </div>
 
 <p class="lead text">
-            Review the <span lang="en-gb">following information </span>before you 
-			<span lang="en-gb">continue</span>.
-        </p>
-
-        
-            <div class="form-group">
-                <table id="summary_table">
-
-                    <tbody>
-                    <tr>
-                        <th>Question</th>
-                        <th>Answer</th>
-                        <th></th>
-                    </tr>
-                    
-                    <tr class="claiming_redundancy">
-                        <td><span lang="en-gb">Title</span></td>
-                        <td><span lang="en-gb">Mr</span></td>
-                        <td>
-                            
-    <a href="/claims/redundancy-details-start">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="employment_tribunal_date">
-                        <td><span lang="en-gb">Name</span></td>
-                        <td><span lang="en-gb">Andrew Smith</span></td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                    
-                    <tr class="part_paid_redundancy">
-                        <td><span lang="en-gb">Address</span></td>
-                        <td>est <br>
-                            
-                                test <br>
-                            
-                                test </td>
-                        <td>
-                            
-    <a href="/claims/redundancy-part-paid">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    <tr class="amount_redundancy_paid">
-                        <td>Date of birth</td>
-                        <td>2 January 1970</td>
-                        <td>
-                            
-    <a href="/claims/amount-redundancy-paid">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                    
-                    </tbody>
-                </table>
-            </div>
+            &nbsp;</p>
 
             <div class="form-group">
             </div>
@@ -188,7 +140,8 @@
          <div class="form-navigation form-group">
             <ul>
             
-            <li><a class="button" id="next" href="5-additional-contact-details.html">Continue</a></li>
+            <li><a id="next" class="button" href="4-confirm-details.html">
+			<span class="auto-style1" lang="en-gb">Continu</span>e</a></li>
                         
                 <li><a href="3-verify-identity.html" id="back" class="button-secondary">Back</a></li>
             
