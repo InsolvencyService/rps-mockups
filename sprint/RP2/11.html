@@ -69,15 +69,18 @@
     .column-heading th{
 		color:gray;
 	}
-	tr > th:first-child,
-	tr > td:first-child{
+	tr.repeat > th:first-child,
+	tr.repeat > td:first-child{
 	border:0 transparent none !important;
 	}
 	tr.group-heading td.title,
 	tr.group-heading td.number{
 		font-weight:bold;
 		font-size:1.2em;
-}
+	}
+	td{
+		vertical-align:top;
+	}
     
     </style>
 
@@ -150,24 +153,21 @@
         We are interested in what you did during these dates <br>
         <span class="bolder">1 October 2014</span> and <span class="bolder">1 November 2014</span> (the notice period)
     </p>
+	</div>
 </div>
-
         
-            <div class="form-group">
+            <div class="form-group" style="margin-left:30px; width:70%">
                 <table id="summary_table">
 
                     <tbody>
                     <tr>
-                    	<th></th>
-                        <th>Question</th>
+                    	<th colspan="2">Question</th>
                         <th>Answer</th>
                         <th>&nbsp;</th>
-                        <th></th>
                     </tr>
                     
                     <tr class="part_paid_redundancy">
-                    <td></td>
-                        <td><label id="claiming_benefits_label">Did you receive 
+                    <td colspan="2"><label id="claiming_benefits_label">Did you receive 
 						any new benefits or an increase in your benefits during 
 						the notice period?</label></td>
                         <td><span lang="en-gb">No</span></td>
@@ -178,13 +178,9 @@
     </a>
 
                         </td>
-                        <td>
-                            
-    					&nbsp;</td>
                     </tr>
                     <tr class="part_paid_redundancy">
-                    <td></td>
-                        <td><label id="refused_benefits_label">Did you apply for 
+                    <td colspan="2"><label id="refused_benefits_label">Did you apply for 
 						Jobseeker's Allowance and was this refused in the notice 
 						period?</label></td>
                         <td><span lang="en-gb">No</span></td>
@@ -195,14 +191,25 @@
     </a>
 
                         </td>
-                        <td>
-                            
-    					&nbsp;</td>
                     </tr>
                     
                     <tr class="part_paid_redundancy">
                     <td></td>
-                        <td><label id="employed_during_notice_label">Did you 
+                        <td><label id="still_claiming_label">Why did you not 
+						apply for Jobseeker's Allowance?</label></td>
+                        <td>
+                            
+    					<span lang="en-gb">D</span>id not want to sign on as I thought 
+						I would get a job quickly</td>
+                        <td>   
+						    <a href="/claims/redundancy-part-paid">
+						        Change
+						    </a>
+                        </td>
+                    </tr>
+                    
+                    <tr class="part_paid_redundancy">
+                    <td colspan="2"><label id="employed_during_notice_label">Did you 
 						have a new job or increase your hours at a second job in 
 						the notice period?</label></td>
                         <td><span lang="en-gb">Yes</span></td>
@@ -213,44 +220,34 @@
     </a>
 
                         </td>
-                        <td>
-                            
-    					&nbsp;</td>
                     </tr>
 
-                    <tr class="part_paid_redundancy">
-                    <td></td>
-                        <td><label id="still_claiming_label">Why did you not 
-						apply for Jobseeker's Allowance?</label></td>
-                        <td>
-                            
-    					<span lang="en-gb">I did not want to sign on and thought 
-						I would get a job quickly</span></td>
-                        <td>
-                            
-    <a href="/claims/redundancy-part-paid">
-        Change
-    </a>
-
-                        </td>
-                    </tr>
-                     <tr class="wage_period group-heading">
+ 
+                     <tr class="wage_period group-heading repeat">
                         <td class="number">1</td>
                         <td class="title"><span lang="en-gb">Two's company</span></td>
                         <td></td>
                         <td>                      
+                            
+    					<a href="#">Remove</a>
+                        
+                        </td>
+                    </tr>
+                    
+                    <tr class="pay_attempted repeat">
+                    	<td>&nbsp;</td>
+                        <td><span lang="en-gb">Company:</span></td>
+                        <td><span lang="en-gb">Two's company</span></td>
+                        <td>         
                             
     <a href="5-employment-details.html">
         Change
     </a>
 
                         </td>
-                        <td>                      
-    					<a href="#">Remove</a>
-                        </td>
                     </tr>
                     
-                    <tr class="pay_attempted">
+                    <tr class="pay_attempted repeat">
                     	<td></td>
                         <td><span lang="en-gb">Start date</span></td>
                         <td><span lang="en-gb">1/10/2014</span></td>
@@ -261,11 +258,9 @@
     </a>
 
                         </td>
-                        <td>         
-                        &nbsp;</td>
                     </tr>
                     
-                    <tr class="wages_owed_amount_currency">
+                    <tr class="wages_owed_amount_currency repeat">
                     <td>&nbsp;</td>
                         <td>End date</td>
                         <td>15/10/2014</td>
@@ -276,11 +271,9 @@
     </a>
 
                         </td>
-                        <td>
-                        &nbsp;</td>
                     </tr>
                     
-                    <tr class="wages_owed_amount_currency">
+                    <tr class="wages_owed_amount_currency repeat">
                     <td></td>
                         <td><span lang="en-gb">Details of earnings per week</span></td>
                         <td><span lang="en-gb">£250.00</span></td>
@@ -291,11 +284,9 @@
     </a>
 
                         </td>
-                        <td>
-                        &nbsp;</td>
                     </tr>
                     
-                    <tr class="days_owed">
+                    <tr class="days_owed repeat">
                     <td></td>
                         <td><span lang="en-gb">Hours worked</span></td>
                         <td><span lang="en-gb">22</span></td>
@@ -306,25 +297,21 @@
     </a>
 
                         </td>
-                        <td>   
-                        &nbsp;</td>
                     </tr>
                     
-                    <tr class="net_wages_owed_amount_currency hidden">
+                    <tr class="net_wages_owed_amount_currency hidden repeat">
                     <td></td>
                         <td>What is the net amount of pay owed for this period?</td>
                         <td>&nbsp;</td>
                         <td>      
                         </td>
-                        <td>      
-                        </td>
                     </tr>
 
 
 
 
 
-                    <tr class="amount_redundancy_paid">
+                    <tr class="amount_redundancy_paid repeat">
                     <td></td>
                         <td>Total gross pay </td>
                         <td>£<span lang="en-gb">5</span>00.00</td>
@@ -335,16 +322,11 @@
     </a>
 
                         </td>
-                        <td>
-                            
-    					&nbsp;</td>
                     </tr>
                     
                     </tbody>
                 </table>
             </div>
-
-
     
 
  <div>

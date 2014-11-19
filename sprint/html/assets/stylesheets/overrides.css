@@ -24,6 +24,14 @@
 table.date-period {
   /* style tables foir time periods differently */ }
 
+ul.list-bullet{
+	margin-bottom:0;
+}
+.form-group  > .form-group,
+.form-group > fieldset > .form-group{
+	margin-bottom:0;
+}
+
 ol.bulleted {
   list-style-type: none; }
   ol.bulleted li {
@@ -61,3 +69,11 @@ ol.bulleted {
 	}
 }
 
+form .panel-indent{
+	margin-bottom:0;
+}
+
+select{
+	font-size:19px;
+	font-family:"nta", Arial, sans-serif;
+}
