@@ -61,7 +61,11 @@
     
      <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/overrides.css">
 
-
+<style type="text/css">
+.bolder{
+	font-weight:bolder;
+}
+</style>
 </head>
 
 <body class="js-enabled js-enabled">
@@ -122,73 +126,79 @@
         
 <div class="inner-block text">
     
-    <div>
-        <h1 class="form-title heading-large"><span lang="en-gb">C</span>laim<span lang="en-gb"> 
-		a loss of notice payment</span></h1>
-        <div class="text">
-            <p>Apply for a payment if you <span lang="en-gb">are not paid for 
-			your loss of notice.</span></p>
-			<p>You should only use this service if:</p>
-            <ul class="list-bullet">
-            <li>your employment has been terminated by your employer</li>
-            <li>you have your National Insurance number</li>
-            </ul>
-
-         </div>
-
-            <p>If you don’t enter any information for more than 30 minutes, then your claim will time out and you’ll need to start again</p>
-
-
-	<h2 class="heading-medium">Information that will help you</h2>
-	<ul class="list-bullet">
-	<li>details of any <a href="https://www.gov.uk/browse/benefitshttps://www.gov.uk/browse/benefits">benefit payments you will earn</a> during your notice period</li>
-	<li>details of any money you will earn during your notice period</li>
-	</ul>
-	
-
-    </div>
-
-           <div>
-    <h2 class="heading-medium">
-            Contact us if you need help using this service</h2>
-		 <h2 class="heading-small">
-            Email
-        </h2>
-        <div class="text">
-            <a href="mailto:redundancypaymentsonline@insolvency.gsi.gov.uk?subject=Query regarding my online redundancy claim">
-			redundancypaymentsonline@insolvency.gsi.gov.uk </a>
-        </div>
-        <h2 class="heading-small">
-            Telephone
-        </h2>
-        <div class="text">
-            0330 331 0020 (<span lang="en-gb">choose </span>option 2)
-			<div class="text">
-            Opening hours are 9am to 5pm  Mon day - Friday (closed on bank holidays)
-        </div>
-        </div>
-        </div>
+    <h1 class="form-title heading-large">Jobseeker's Allowance received during 
+	<span lang="en-gb">your</span> notice period</h1>
+    <div class="notice-period panel-indent">
+    <p>
+        <span lang="en-gb">Your notice period is </span><span class="bolder">
+		<strong class="bolder">1 October 2014</strong></span> and <span class="bolder">1 November 2014</span></p>
+</div>
 
     
+    
     <form class="form" method="post">
-         <input type="hidden" name="_csrf_token" value="2b6af3e5a8192bfe7cb2a48bbd05aaae18689c4f">
-         <fieldset>
+         <input type="hidden" name="_csrf_token" value="a35be6f3aaeccd6e4af0549d8ff93f9dcfc7e3d9">
+         
+    <p>
+        </p><div class="form-group ">
             
+            <fieldset id="new_benefit_claim_start" class="date-of-birth">
+                <legend id="new_benefit_claim_start_label" class="form-label-bold">When did you apply for Jobseeker's Allowance?</legend>
+                <span class="form-hint">You must tell us the 
+				date you first applied or requested an increase to your current 
+				claim</span>
+
+                <div class="form-group form-group-day">
+	            <label id="new_benefit_claim_start_label.day" for="new_benefit_claim_start.day">Day </label><input id="new_benefit_claim_start.day" name="new_benefit_claim_start.day" 
+	            class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-month">
+	            <label id="new_benefit_claim_start_label.month" for="new_benefit_claim_start.month">Month </label><input id="new_benefit_claim_start.month" name="new_benefit_claim_start.month" class="date-input" type="text" maxlength="2" size="2" value="">
+            </div>
+            <div class="form-group form-group-year">
+                <label id="new_benefit_claim_start_label.year" for="new_benefit_claim_start.year">Year </label><input id="new_benefit_claim_start.year" name="new_benefit_claim_start.year" class="date-input" type="text" maxlength="4" size="4" value="">
+            </div>
+            </fieldset>
+        </div>
+    <p></p>
+
+    <p>
+        </p><div class="form-group inline ">
             
-        </fieldset><!-- For User research -->
-         <div class="form-navigation form-group">
+             <fieldset class="inline">
+                    <legend id="still_claiming_label" class="form-label-bold">Were you still claiming Jobseeker's Allowance on 1 November 2014 ?</legend>
+                    <div id="still_claiming" class="form-group">
+        
+        <label id="still_claiming_label" for="still_claiming_Yes" class="block-label">
+            <input id="still_claiming_Yes" value="Yes" name="still_claiming" type="radio">
+            Yes
+        </label>
+        
+        <label id="still_claiming_label" for="still_claiming_No" class="block-label">
+            <input id="still_claiming_No" value="No" name="still_claiming" type="radio">
+            No
+        </label>
+        
+    </div>
+             </fieldset>
+        </div>
+    <p></p>
+<!-- For User research -->
+        <div class="form-navigation form-group">
             <ul>
-            <li><a class="button" id="next" href="1.html">Start now</a></li>                    
-            <li><a href="8.html" id="back" class="button-secondary" style="display:none">Back</a></li>            
+            
+            <li><input id="next" class="button" type="submit" value="Next"></li>
+            
+                <li><a href="/claims/configure-benefits" id="back" class="button-secondary">Back</a></li>
+            
+            
             </ul>
         </div>
-
     </form>
 </div>
 
     </div>
-
-
+            
 </main>
 
 
