@@ -24,31 +24,6 @@
 table.date-period {
   /* style tables foir time periods differently */ }
 
-ul.list-bullet {
-margin-bottom: 20px
-}
-
-form .panel-indent {
-margin-bottom: 30px
-}
-
-.form-group > .form-group, .form-group > fieldset > .form-group {
-margin-bottom: 0px
-}
-
-#benefits_options {
-margin-bottom: 15px
-}
-
-select {
-font-size: 19px;
-font-family: "nta",Arial,sans-serif
-}
-@media (max-width: 640px) {
-    select{
-      font-size: 16px} }
-
-
 ol.bulleted {
   list-style-type: none; }
   ol.bulleted li {
@@ -60,11 +35,29 @@ ol.bulleted {
     background: url("/static/public/images/icons/icon-steps/icon-step-2.png") no-repeat 3px 5px; }
   ol.bulleted li:nth-child(3) {
     background: url("/static/public/images/icons/icon-steps/icon-step-3.png") no-repeat 3px 5px; }
+    
+/* Prototype */
+.text{
+	width:auto;
+}
+.maincontent, .sidebar{
+	float:left;
+	display:block;
+	max-width: 30em;
+}
+.sidebar{
+	margin-top:45px;
+	margin-left: 30px;
+	width: 15em;
+}
+.swatch-light-blue,
+.sidebar .swatch-yellow{
+	padding:10px;
+	font-size:14px;
+}
+ @media (min-width: 641px) {
+	.inner-block {
+		margin-right:0;
+	}
+}
 
-.summary ul.benefit-item-list {
-  list-style: none; }
-
-.bolder {
-  font-weight: bold; }
-
-/*# sourceMappingURL=overrides.css.map */
