@@ -329,17 +329,24 @@
             </div>
     
 
-<div style="clear:left">
+<div style="clear:left" class="inner-block text">
     <h2 style="font-weight:bold">Declaration</h2>
     <p>By submitting your claim, you confirm that:</p><ul class="list-bullet">    <li>As far as you know, all the information you have provided in your claim is correct</li>    <li>This is the only claim you are making for a compensatory notice payment in relation to this employment</li>    <li>You agree to us using your information as described in our privacy policy (including sharing information with your employer, their representatives or with relevant government organisations if we need to in order to check your claim or work out how much to pay you)    </li></ul>
     <p class="panel-indent">We may take legal action against you if you knowingly make a false statement in your claim.</p>
 
     <form class="form" method="post">
+    
+    
          <input type="hidden" name="_csrf_token" value="2b6af3e5a8192bfe7cb2a48bbd05aaae18689c4f">
          <fieldset>
+        <div class="form-group ">
             
+            <input id="confirm_claim_submission" name="confirm_claim_submission" value="True" type="checkbox">
+	<label id="confirm_claim_submission_label" for="confirm_claim_submission">I understand and agree with the declaration above</label>
+        </div>
+    
             
-        </fieldset><!-- For User research -->
+        </fieldset>
         <div class="form-navigation form-group">
             <ul>
             
