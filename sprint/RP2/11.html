@@ -65,6 +65,17 @@
     
      <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/overrides.css">
 
+    <link type="text/css" rel="stylesheet" media="screen" href="assets/javascripts/jquery.PrintArea.js_4.js">
+
+<script type="text/javascript">
+	$('.print').click(function() {
+		var container = $(this).attr('rel');
+		$('#' + container).printArea();
+		return false;
+	});
+	
+</script>
+
    <style type="text/css">
     .column-heading th{
 		color:gray;
@@ -165,7 +176,7 @@
                     <tr>
                     	<th colspan="2">Question</th>
                         <th>Answer</th>
-                        <th>&nbsp;</th>
+                        <th><a href="#" class="print" rel="content">Print</a></th>
                     </tr>
                     
                     <tr class="part_paid_redundancy">
