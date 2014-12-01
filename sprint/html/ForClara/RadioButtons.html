@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Untitled 1</title>
+    
+    <script type="text/javascript" src="../assets/javascripts/govuk-template.js"></script>
+    <script type="text/javascript" src="../assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../assets/javascripts/jquery.details.min.js"></script>
+
+    <script type="text/javascript">
+
+$( document ).ready(function() {
+  	$("#panel-bonus").hide();
+  	
+	$("#pay_includes_bonuses_Yes").click(function(){
+		if ($("#pay_includes_bonuses_Yes").prop("checked") == true){
+    		$("#panel-bonus").show();
+    	}
+    });
+    $("#pay_includes_bonuses_No").click(function(){
+		if ($("#pay_includes_bonuses_No").prop("checked") == true){
+     		$("#panel-bonus").hide();
+    	}
+    });
+
+});
+    </script>
+</head>
+
+<body>
+    <form>
+        <fieldset class="inline">
+            <div class="form-group ">
+
+                <label id="pay_includes_bonuses_label" class="form-label-bold">
+                    Did your
+                    <span lang="en-gb">contract</span> include any bonus or commission?
+                </label>
+                <div id="pay_includes_bonuses" class="form-group">
+
+                    <label id="pay_includes_bonuses_label" for="pay_includes_bonuses_Yes" class="block-label">
+                        <input id="pay_includes_bonuses_Yes" value="Yes" name="pay_includes_bonuses" type="radio" />
+                        Yes
+                    </label>
+
+                    <label id="pay_includes_bonuses_label" for="pay_includes_bonuses_No" class="block-label">
+                        <input id="pay_includes_bonuses_No" value="No" name="pay_includes_bonuses" type="radio" />
+                        No
+                    </label>
+
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <div id="panel-bonus">
+        <form>
+
+            <fieldset>
+                <fieldset>
+
+                    <p>
+                    </p><div class="form-group ">
+
+                        <label id="details_of_bonus_or_commission_label" for="details_of_bonus_or_commission" class="form-label-bold details_of_bonus_or_commission">How much bonus or commission did you get, and how often?</label>
+                        <span class="form-hint">We will take this information into account when calculating your payments so please be as accurate as possible.</span>
+                        <textarea id="details_of_bonus_or_commission" name="details_of_bonus_or_commission" cols="75" rows="7"></textarea>
+                    </div>
+                    <p></p>
+
+
+                </fieldset>
+            </fieldset>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
