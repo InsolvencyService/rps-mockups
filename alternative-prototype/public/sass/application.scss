@@ -1,0 +1,14 @@
+// Import elements
+@import 'elements';
+
+// Set up main content
+#content {
+  @include outer-block;
+  padding-bottom: 120px;
+}
+
+.inner-block {
+  @include inner-block;
+}
+
+// Your styles here
